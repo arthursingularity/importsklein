@@ -124,7 +124,12 @@ function App() {
           </div>
           <div className="mt-10 p-5">
             <p className="text-white text-xl font-regular">Destaques</p>
-            <div className="mt-4">
+            <div className="mt-4 flex space-x-2">
+              <ProductComponent
+                src={"./images/product1.jpg"}
+                product={"Apple IPhone 16 Pro Max (128GB) - Titânio natural"}
+                price={"R$ 8.499,00"}
+              />
               <ProductComponent
                 src={"./images/product1.jpg"}
                 product={"Apple IPhone 16 Pro Max (128GB) - Titânio natural"}
@@ -133,31 +138,75 @@ function App() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="text-white mt-4 bg-dark-bg-2 py-3 mt-5 rounded-2xl border border-borderColor" style={{ width: '325px' }}>
+            <div className="flex justify-center text-white rounded-2xl py-4 bg-dark-bg-2" style={{ width: '340px' }}>
+              <div>
+                <p className="text-center text-xl font-light mt-1">Quem compra, <span className="font-medium">confia!</span></p>
+                <div className="stars flex justify-center">
+                  <span className="starIcon material-symbols-outlined text-yellow-500">
+                    star
+                  </span>
+                  <span className="starIcon material-symbols-outlined text-yellow-500">
+                    star
+                  </span>
+                  <span className="starIcon material-symbols-outlined text-yellow-500">
+                    star
+                  </span>
+                  <span className="starIcon material-symbols-outlined text-yellow-500">
+                    star
+                  </span>
+                  <span className="starIcon material-symbols-outlined text-yellow-500">
+                    star
+                  </span>
+                </div>
+                <div className="flex space-x-3 mt-6">
+                  <img src="./images/cliente1.jpg" className="w-24 rounded-lg border border-borderColor" />
+                  <img src="./images/cliente2.jpg" className="w-24 rounded-lg border border-borderColor" />
+                  <img src="./images/cliente3.jpg" className="w-24 rounded-lg border border-borderColor" />
+                </div>
+                <div className="flex space-x-3 mt-3">
+                  <img src="./images/cliente4.jpg" className="w-24 rounded-lg border border-borderColor" />
+                  <img src="./images/cliente5.jpg" className="w-24 rounded-lg border border-borderColor" />
+                  <img src="./images/cliente6.jpg" className="w-24 rounded-lg border border-borderColor" />
+                </div>
+                <div className="flex space-x-3 mt-3">
+                  <img src="./images/cliente7.jpg" className="w-24 rounded-lg border border-borderColor" />
+                  <img src="./images/cliente8.jpg" className="w-24 rounded-lg border border-borderColor" />
+                  <img src="./images/cliente9.jpg" className="w-24 rounded-lg border border-borderColor" />
+                </div>
+                <div className="flex space-x-3 mt-3">
+                  <img src="./images/cliente10.jpg" className="w-24 rounded-lg border border-borderColor" />
+                  <img src="./images/cliente11.jpg" className="w-24 rounded-lg border border-borderColor" />
+                  <img src="./images/cliente12.jpg" className="w-24 rounded-lg border border-borderColor" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="text-white mt-4 bg-dark-bg-2 py-3 mt-5 rounded-2xl" style={{ width: '340px' }}>
               <p className="text-center text-xl font-regular mt-1">Formas de pagamento</p>
               <div className="space-y-3 mt-5">
                 <div className="flex justify-center">
-                  <div className="flex justify-center items-center bg-dark-bg-3 p-2 rounded-lg leading-tight border border-borderColor" style={{ width: '300px', height: "70px" }}>
+                  <div className="flex justify-center items-center bg-dark-bg-3 p-2 rounded-lg leading-tight" style={{ width: '313px', height: "70px" }}>
                     <img src="./images/maquininha.png" className="w-12" />
                     <p className="font-light">Cartão de débito ou crédito em até 18x</p>
                   </div>
                 </div>
                 <div className="flex justify-center space-x-3">
                   <div className="flex justify-center">
-                    <div className="flex items-center justify-center bg-dark-bg-3 space-x-2 rounded-lg leading-tight border border-borderColor" style={{ width: '110px', height: "60px" }}>
+                    <div className="flex items-center justify-center bg-dark-bg-3 space-x-2 rounded-lg leading-tight" style={{ width: '124px', height: "60px" }}>
                       <img src="./images/pixIcon.svg" className="w-7" />
                       <p className="font-light">Pix</p>
                     </div>
                   </div>
                   <div className="flex justify-center">
-                    <div className="flex items-center justify-center bg-dark-bg-3 space-x-3 rounded-lg leading-tight border border-borderColor" style={{ width: '177px', height: "60px" }}>
+                    <div className="flex items-center justify-center bg-dark-bg-3 space-x-3 rounded-lg leading-tight" style={{ width: '177px', height: "60px" }}>
                       <img src="./images/cash-icon.svg" className="w-8" />
                       <p className="font-light">Dinheiro</p>
                     </div>
                   </div>
                 </div>
                 <div className="flex justify-center mt-4">
-                  <div className="flex justify-center items-center bg-dark-bg-3 pl-3 pr-1 rounded-lg leading-tight border border-borderColor" style={{ width: '300px', height: "70px" }}>
+                  <div className="flex justify-center items-center bg-dark-bg-3 pl-3 pr-1 rounded-lg leading-tight" style={{ width: '314px', height: "70px" }}>
                     <img src="./images/aparelhoEntrada.png" className="w-8" />
                     <p className="font-light ml-3">Aceitamos o seu aparelho android ou iOS como entrada</p>
                   </div>
@@ -166,10 +215,20 @@ function App() {
             </div>
 
           </div>
-          <div className="linha flex justify-center mt-8">
-            <hr className="border-borderColor" style={{ width: "90%" }} />
+          <div className="bg-dark-bg-2 w-full mt-6">
+            <p className="text-white font-regular pt-6 ml-6">Redes sociais</p>
+            <div className="flex space-x-3 mt-2 ml-6">
+              <img src="./images/instagram.png" className="w-6 filter invert cursor-pointer"/>
+              <img src="./images/whatsapp.png" className="w-6 h-6 filter invert cursor-pointer"/>
+            </div>
+            <p className="text-white text-sm font-thin pt-6 text-center">© 2025 Imports Klein. Todos os direitos reservados.</p>
+            <p className="text-white text-sm font-thin text-center">Nova Friburgo, RJ</p>
+            <div className="linha flex justify-center mt-6">
+              <hr className="border-borderColor" style={{ width: "90%" }} />
+            </div>
+            <div></div>
+            <p className="text-white font-thin text-center mt-6 pb-6 text-sm">Desenvolvido por <span className="font-regular">Arthur Alves</span></p>
           </div>
-          <p className="text-white font-thin text-center mt-6 pb-6 text-sm">Desenvolvido por <span className="font-regular">Arthur Alves</span></p>
         </div>
       </div>
     </div>
