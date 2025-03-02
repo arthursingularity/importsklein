@@ -169,7 +169,7 @@ function App() {
           <div className="linha flex justify-center mt-8">
             <hr className="border-borderColor" style={{ width: "90%" }} />
           </div>
-          <p className="text-white font-thin text-center mt-6 pb-6 text-sm">Deesenvolvido por <span className="font-regular">Arthur Alves</span></p>
+          <p className="text-white font-thin text-center mt-6 pb-6 text-sm">Desenvolvido por <span className="font-regular">Arthur Alves</span></p>
         </div>
       </div>
     </div>
