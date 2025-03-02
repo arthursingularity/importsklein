@@ -1,0 +1,18 @@
+.entregaIcon {
+    font-size: 35px;
+    font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.closePopUpIcon {
+    font-size: 25px;
+    font-variation-settings: 'FILL' 1, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none; /* Para IE e Edge */
+    scrollbar-width: none; /* Para Firefox */
+  }

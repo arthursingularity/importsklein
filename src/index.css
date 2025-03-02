@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'SF Pro Thin';
+  src: url(../public/fonts/SFProThin.ttf);
+}
+
+@font-face {
+  font-family: 'SF Pro Light';
+  src: url(../public/fonts/SFProLight.ttf);
+}
+
+@font-face {
+  font-family: 'SF Pro Regular';
+  src: url(../public/fonts/SFProRegular.ttf);
+}
+
+@font-face {
+  font-family: 'SF Pro Medium';
+  src: url(../public/fonts/SFProMedium.ttf);
+}
+
+@font-face {
+  font-family: 'SF Pro Semibold';
+  src: url(../public/fonts/SFProSemibold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #16171B;
+}
+
+.buttonHover:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3c3e49;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4a4d5a;
+}
