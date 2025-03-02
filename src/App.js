@@ -132,40 +132,44 @@ function App() {
               />
             </div>
           </div>
-          <div className="text-white">
-            <p className="text-center text-xl font-regular">Formas de pagamento</p>
-            <div className="space-y-3">
-              <div className="flex justify-center mt-4">
-                <div className="flex items-center bg-dark-bg-2 border border-borderColor p-2 rounded-lg leading-tight" style={{ width: '250px', height: "70px" }}>
-                  <img src="./images/maquininha.png" className="w-12" />
-                  <p className="font-light">Cartão de débito ou crédito em até 18x</p>
-                </div>
-              </div>
-              <div className="flex justify-center space-x-3">
+          <div className="flex justify-center">
+            <div className="text-white mt-4 bg-dark-bg-2 py-3 mt-5 rounded-2xl border border-borderColor" style={{ width: '325px' }}>
+              <p className="text-center text-xl font-regular mt-1">Formas de pagamento</p>
+              <div className="space-y-3 mt-5">
                 <div className="flex justify-center">
-                  <div className="flex items-center justify-center bg-dark-bg-2 border border-borderColor space-x-2 rounded-lg leading-tight" style={{ width: '95px', height: "70px" }}>
-                    <img src="./images/pixIcon.svg" className="w-8" />
-                    <p className="font-light">Pix</p>
+                  <div className="flex justify-center items-center bg-dark-bg-3 p-2 rounded-lg leading-tight border border-borderColor" style={{ width: '300px', height: "70px" }}>
+                    <img src="./images/maquininha.png" className="w-12" />
+                    <p className="font-light">Cartão de débito ou crédito em até 18x</p>
                   </div>
                 </div>
-                <div className="flex justify-center">
-                  <div className="flex items-center justify-center bg-dark-bg-2 border border-borderColor space-x-2 rounded-lg leading-tight" style={{ width: '143px', height: "70px" }}>
-                    <img src="./images/cash-icon.svg" className="w-8" />
-                    <p className="font-light">Dinheiro</p>
+                <div className="flex justify-center space-x-3">
+                  <div className="flex justify-center">
+                    <div className="flex items-center justify-center bg-dark-bg-3 space-x-2 rounded-lg leading-tight border border-borderColor" style={{ width: '110px', height: "60px" }}>
+                      <img src="./images/pixIcon.svg" className="w-7" />
+                      <p className="font-light">Pix</p>
+                    </div>
+                  </div>
+                  <div className="flex justify-center">
+                    <div className="flex items-center justify-center bg-dark-bg-3 space-x-3 rounded-lg leading-tight border border-borderColor" style={{ width: '177px', height: "60px" }}>
+                      <img src="./images/cash-icon.svg" className="w-8" />
+                      <p className="font-light">Dinheiro</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex justify-center mt-4">
-                <div className="flex items-center bg-dark-bg-2 border border-borderColor p-3 rounded-lg leading-tight" style={{ width: '250px', height: "70px" }}>
-                  <img src="./images/aparelhoEntrada.png" className="w-8" />
-                  <p className="font-light ml-3">Aceitamos o seu aparelho android/iOS como entrada</p>
+                <div className="flex justify-center mt-4">
+                  <div className="flex justify-center items-center bg-dark-bg-3 pl-3 pr-1 rounded-lg leading-tight border border-borderColor" style={{ width: '300px', height: "70px" }}>
+                    <img src="./images/aparelhoEntrada.png" className="w-8" />
+                    <p className="font-light ml-3">Aceitamos o seu aparelho android ou iOS como entrada</p>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
-          <div className="linha flex justify-center">
-            <hr className="border-borderColor mt-8 pb-8" style={{ width: "90%" }} />
+          <div className="linha flex justify-center mt-8">
+            <hr className="border-borderColor" style={{ width: "90%" }} />
           </div>
+          <p className="text-white font-thin text-center mt-6 pb-6 text-sm">Deesenvolvido por <span className="font-regular">Arthur Alves</span></p>
         </div>
       </div>
     </div>
