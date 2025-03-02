@@ -63,7 +63,7 @@ function App() {
       <NavBar />
       {popUpVisible && (
         <div className="popUp flex justify-center">
-          <div className="fixed w-72 h-20 bg-dark-bg-3 bottom-4 z-20 border p-3 border-borderColor rounded-xl flex items-center">
+          <div className="fixed w-72 bg-dark-bg-3 bottom-4 z-20 border p-2 border-borderColor rounded-lg flex items-center" style={{ height: "72px" }}>
             <span
               className="closePopUpIcon material-symbols-outlined text-gray-400 absolute right-0.5 top-0.5 cursor-pointer"
               onClick={popUpVisibillity}
