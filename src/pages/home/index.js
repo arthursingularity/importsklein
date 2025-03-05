@@ -67,15 +67,12 @@ function Home() {
             {popUpVisible && (
                 <div className="popUp flex justify-center">
                     <div className="fixed w-72 bg-dark-bg-3 bottom-4 z-20 border p-2 border-borderColor rounded-lg flex items-center" style={{ height: "72px" }}>
-                        <span
-                            className="closePopUpIcon material-symbols-outlined text-gray-400 absolute right-0.5 top-0.5 cursor-pointer"
+                        <img
+                            src='/images/icons/close.svg'
+                            className='absolute right-0.5 top-0.5 cursor-pointer w-6'
                             onClick={popUpVisibillity}
-                        >
-                            close
-                        </span>
-                        <span className="entregaIcon material-symbols-outlined text-white border border-gray-500 bg-dark-bg-4 p-2 rounded">
-                            delivery_truck_speed
-                        </span>
+                        />
+                        <img src='/images/icons/entrega.svg' className='border border-gray-500 bg-dark-bg-4 p-2 rounded w-16'/>
                         <p className="text-white font-thin text-lg leading-tight ml-3">
                             <span className="font-medium">Entrega grátis</span> em toda Nova Friburgo!
                         </p>
@@ -187,21 +184,11 @@ function Home() {
                             <div>
                                 <p className="text-center text-xl font-light mt-1">Quem compra, <span className="font-medium">confia!</span></p>
                                 <div className="stars flex justify-center">
-                                    <span className="starIcon material-symbols-outlined text-yellow-500">
-                                        star
-                                    </span>
-                                    <span className="starIcon material-symbols-outlined text-yellow-500">
-                                        star
-                                    </span>
-                                    <span className="starIcon material-symbols-outlined text-yellow-500">
-                                        star
-                                    </span>
-                                    <span className="starIcon material-symbols-outlined text-yellow-500">
-                                        star
-                                    </span>
-                                    <span className="starIcon material-symbols-outlined text-yellow-500">
-                                        star
-                                    </span>
+                                    <img src='/images/icons/star.svg'/>
+                                    <img src='/images/icons/star.svg'/>
+                                    <img src='/images/icons/star.svg'/>
+                                    <img src='/images/icons/star.svg'/>
+                                    <img src='/images/icons/star.svg'/>
                                 </div>
                                 <div className="flex space-x-3 mt-6">
                                     <img src="./images/cliente1.jpg" className="w-24 rounded-lg border border-borderColor" />
