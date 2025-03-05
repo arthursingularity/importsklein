@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar';
-import ProductComponent from '../../components/ProductComponent';
 import './home.css'
 import { useRef, useState, useEffect } from "react";
 import SmartphonesComponent from '../../components/SmartphonesComponent';
