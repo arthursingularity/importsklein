@@ -80,13 +80,13 @@ function App() {
         </div>
       )}
       <div className="flex justify-center">
-        <div className="mt-14">
-          <p className="text-white font-regular text-4xl text-center p-8" style={{ lineHeight: "0.75" }}>
-            <span className="font-thin text-2xl">Tudo o que você precisa,</span>
+        <div className="mt-12">
+          <p className="text-white font-regular text-3xl text-center p-8" style={{ lineHeight: "0.75" }}>
+            <span className="font-thin text-xl">Tudo o que você precisa,</span>
             <br />
             em um só clique!
           </p>
-          <div className="relative mt-2">
+          <div className="relative">
             <div
               ref={sliderRef}
               className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 no-scrollbar px-7 pb-4"
@@ -96,29 +96,49 @@ function App() {
               <img src="./images/banner1.jpg" className="buttonHover w-96 border border-borderColor rounded-xl snap-center" />
             </div>
           </div>
-          <div className="flex justify-center mt-8 space-x-2">
+          <div className="flex justify-center mt-8 space-x-4">
             <div className="buttonHover">
-              <img src="./images/celulares.png" className="w-20" />
+              <img src="./images/celulares.png" style={{ width: '70px' }}/>
               <div className="flex justify-center mt-1">
-                <p className="text-white text-center font-thin absolute">Celulares</p>
+                <p className="text-white text-center font-thin absolute">Smartphones</p>
               </div>
             </div>
             <div className="buttonHover">
-              <img src="./images/eletronicos.png" className="w-20" />
+              <img src="./images/fones.png" style={{ width: '70px' }}/>
               <div className="flex justify-center mt-1">
-                <p className="text-white text-center font-thin absolute">Eletrônicos</p>
+                <p className="text-white text-center font-thin absolute">Fones</p>
               </div>
             </div>
             <div className="buttonHover">
-              <img src="./images/capas.png" className="w-20" />
+              <img src="./images/carregadores.png" style={{ width: '70px' }}/>
               <div className="flex justify-center mt-1">
-                <p className="text-white text-center font-thin absolute">Capinhas</p>
+                <p className="text-white text-center font-thin absolute">Carregadores</p>
               </div>
             </div>
             <div className="buttonHover">
-              <img src="./images/smartwatches.png" className="w-20" />
+              <img src="./images/capas.png" style={{ width: '70px' }}/>
+              <div className="flex justify-center mt-1">
+                <p className="text-white text-center font-thin absolute">Acessórios</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center mt-8 space-x-4">
+          <div className="buttonHover">
+              <img src="./images/smartwatches.png" style={{ width: '70px' }}/>
               <div className="flex justify-center mt-1">
                 <p className="text-white text-center font-thin absolute">Smartwatches</p>
+              </div>
+            </div>
+            <div className="buttonHover">
+              <img src="./images/som.png" style={{ width: '70px' }}/>
+              <div className="flex justify-center mt-1">
+                <p className="text-white text-center font-thin absolute">Som</p>
+              </div>
+            </div>
+            <div className="buttonHover">
+              <img src="./images/eletronicos.png" style={{ width: '70px' }}/>
+              <div className="flex justify-center mt-1">
+                <p className="text-white text-center font-thin absolute">Eletrônicos</p>
               </div>
             </div>
           </div>
