@@ -3,6 +3,33 @@ import NavBar from '../../components/NavBar';
 import ProductComponent from '../../components/ProductComponent';
 import './home.css'
 import { useRef, useState, useEffect } from "react";
+import SmartphonesComponent from '../../components/SmartphonesComponent';
+
+const data = {
+    Apple: [
+        {
+            src: "/images/smartphones/iphone13.jpg",
+            product: "Apple IPhone 13 (128GB)",
+            storage: [
+                { size: "128GB", price: "R$ 3.632,00" },
+            ]
+        },
+        {
+            src: "/images/smartphones/iphone14.jpg",
+            product: "Apple IPhone 14 (128GB)",
+            storage: [
+                { size: "128GB", price: "R$ 4.304,00" },
+            ]
+        },
+        {
+            src: "/images/smartphones/iphone15.jpg",
+            product: "Apple IPhone 15 (128GB)",
+            storage: [
+                { size: "128GB", price: "R$ 4.830,00" },
+            ]
+        },
+    ]
+};
 
 function Home() {
     const sliderRef = useRef(null);
@@ -38,7 +65,7 @@ function Home() {
                 left: scrollAmount,
                 behavior: "smooth",
             });
-    
+
             setTimeout(() => {
                 if (
                     sliderRef.current &&
@@ -50,7 +77,7 @@ function Home() {
             }, 5000);
         }
     };
-    
+
 
     useEffect(() => {
         const interval = setInterval(scroll, 5000);
@@ -72,7 +99,7 @@ function Home() {
                             className='absolute right-0.5 top-0.5 cursor-pointer w-6'
                             onClick={popUpVisibillity}
                         />
-                        <img src='/images/icons/entrega.svg' className='border border-gray-500 bg-dark-bg-4 p-2 rounded w-16'/>
+                        <img src='/images/icons/entrega.svg' className='border border-gray-500 bg-dark-bg-4 p-2 rounded w-16' />
                         <p className="text-white font-thin text-lg leading-tight ml-3">
                             <span className="font-medium">Entrega grátis</span> em toda Nova Friburgo!
                         </p>
@@ -164,31 +191,39 @@ function Home() {
                             </div>
                         </Link>
                     </div>
-                    <div className="mt-10 p-5">
-                        <p className="text-white text-xl font-regular">Destaques</p>
-                        <div className="mt-4 flex space-x-2">
-                            <ProductComponent
-                                src={"./images/product1.jpg"}
-                                product={"Apple IPhone 16 Pro Max (128GB) - Titânio natural"}
-                                price={"R$ 8.499,00"}
-                            />
-                            <ProductComponent
-                                src={"./images/product1.jpg"}
-                                product={"Apple IPhone 16 Pro Max (128GB) - Titânio natural"}
-                                price={"R$ 8.499,00"}
-                            />
+                    <div className="flex justify-center mt-16">
+                        <div className="space-y-2">
+                            <p className="text-white text-xl font-regular">Destaques</p>
+                            {Object.keys(data).map((brand, index) => (
+                                <div key={index}>
+                                    <div className="grid grid-cols-3 gap-1.5">
+                                        {data[brand].map((item, idx) => (
+                                            <SmartphonesComponent
+                                                key={idx}
+                                                src={item.src}
+                                                product={item.product}
+                                                price={
+                                                    item.storage
+                                                        ? Math.min(...item.storage.map(s => Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                        : item.price
+                                                }
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                    <div className="flex justify-center">
+                    <div className="flex justify-center mt-10">
                         <div className="flex justify-center text-white rounded-2xl py-4 bg-dark-bg-2" style={{ width: '340px' }}>
                             <div>
                                 <p className="text-center text-xl font-light mt-1">Quem compra, <span className="font-medium">confia!</span></p>
                                 <div className="stars flex justify-center">
-                                    <img src='/images/icons/star.svg'/>
-                                    <img src='/images/icons/star.svg'/>
-                                    <img src='/images/icons/star.svg'/>
-                                    <img src='/images/icons/star.svg'/>
-                                    <img src='/images/icons/star.svg'/>
+                                    <img src='/images/icons/star.svg' />
+                                    <img src='/images/icons/star.svg' />
+                                    <img src='/images/icons/star.svg' />
+                                    <img src='/images/icons/star.svg' />
+                                    <img src='/images/icons/star.svg' />
                                 </div>
                                 <div className="flex space-x-3 mt-6">
                                     <img src="./images/cliente1.jpg" className="w-24 rounded-lg border border-borderColor" />
