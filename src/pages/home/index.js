@@ -1,8 +1,8 @@
+import { Link } from 'react-router-dom';
+import NavBar from '../../components/NavBar';
+import ProductComponent from '../../components/ProductComponent';
 import './home.css'
 import { useRef, useState, useEffect } from "react";
-import NavBar from "./components/NavBar";
-import ProductComponent from "./components/ProductComponent";
-import './App.css'
 
 function Home() {
     const sliderRef = useRef(null);
@@ -38,9 +38,10 @@ function Home() {
                 left: scrollAmount,
                 behavior: "smooth",
             });
-
+    
             setTimeout(() => {
                 if (
+                    sliderRef.current &&
                     sliderRef.current.scrollLeft + sliderRef.current.clientWidth >=
                     sliderRef.current.scrollWidth
                 ) {
@@ -49,6 +50,7 @@ function Home() {
             }, 5000);
         }
     };
+    
 
     useEffect(() => {
         const interval = setInterval(scroll, 5000);
@@ -97,51 +99,73 @@ function Home() {
                             <img src="./images/banner1.jpg" className="buttonHover w-96 border border-borderColor rounded-xl snap-center" />
                         </div>
                     </div>
-                    <div className="flex justify-center mt-8 space-x-2">
-                        <div className="buttonHover">
-                            <img src="./images/celulares.png" style={{ width: '100px' }}/>
-                            <div className="flex justify-center mt-1">
-                                <p className="text-white text-center font-thin absolute">Smartphones</p>
+                    <div className="flex justify-center mt-8 space-x-4">
+                        <Link to="/produtos/smartphones">
+                            <div className="buttonHover">
+                                <img src="./images/celulares.png" style={{ width: '70px' }} />
+                                <div className="flex justify-center mt-1">
+                                    <p className="text-white text-center font-thin absolute">Smartphones</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="buttonHover">
-                            <img src="./images/eletronicos.png"/>
-                            <div className="flex justify-center mt-1">
-                                <p className="text-white text-center font-thin absolute">Fones</p>
+                        </Link>
+                        <Link to="/produtos/fones">
+                            <div className="buttonHover">
+                                <img src="./images/fones.png" style={{ width: '70px' }} />
+                                <div className="flex justify-center mt-1">
+                                    <p className="text-white text-center font-thin absolute">Fones</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="buttonHover">
-                            <img src="./images/capas.png"/>
-                            <div className="flex justify-center mt-1">
-                                <p className="text-white text-center font-thin absolute">Carregadores</p>
+                        </Link>
+                        <Link to="/produtos/carregadores">
+                            <div className="buttonHover">
+                                <img src="./images/carregadores.png" style={{ width: '70px' }} />
+                                <div className="flex justify-center mt-1">
+                                    <p className="text-white text-center font-thin absolute">Carregadores</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="buttonHover">
-                            <img src="./images/capas.png"/>
-                            <div className="flex justify-center mt-1">
-                                <p className="text-white text-center font-thin absolute">Acessórios</p>
+                        </Link>
+                        <Link to="/produtos/acessorios">
+                            <div className="buttonHover">
+                                <img src="./images/capas.png" style={{ width: '70px' }} />
+                                <div className="flex justify-center mt-1">
+                                    <p className="text-white text-center font-thin absolute">Acessórios</p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
-                    <div className="flex justify-center mt-8 space-x-2">
-                        <div className="buttonHover">
-                            <img src="./images/smartwatches.png"/>
-                            <div className="flex justify-center mt-1">
-                                <p className="text-white text-center font-thin absolute">Smartwatches</p>
+                    <div className="flex justify-center mt-8 space-x-4">
+                        <Link to="/produtos/smartwatches">
+                            <div className="buttonHover">
+                                <img src="./images/smartwatches.png" style={{ width: '70px' }} />
+                                <div className="flex justify-center mt-1">
+                                    <p className="text-white text-center font-thin absolute">Smartwatches</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="buttonHover">
-                            <img src="./images/capas.png"/>
-                            <div className="flex justify-center mt-1">
-                                <p className="text-white text-center font-thin absolute">Som</p>
+                        </Link>
+                        <Link to="/produtos/som">
+                            <div className="buttonHover">
+                                <img src="./images/som.png" style={{ width: '70px' }} />
+                                <div className="flex justify-center mt-1">
+                                    <p className="text-white text-center font-thin absolute">Som</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="buttonHover">
-                            <img src="./images/celulares.png"/>
-                            <div className="flex justify-center mt-1">
-                                <p className="text-white text-center font-thin absolute">Eletrônicos</p>
+                        </Link>
+                        <Link to="/produtos/eletronicos">
+                            <div className="buttonHover">
+                                <img src="./images/eletronicos.png" style={{ width: '70px' }} />
+                                <div className="flex justify-center mt-1">
+                                    <p className="text-white text-center font-thin absolute">Eletrônicos</p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
+                        <Link to="/produtos/chaveiros">
+                            <div className="buttonHover">
+                                <img src="./images/chaveiros.png" style={{ width: '70px' }} />
+                                <div className="flex justify-center mt-1">
+                                    <p className="text-white text-center font-thin absolute">Chaveiros</p>
+                                </div>
+                            </div>
+                        </Link>
                     </div>
                     <div className="mt-10 p-5">
                         <p className="text-white text-xl font-regular">Destaques</p>
