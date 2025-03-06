@@ -40,6 +40,82 @@ function ProductBrand() {
                     />
                 </div>
             )}
+            {location.pathname.startsWith("/fones") && (
+                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-20 flex space-x-1">
+                    <img
+                        src="/images/appleLogo.svg"
+                        className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}
+                        style={{ width: "45px" }}
+                        onClick={() => handleBrandClick('Apple')}
+                    />
+                    <img
+                        src="/images/xiaomiLogo.svg"
+                        className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Xiaomi') ? 'bg-dark-bg-4' : ''}`}
+                        style={{ width: "45px" }}
+                        onClick={() => handleBrandClick('Xiaomi')}
+                    />
+                </div>
+            )}
+            {location.pathname.startsWith("/carregadores") && (
+                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-20 flex space-x-1">
+                    <img
+                        src="/images/appleLogo.svg"
+                        className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}
+                        style={{ width: "45px" }}
+                        onClick={() => handleBrandClick('Apple')}
+                    />
+                </div>
+            )}
+            {location.pathname.startsWith("/acessorios") && (
+                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-20 flex space-x-1">
+                    <img
+                        src="/images/appleLogo.svg"
+                        className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}
+                        style={{ width: "45px" }}
+                        onClick={() => handleBrandClick('Apple')}
+                    />
+                </div>
+            )}
+            {location.pathname.startsWith("/smartwatches") && (
+                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-20 flex space-x-1">
+                    <img
+                        src="/images/appleLogo.svg"
+                        className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}
+                        style={{ width: "45px" }}
+                        onClick={() => handleBrandClick('Apple')}
+                    />
+                </div>
+            )}
+            {location.pathname.startsWith("/som") && (
+                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-20 flex space-x-1">
+                    <img
+                        src="/images/appleLogo.svg"
+                        className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}
+                        style={{ width: "45px" }}
+                        onClick={() => handleBrandClick('Apple')}
+                    />
+                </div>
+            )}
+            {location.pathname.startsWith("/eletronicos") && (
+                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-20 flex space-x-1">
+                    <img
+                        src="/images/appleLogo.svg"
+                        className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}
+                        style={{ width: "45px" }}
+                        onClick={() => handleBrandClick('Apple')}
+                    />
+                </div>
+            )}
+            {location.pathname.startsWith("/chaveiros") && (
+                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-20 flex space-x-1">
+                    <img
+                        src="/images/appleLogo.svg"
+                        className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}
+                        style={{ width: "45px" }}
+                        onClick={() => handleBrandClick('Apple')}
+                    />
+                </div>
+            )}
         </div>
     );
 }
