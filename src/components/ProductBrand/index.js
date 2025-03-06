@@ -5,14 +5,14 @@ function ProductBrand() {
     const navigate = useNavigate();
 
     const handleBrandClick = (brand) => {
-        navigate(`/produtos/smartphones/${brand.toLowerCase()}`);
+        navigate(`/smartphones/${brand.toLowerCase()}`);
     };
 
-    const isCurrentBrand = (brand) => location.pathname === `/produtos/smartphones/${brand.toLowerCase()}`;
+    const isCurrentBrand = (brand) => location.pathname === `/smartphones/${brand.toLowerCase()}`;
 
     return (
         <div className="flex justify-center">
-            {location.pathname.startsWith("/produtos/smartphones") && (
+            {location.pathname.startsWith("/smartphones") && (
                 <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-20 flex space-x-1">
                     <img
                         src="/images/appleLogo.svg"

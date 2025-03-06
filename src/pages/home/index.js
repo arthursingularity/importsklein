@@ -32,14 +32,14 @@ const data = {
 };
 
 const categorias = [
-    { nome: "Smartphones", img: "/images/celulares.png", link: "/produtos/smartphones" },
-    { nome: "Fones", img: "/images/fones.png", link: "/produtos/fones" },
-    { nome: "Carregadores", img: "/images/carregadores.png", link: "/produtos/carregadores" },
-    { nome: "Acessórios", img: "/images/capas.png", link: "/produtos/acessorios" },
-    { nome: "Smartwatches", img: "/images/smartwatches.png", link: "/produtos/smartwatches" },
-    { nome: "Som", img: "/images/som.png", link: "/produtos/som" },
-    { nome: "Eletrônicos", img: "/images/eletronicos.png", link: "/produtos/eletronicos" },
-    { nome: "Chaveiros", img: "/images/chaveiros.png", link: "/produtos/chaveiros" }
+    { nome: "Smartphones", img: "/images/celulares.png", link: "/smartphones" },
+    { nome: "Fones", img: "/images/fones.png", link: "/fones" },
+    { nome: "Carregadores", img: "/images/carregadores.png", link: "/carregadores" },
+    { nome: "Acessórios", img: "/images/capas.png", link: "/acessorios" },
+    { nome: "Smartwatches", img: "/images/smartwatches.png", link: "/smartwatches" },
+    { nome: "Som", img: "/images/som.png", link: "/som" },
+    { nome: "Eletrônicos", img: "/images/eletronicos.png", link: "/eletronicos" },
+    { nome: "Chaveiros", img: "/images/chaveiros.png", link: "/chaveiros" }
 ];
 
 function Home() {

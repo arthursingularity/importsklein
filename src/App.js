@@ -9,8 +9,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/produtos/smartphones' element={<Products />} />
-          <Route path='/produtos/smartphones/:brand' element={<Products />} />
+          <Route path='/smartphones' element={<Products />} />
+          <Route path='/smartphones/:brand' element={<Products />} />
           <Route path='/produtos/fones' element={<Products/>} />
           <Route path='/produtos/carregadores' element={<Products/>} />
           <Route path='/produtos/acessorios' element={<Products/>} />
