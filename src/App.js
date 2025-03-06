@@ -8,15 +8,16 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/produtos/smartphones' element={<Products/>}/>
-          <Route path='/produtos/fones' element={<Products/>}/>
-          <Route path='/produtos/carregadores' element={<Products/>}/>
-          <Route path='/produtos/acessorios' element={<Products/>}/>
-          <Route path='/produtos/smartwatches' element={<Products/>}/>
-          <Route path='/produtos/som' element={<Products/>}/>
-          <Route path='/produtos/eletronicos' element={<Products/>}/>
-          <Route path='/produtos/chaveiros' element={<Products/>}/>
+          <Route path='/' element={<Home/>} />
+          <Route path='/produtos/smartphones' element={<Products />} />
+          <Route path='/produtos/smartphones/:brand' element={<Products />} />
+          <Route path='/produtos/fones' element={<Products/>} />
+          <Route path='/produtos/carregadores' element={<Products/>} />
+          <Route path='/produtos/acessorios' element={<Products/>} />
+          <Route path='/produtos/smartwatches' element={<Products/>} />
+          <Route path='/produtos/som' element={<Products/>} />
+          <Route path='/produtos/eletronicos' element={<Products/>} />
+          <Route path='/produtos/chaveiros' element={<Products/>} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -3,9 +3,9 @@ import './navbar.css'
 
 function NavBar() {
     return (
-        <div className="bg-dark-bg-2 p-3 flex justify-center items-center fixed w-full z-50">
+        <div className="bg-dark-bg-2 p-3 flex justify-center items-center fixed w-full z-40">
             <Link to="/">
-                <img src="/images/importsKleinLogo.png" style={{ width: 75 }} />
+                <img src="/images/importsKleinLogo.png" style={{ width: 75 }}  className='buttonHover'/>
             </Link>
             <div>
                 <img src='/images/icons/search.svg' className='searchNavBarIcon buttonHover absolute text-white right-4 w-7'/>

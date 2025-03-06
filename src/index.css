@@ -38,7 +38,7 @@ body {
 }
 
 .buttonHover:hover {
-  filter: brightness(85%);
+  filter: brightness(80%);
   cursor: pointer;
 }
 

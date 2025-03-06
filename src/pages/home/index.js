@@ -3,6 +3,7 @@ import NavBar from '../../components/NavBar';
 import './home.css'
 import { useRef, useState, useEffect } from "react";
 import SmartphonesComponent from '../../components/SmartphonesComponent';
+import Footer from '../../components/Footer';
 
 const data = {
     Apple: [
@@ -30,11 +31,43 @@ const data = {
     ]
 };
 
+const categorias = [
+    { nome: "Smartphones", img: "/images/celulares.png", link: "/produtos/smartphones" },
+    { nome: "Fones", img: "/images/fones.png", link: "/produtos/fones" },
+    { nome: "Carregadores", img: "/images/carregadores.png", link: "/produtos/carregadores" },
+    { nome: "Acessórios", img: "/images/capas.png", link: "/produtos/acessorios" },
+    { nome: "Smartwatches", img: "/images/smartwatches.png", link: "/produtos/smartwatches" },
+    { nome: "Som", img: "/images/som.png", link: "/produtos/som" },
+    { nome: "Eletrônicos", img: "/images/eletronicos.png", link: "/produtos/eletronicos" },
+    { nome: "Chaveiros", img: "/images/chaveiros.png", link: "/produtos/chaveiros" }
+];
+
 function Home() {
     const sliderRef = useRef(null);
     const scrollAmount = 300;
     const destaqueRef = useRef(null);
     const [popUpVisible, setPopUpVisible] = useState(true);
+    const [colunas, setColunas] = useState(4);
+
+    useEffect(() => {
+        const updateColumns = () => {
+            const width = window.innerWidth;
+            if (width < 610) setColunas(4);  // Mínimo 2 grupos de 4
+            else if (width < 740) setColunas(5); // 5 + 3
+            else if (width < 820) setColunas(6); // 6 + 2
+            else if (width < 910) setColunas(7); // 6 + 2
+            else setColunas(8);  // Única linha com 8
+        };
+
+        updateColumns();
+        window.addEventListener("resize", updateColumns);
+        return () => window.removeEventListener("resize", updateColumns);
+    }, []);
+
+    const grupos = [];
+    for (let i = 0; i < categorias.length; i += colunas) {
+        grupos.push(categorias.slice(i, i + colunas));
+    }
 
     useEffect(() => {
         const handleWheelScroll = (event) => {
@@ -117,78 +150,26 @@ function Home() {
                             ref={sliderRef}
                             className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 no-scrollbar px-7 pb-4"
                         >
-                            <img src="./images/banner1.jpg" className="buttonHover w-96 border border-borderColor rounded-xl snap-center" />
-                            <img src="./images/banner1.jpg" className="buttonHover w-96 border border-borderColor rounded-xl snap-center" />
-                            <img src="./images/banner1.jpg" className="buttonHover w-96 border border-borderColor rounded-xl snap-center" />
+                            <img src="./images/banner1.jpg" className="buttonHover  border border-borderColor rounded-xl snap-center" style={{ width: "500px" }} />
+                            <img src="./images/banner1.jpg" className="buttonHover  border border-borderColor rounded-xl snap-center" style={{ width: "500px" }} />
+                            <img src="./images/banner1.jpg" className="buttonHover  border border-borderColor rounded-xl snap-center" style={{ width: "500px" }} />
                         </div>
                     </div>
-                    <div className="flex justify-center mt-8 space-x-4">
-                        <Link to="/produtos/smartphones">
-                            <div className="buttonHover">
-                                <img src="./images/celulares.png" style={{ width: '70px' }} />
-                                <div className="flex justify-center mt-1">
-                                    <p className="text-white text-center font-thin absolute">Smartphones</p>
-                                </div>
+                    <div className="flex flex-col items-center mt-8 space-y-9">
+                        {grupos.map((grupo, index) => (
+                            <div key={index} className="flex justify-center space-x-4">
+                                {grupo.map((categoria) => (
+                                    <Link to={categoria.link} key={categoria.nome}>
+                                        <div className="buttonHover">
+                                            <img src={categoria.img} className="w-[70px]" />
+                                            <div className="flex justify-center mt-1">
+                                                <p className="text-white text-center font-thin absolute">{categoria.nome}</p>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
                             </div>
-                        </Link>
-                        <Link to="/produtos/fones">
-                            <div className="buttonHover">
-                                <img src="./images/fones.png" style={{ width: '70px' }} />
-                                <div className="flex justify-center mt-1">
-                                    <p className="text-white text-center font-thin absolute">Fones</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/produtos/carregadores">
-                            <div className="buttonHover">
-                                <img src="./images/carregadores.png" style={{ width: '70px' }} />
-                                <div className="flex justify-center mt-1">
-                                    <p className="text-white text-center font-thin absolute">Carregadores</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/produtos/acessorios">
-                            <div className="buttonHover">
-                                <img src="./images/capas.png" style={{ width: '70px' }} />
-                                <div className="flex justify-center mt-1">
-                                    <p className="text-white text-center font-thin absolute">Acessórios</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="flex justify-center mt-8 space-x-4">
-                        <Link to="/produtos/smartwatches">
-                            <div className="buttonHover">
-                                <img src="./images/smartwatches.png" style={{ width: '70px' }} />
-                                <div className="flex justify-center mt-1">
-                                    <p className="text-white text-center font-thin absolute">Smartwatches</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/produtos/som">
-                            <div className="buttonHover">
-                                <img src="./images/som.png" style={{ width: '70px' }} />
-                                <div className="flex justify-center mt-1">
-                                    <p className="text-white text-center font-thin absolute">Som</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/produtos/eletronicos">
-                            <div className="buttonHover">
-                                <img src="./images/eletronicos.png" style={{ width: '70px' }} />
-                                <div className="flex justify-center mt-1">
-                                    <p className="text-white text-center font-thin absolute">Eletrônicos</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/produtos/chaveiros">
-                            <div className="buttonHover">
-                                <img src="./images/chaveiros.png" style={{ width: '70px' }} />
-                                <div className="flex justify-center mt-1">
-                                    <p className="text-white text-center font-thin absolute">Chaveiros</p>
-                                </div>
-                            </div>
-                        </Link>
+                        ))}
                     </div>
                     <div className="flex justify-center mt-16">
                         <div className="space-y-2">
@@ -281,24 +262,7 @@ function Home() {
                         </div>
 
                     </div>
-                    <div className="bg-dark-bg-2 w-full mt-6">
-                        <p className="text-white font-regular pt-6 ml-6">Redes sociais</p>
-                        <div className="flex space-x-3 mt-2 ml-6">
-                            <a href="https://www.instagram.com/imports_klein/">
-                                <img src="./images/instagram.png" className="w-6 filter invert cursor-pointer" />
-                            </a>
-                            <a href="https://w.app/mr6vfw">
-                                <img src="./images/whatsapp.png" className="w-6 h-6 filter invert cursor-pointer" />
-                            </a>
-                        </div>
-                        <p className="text-white text-sm font-thin pt-6 text-center">© 2025 Imports Klein. Todos os direitos reservados.</p>
-                        <p className="text-white text-sm font-thin text-center">Nova Friburgo, RJ</p>
-                        <div className="linha flex justify-center mt-6">
-                            <hr className="border-borderColor" style={{ width: "90%" }} />
-                        </div>
-                        <div></div>
-                        <p className="text-white font-thin text-center mt-6 pb-6 text-sm">Desenvolvido por <span className="font-regular">Arthur Alves</span></p>
-                    </div>
+                    <Footer />
                 </div>
             </div>
         </div>
