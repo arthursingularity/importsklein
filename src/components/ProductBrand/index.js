@@ -17,26 +17,32 @@ function ProductBrand() {
                     <img
                         src="/images/appleLogo.svg"
                         className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}
-                        style={{ width: "45px" }}
+                        style={{ width: "40px" }}
                         onClick={() => handleBrandClick('Apple')}
                     />
                     <img
                         src="/images/samsungLogo.svg"
                         className={`p-1.5 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Samsung') ? 'bg-dark-bg-4' : ''}`}
-                        style={{ width: "45px" }}
+                        style={{ width: "40px" }}
                         onClick={() => handleBrandClick('Samsung')}
                     />
                     <img
                         src="/images/xiaomiLogo.svg"
                         className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Xiaomi') ? 'bg-dark-bg-4' : ''}`}
-                        style={{ width: "45px" }}
+                        style={{ width: "40px" }}
                         onClick={() => handleBrandClick('Xiaomi')}
                     />
                     <img
                         src="/images/motorolaLogo.svg"
                         className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Motorola') ? 'bg-dark-bg-4' : ''}`}
-                        style={{ width: "45px" }}
+                        style={{ width: "40px" }}
                         onClick={() => handleBrandClick('Motorola')}
+                    />
+                    <img
+                        src="/images/realmeLogo.svg"
+                        className={`p-1 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Realme') ? 'bg-dark-bg-4' : ''}`}
+                        style={{ width: "40px" }}
+                        onClick={() => handleBrandClick('Realme')}
                     />
                 </div>
             )}

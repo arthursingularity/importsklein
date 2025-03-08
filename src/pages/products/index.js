@@ -9,101 +9,146 @@ const data = {
         Apple: [
             {
                 src: "/images/smartphones/iphone13.jpg",
-                product: "Apple IPhone 13",
+                product: "Apple iPhone 13",
                 price: "R$ 3.632,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 3.632,00",
-                        colors: ["Azul", "Estelar", "Meia-noite"]
+                        colors: ["Azul", "Estelar", "Meia-noite"],
+                        availability: "Encomenda"
                     }
                 ]
             },
             {
                 src: "/images/smartphones/iphone14.jpg",
-                product: "Apple IPhone 14",
+                product: "Apple iPhone 14",
                 price: "R$ 4.304,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 4.304,00",
-                        colors: ["Azul"]
+                        colors: ["Azul"],
+                        availability: "Encomenda"
                     }
                 ]
             },
             {
                 src: "/images/smartphones/iphone15.jpg",
-                product: "Apple IPhone 15",
+                product: "Apple iPhone 15",
                 price: "R$ 4.830,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 4.830,00",
-                        colors: ["Azul", "Branco", "Preto", "Verde", "Rosa"]
+                        colors: ["Azul", "Branco", "Preto", "Verde", "Rosa"],
+                        availability: "Encomenda"
                     }
                 ]
             },
             {
                 src: "/images/smartphones/iphone16.jpg",
-                product: "Apple IPhone 16",
+                product: "Apple iPhone 16",
                 price: "R$ 5.102,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 5.102,00",
-                        colors: ["Ultramarino", "Branco", "Preto", "Verde", "Rosa"]
+                        colors: ["Ultramarino", "Branco", "Preto", "Verde", "Rosa"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB",
                         price: "R$ 6.132,00",
-                        colors: ["Ultramarino", "Branco", "Preto", "Rosa"]
+                        colors: ["Ultramarino", "Branco", "Preto", "Rosa"],
+                        availability: "Encomenda"
                     }
                 ]
             },
             {
                 src: "/images/smartphones/iphone16pro.jpg",
-                product: "Apple IPhone 16 PRO",
+                product: "Apple iPhone 16 PRO",
                 price: "R$ 6.432,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 6.432,00",
-                        colors: ["Titânio deserto", "Titânio natural", "Titânio branco"]
+                        colors: ["Titânio deserto", "Titânio natural", "Titânio branco"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB",
                         price: "R$ 7.052,00",
-                        colors: ["Titânio deserto", "Titânio preto", "Titânio branco"]
+                        colors: ["Titânio deserto", "Titânio preto", "Titânio branco"],
+                        availability: "Encomenda"
                     },
                 ]
             },
             {
                 src: "/images/smartphones/iphone16promax.png",
-                product: "Apple IPhone 16 PRO MAX",
+                product: "Apple iPhone 16 PRO MAX",
                 price: "R$ 7.602,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB",
                         price: "R$ 7.602,00",
-                        colors: ["Titânio deserto"]
+                        colors: ["Titânio deserto"],
+                        availability: "Encomenda"
                     }
                 ]
             }
         ],
         Samsung: [
             {
-                src: "/images/smartphones/galaxys21.jpg",
-                product: "Samsung Galaxy S21 128GB",
-                price: "R$ 3.499,00"
-            }
+                src: "/images/smartphones/samsung/galaxya15.png",
+                product: "Samsung Galaxy A15 5G",
+                price: "R$ 1.140,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        storage: "128GB",
+                        price: "R$ 1.140,00",
+                        colors: ["Azul claro"],
+                        availability: "Encomenda"
+                    }
+                ]
+            },
+            {
+                src: "/images/smartphones/samsung/galaxys23fe.jpg",
+                product: "Samsung Galaxy S23 FE",
+                price: "R$ 2.690,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        storage: "128GB",
+                        price: "R$ 2.690,00",
+                        colors: ["Grafite", "Verde"],
+                        availability: "Encomenda"
+                    }
+                ]
+            },
+            {
+                src: "/images/smartphones/samsung/galaxys23ultra.png",
+                product: "Samsung Galaxy S23 Ultra",
+                price: "R$ 4.710,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        storage: "256GB",
+                        price: "R$ 4.710,00",
+                        colors: ["Preto"],
+                        availability: "Encomenda"
+                    }
+                ]
+            },
         ],
         Xiaomi: [
             {
@@ -112,16 +157,18 @@ const data = {
                 price: "R$ 909,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "64GB/3GB RAM",
                         price: "R$ 909,00",
-                        colors: ["Verde", "Azul", "Preto"]
+                        colors: ["Verde", "Azul", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/4GB RAM",
                         price: "R$ 1.039,00",
-                        colors: ["Preto", "Azul"]
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -131,10 +178,11 @@ const data = {
                 price: "R$ 1.329,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/4GB RAM",
                         price: "R$ 1.329,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -144,22 +192,25 @@ const data = {
                 price: "R$ 1.129,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/4GB RAM",
                         price: "R$ 1.129,00",
-                        colors: ["Azul", "Preto"]
+                        colors: ["Azul", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/8GB RAM",
                         price: "R$ 1.209,00",
-                        colors: ["Azul", "Silver"]
+                        colors: ["Azul", "Silver"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.309,00",
-                        colors: ["Azul", "Preto"]
+                        colors: ["Azul", "Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -169,10 +220,11 @@ const data = {
                 price: "R$ 1.479,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.479,00",
-                        colors: ["Branco", "Cinza", "Preto"]
+                        colors: ["Branco", "Cinza", "Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -182,16 +234,18 @@ const data = {
                 price: "R$ 1.229,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/6GB RAM",
                         price: "R$ 1.229,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.379,00",
-                        colors: ["Preto", "Azul"]
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda"
                     },
                 ],
             },
@@ -201,10 +255,11 @@ const data = {
                 price: "R$ 1.259,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/6GB RAM",
                         price: "R$ 1.259,00",
-                        colors: ["Branco", "Preto"]
+                        colors: ["Branco", "Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -214,22 +269,32 @@ const data = {
                 price: "R$ 1.120,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/4GB RAM",
                         price: "R$ 1.120,00",
-                        colors: ["Azul", "Preto"]
+                        colors: ["Azul", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/4GB RAM",
                         price: "R$ 1.189,00",
-                        colors: ["Azul", "Preto"]
+                        colors: ["Azul", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.279,00",
-                        colors: ["Azul"]
+                        colors: ["Azul"],
+                        availability: "Encomenda"
+                    },
+                    {
+                        condition: "Lacrado",
+                        storage: "256GB/8GB RAM",
+                        price: "R$ 1.160,00",
+                        colors: ["Azul"],
+                        availability: "Pronta-entrega"
                     },
                 ]
             },
@@ -239,16 +304,18 @@ const data = {
                 price: "R$ 1.629,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.629,00",
-                        colors: ["Roxo", "Preto"]
+                        colors: ["Roxo", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "512GB/12GB RAM",
                         price: "R$ 1.909,00",
-                        colors: ["Azul", "Preto"]
+                        colors: ["Azul", "Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -258,10 +325,11 @@ const data = {
                 price: "R$ 2.059,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/12GB RAM",
                         price: "R$ 2.059,00",
-                        colors: ["Azul", "Preto"]
+                        colors: ["Azul", "Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -271,16 +339,18 @@ const data = {
                 price: "R$ 2.349,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 2.349,00",
-                        colors: ["Cinza", "Preto"]
+                        colors: ["Cinza", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "512GB/12GB RAM",
                         price: "R$ 2.539,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -290,16 +360,18 @@ const data = {
                 price: "R$ 2.149,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 2.149,00",
-                        colors: ["Verde", "Preto", "Silver"]
+                        colors: ["Verde", "Preto", "Silver"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "512GB/12GB RAM",
                         price: "R$ 2.379,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -309,16 +381,18 @@ const data = {
                 price: "R$ 2.759,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/12GB RAM",
                         price: "R$ 2.759,00",
-                        colors: ["Verde", "Preto", "Silver"]
+                        colors: ["Verde", "Preto", "Silver"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "512GB/12GB RAM",
                         price: "R$ 3.009,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -328,10 +402,11 @@ const data = {
                 price: "R$ 2.559,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 2.559,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -341,16 +416,18 @@ const data = {
                 price: "R$ 3.739,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "512GB/12GB RAM",
                         price: "R$ 3.739,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "1TB/16GB RAM",
                         price: "R$ 4.379,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -360,10 +437,11 @@ const data = {
                 price: "R$ 1.279,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.279,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -373,16 +451,18 @@ const data = {
                 price: "R$ 1.209,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/6GB RAM",
                         price: "R$ 1.209,00",
-                        colors: ["Verde", "Preto"]
+                        colors: ["Verde", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.269,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -392,10 +472,11 @@ const data = {
                 price: "R$ 1.309,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.309,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -405,22 +486,25 @@ const data = {
                 price: "R$ 1.349,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/6GB RAM",
                         price: "R$ 1.349,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/8GB RAM",
                         price: "R$ 1.379,00",
-                        colors: ["Azul", "Preto"]
+                        colors: ["Azul", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.549,00",
-                        colors: ["Azul", "Preto", "Verde"]
+                        colors: ["Azul", "Preto", "Verde"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -430,22 +514,25 @@ const data = {
                 price: "R$ 1.509,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/6GB RAM",
                         price: "R$ 1.509,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.959,00",
-                        colors: ["Azul", "Preto"]
+                        colors: ["Azul", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.999,00",
-                        colors: ["Roxo"]
+                        colors: ["Roxo"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -455,10 +542,11 @@ const data = {
                 price: "R$ 1.999,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.999,00",
-                        colors: ["Roxo"]
+                        colors: ["Roxo"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -468,16 +556,18 @@ const data = {
                 price: "R$ 2.509,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 2.509,00",
-                        colors: ["Azul", "Preto"]
+                        colors: ["Azul", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "512GB/12GB RAM",
                         price: "R$ 2.789,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     },
                 ],
             },
@@ -487,10 +577,11 @@ const data = {
                 price: "R$ 2.149,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 2.149,00",
-                        colors: ["Azul"]
+                        colors: ["Azul"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -500,16 +591,18 @@ const data = {
                 price: "R$ 2.729,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 2.729,00",
-                        colors: ["Roxo", "Preto"]
+                        colors: ["Roxo", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "512GB/12GB RAM",
                         price: "R$ 3.109,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     },
                 ],
             },
@@ -519,16 +612,18 @@ const data = {
                 price: "R$ 1.469,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "128GB/6GB RAM",
                         price: "R$ 1.469,00",
-                        colors: ["Azul", "Roxo", "Preto"]
+                        colors: ["Azul", "Roxo", "Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 1.619,00",
-                        colors: ["Azul", "Vrde", "Preto"]
+                        colors: ["Azul", "Vrde", "Preto"],
+                        availability: "Encomenda"
                     },
                 ],
             },
@@ -538,10 +633,11 @@ const data = {
                 price: "R$ 2.229,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 2.229,00",
-                        colors: ["Azul"]
+                        colors: ["Azul"],
+                        availability: "Encomenda"
                     }
                 ],
             },
@@ -551,18 +647,52 @@ const data = {
                 price: "R$ 3.009,00",
                 versions: [
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "256GB/8GB RAM",
                         price: "R$ 3.009,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     },
                     {
-                        condition: "Novo",
+                        condition: "Lacrado",
                         storage: "512GB/12GB RAM",
                         price: "R$ 3.309,00",
-                        colors: ["Preto"]
+                        colors: ["Preto"],
+                        availability: "Encomenda"
                     }
                 ],
+            },
+        ],
+        Motorola: [
+            {
+                src: "/images/smartphones/motorola/motog30.png",
+                product: "Moto G30",
+                price: "R$ 599,00",
+                versions: [
+                    {
+                        condition: "Seminovo",
+                        storage: "128GB",
+                        price: "R$ 599,00",
+                        colors: ["White lilac"],
+                        availability: "Pronta-entrega"
+                    }
+                ]
+            },
+        ],
+        Realme: [
+            {
+                src: "/images/smartphones/realme/note60.png",
+                product: "Realme Note 60",
+                price: "R$ 899,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        storage: "128GB",
+                        price: "R$ 899,00",
+                        colors: ["Marble black"],
+                        availability: "Pronta-entrega"
+                    }
+                ]
             },
         ]
     }
@@ -572,38 +702,58 @@ function Products() {
     const { brand } = useParams();
     const capitalizedBrand = brand ? brand.charAt(0).toUpperCase() + brand.slice(1) : '';
     const location = useLocation();
-
     const [sortType, setSortType] = useState(null);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
+    const [selectedFilter, setSelectedFilter] = useState(null);
 
     const toggleFilter = () => setIsFilterOpen(!isFilterOpen);
 
     const handleSort = (type) => {
         setSortType(type);
-        setIsFilterOpen(false); // Fecha a aba após selecionar
+        setSelectedFilter(type);
+        setIsFilterOpen(false);
     };
 
-    // Reseta a ordenação (volta à ordem alfabética padrão)
     const resetSort = () => {
         setSortType(null);
+        setSelectedFilter(null);
         setIsFilterOpen(false);
     };
 
     const sortProducts = (products) => {
-        if (!sortType) return products; // Retorna sem ordenar se não houver filtro ativo
-
-        return [...products].sort((a, b) => {
-            const priceA = a.storage
-                ? Math.min(...a.storage.map(s => Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."))))
+        if (!products) return [];
+    
+        let filteredProducts = [...products];
+    
+        // Filtrar por disponibilidade
+        if (selectedFilter === "pronta-entrega") {
+            filteredProducts = filteredProducts.filter(item => 
+                item.versions.some(version => version.availability === "Pronta-entrega")
+            );
+        } else if (selectedFilter === "encomenda") {
+            filteredProducts = filteredProducts.filter(item => 
+                item.versions.some(version => version.availability === "Encomenda")
+            );
+        }
+    
+        // Ordenação alfabética padrão
+        filteredProducts.sort((a, b) => a.product.localeCompare(b.product));
+    
+        if (!sortType) return filteredProducts;
+    
+        return filteredProducts.sort((a, b) => {
+            const priceA = a.versions
+                ? Math.min(...a.versions.map(v => Number(v.price.replace("R$ ", "").replace(".", "").replace(",", "."))))
                 : Number(a.price.replace("R$ ", "").replace(".", "").replace(",", "."));
-
-            const priceB = b.storage
-                ? Math.min(...b.storage.map(s => Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."))))
+    
+            const priceB = b.versions
+                ? Math.min(...b.versions.map(v => Number(v.price.replace("R$ ", "").replace(".", "").replace(",", "."))))
                 : Number(b.price.replace("R$ ", "").replace(".", "").replace(",", "."));
-
+    
             return sortType === "price-asc" ? priceA - priceB : priceB - priceA;
         });
     };
+    
 
     return (
         <div>
@@ -629,18 +779,43 @@ function Products() {
                             <h2 className="text-xl font-medium">Ordenar por</h2>
                             <ul className="space-y-3 mt-5">
                                 <li>
-                                    <button onClick={resetSort} className="w-full text-left font-regular hover:text-blue-400">
+                                    <button
+                                        onClick={resetSort}
+                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === null ? "text-blue-400" : ""}`}
+                                    >
                                         Ordem alfabética
                                     </button>
                                 </li>
                                 <li>
-                                    <button onClick={() => handleSort("price-asc")} className="w-full text-left font-regular hover:text-blue-400">
+                                    <button
+                                        onClick={() => handleSort("price-asc")}
+                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "price-asc" ? "text-blue-400" : ""}`}
+                                    >
                                         Preço crescente
                                     </button>
                                 </li>
                                 <li>
-                                    <button onClick={() => handleSort("price-desc")} className="w-full text-left font-regular hover:text-blue-400">
+                                    <button
+                                        onClick={() => handleSort("price-desc")}
+                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "price-desc" ? "text-blue-400" : ""}`}
+                                    >
                                         Preço decrescente
+                                    </button>
+                                </li>
+                                <li>
+                                    <button
+                                        onClick={() => handleSort("pronta-entrega")}
+                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "pronta-entrega" ? "text-blue-400" : ""}`}
+                                    >
+                                        Pronta-entrega
+                                    </button>
+                                </li>
+                                <li>
+                                    <button
+                                        onClick={() => handleSort("encomenda")}
+                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "encomenda" ? "text-blue-400" : ""}`}
+                                    >
+                                        Encomenda
                                     </button>
                                 </li>
                             </ul>
@@ -653,49 +828,60 @@ function Products() {
                     <div className="space-y-2 mt-6 pb-4">
                         {capitalizedBrand ? (
                             data.Smartphones[capitalizedBrand] ? (
-                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
-                                    {sortProducts(data.Smartphones[capitalizedBrand]).map((item, idx) => (
-                                        <SmartphonesComponent
-                                            key={idx}
-                                            src={item.src}
-                                            product={item.product}
-                                            price={
-                                                item.storage
-                                                    ? Math.min(
-                                                        ...item.storage.map(s =>
-                                                            Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."))
-                                                        )
-                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-                                                    : item.price
-                                            }
-                                        />
-                                    ))}
-                                </div>
+                                (() => {
+                                    const filteredProducts = sortProducts(data.Smartphones[capitalizedBrand]);
+                                    return filteredProducts.length > 0 ? (
+                                        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
+                                            {filteredProducts.map((item, idx) => (
+                                                <SmartphonesComponent
+                                                    key={idx}
+                                                    src={item.src}
+                                                    product={item.product}
+                                                    price={
+                                                        item.storage
+                                                            ? Math.min(
+                                                                ...item.storage.map(s =>
+                                                                    Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
+                                                            ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                            : item.price
+                                                    }
+                                                />
+                                            ))}
+                                        </div>
+                                    ) : (
+                                        <p className="text-white font-light text-center">
+                                            Essa marca ainda não possui um produto com o filtro selecionado.
+                                        </p>
+                                    );
+                                })()
                             ) : (
                                 <p className="text-white font-light">Esta marca ainda não possui produto cadastrado.</p>
                             )
                         ) : (
                             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
-                                {Object.keys(data.Smartphones).map((brandKey) =>
-                                    sortProducts(data.Smartphones[brandKey]).map((item, idx) => (
-                                        <SmartphonesComponent
-                                            key={idx}
-                                            src={item.src}
-                                            product={item.product}
-                                            price={
-                                                item.storage
-                                                    ? Math.min(
-                                                        ...item.storage.map(s =>
-                                                            Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."))
-                                                        )
-                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-                                                    : item.price
-                                            }
-                                        />
-                                    ))
-                                )}
+                                {Object.keys(data.Smartphones).map((brandKey) => {
+                                    const filteredProducts = sortProducts(data.Smartphones[brandKey]);
+                                    return filteredProducts.length > 0 ? (
+                                        filteredProducts.map((item, idx) => (
+                                            <SmartphonesComponent
+                                                key={idx}
+                                                src={item.src}
+                                                product={item.product}
+                                                price={
+                                                    item.storage
+                                                        ? Math.min(
+                                                            ...item.storage.map(s =>
+                                                                Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
+                                                        ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                        : item.price
+                                                }
+                                            />
+                                        ))
+                                    ) : null;
+                                })}
                             </div>
                         )}
+
                     </div>
                 </div>
             )}
