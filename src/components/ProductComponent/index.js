@@ -44,7 +44,7 @@ const productData = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 4.830,00",
-                        colors: ["Azul", "Branco", "Preto", "Verde", "Rosa"],
+                        colors: ["Preto", "Azul", "Branco", "Verde", "Rosa"],
                         availability: "Encomenda"
                     }
                 ]
@@ -59,7 +59,7 @@ const productData = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 5.102,00",
-                        colors: ["Ultramarino", "Branco", "Preto", "Verde", "Rosa"],
+                        colors: ["Preto", "Ultramarino", "Branco", "Verde", "Rosa"],
                         availability: "Encomenda"
                     },
                     {
@@ -733,14 +733,15 @@ const productData = {
 };
 
 const colorMap = {
-    Azul: "#d2e0e5",
+    Azul: "#246180",
     Preto: "#404447",
     Verde: "#cfdaca",
     Rosa: "#ebd1d4",
-    Estelar: "#2e3b4e",
+    Estelar: "#ffffff",
     MeiaNoite: "#0f1a1d",
     Ultramarino: "#003b5c",
     Branco: "#ffffff",
+    "Meia-noite": "#404447",
     "Azul Claro": "#d2e0e5",
     "Titânio Deserto": "#c1a693",
     "Titânio Natural": "#c4bfb5",
