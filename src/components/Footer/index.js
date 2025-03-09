@@ -12,7 +12,7 @@ function Footer() {
                     </a>
                 </div>
                 <p className="text-white text-sm font-thin pt-6 text-center">© 2025 Imports Klein. Todos os direitos reservados.</p>
-                <p className="text-white text-sm font-thin text-center">Nova Friburgo, RJ</p>
+                <p className="text-white text-sm font-thin text-center">Nova Friburgo, RJ - Brasil</p>
                 <div className="linha flex justify-center mt-6">
                     <hr className="border-borderColor" style={{ width: "90%" }} />
                 </div>

@@ -10,7 +10,7 @@ const data = {
         Apple: [
             {
                 key: "iphone13",
-                src: "/images/smartphones/iphone13.jpg",
+                src: "/images/smartphones/apple/iphone13.jpg",
                 product: "Apple iPhone 13",
                 price: "R$ 3.632,00",
                 versions: [
@@ -25,7 +25,7 @@ const data = {
             },
             {
                 key: "iphone14",
-                src: "/images/smartphones/iphone14.jpg",
+                src: "/images/smartphones/apple/iphone14.jpg",
                 product: "Apple iPhone 14",
                 price: "R$ 4.304,00",
                 versions: [
@@ -40,7 +40,7 @@ const data = {
             },
             {
                 key: "iphone15",
-                src: "/images/smartphones/iphone15.jpg",
+                src: "/images/smartphones/apple/iphone15.jpg",
                 product: "Apple iPhone 15",
                 price: "R$ 4.830,00",
                 versions: [
@@ -48,14 +48,14 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 4.830,00",
-                        colors: ["Azul", "Branco", "Preto", "Verde", "Rosa"],
+                        colors: ["Preto", "Azul", "Verde", "Rosa"],
                         availability: "Encomenda"
                     }
                 ]
             },
             {
                 key: "iphone16",
-                src: "/images/smartphones/iphone16.jpg",
+                src: "/images/smartphones/apple/iphone16.jpg",
                 product: "Apple iPhone 16",
                 price: "R$ 5.102,00",
                 versions: [
@@ -63,7 +63,7 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 5.102,00",
-                        colors: ["Ultramarino", "Branco", "Preto", "Verde", "Rosa"],
+                        colors: ["Preto", "Ultramarino", "Branco", "Verde", "Rosa"],
                         availability: "Encomenda"
                     },
                     {
@@ -77,7 +77,7 @@ const data = {
             },
             {
                 key: "iphone16pro",
-                src: "/images/smartphones/iphone16pro.jpg",
+                src: "/images/smartphones/apple/iphone16pro.jpg",
                 product: "Apple iPhone 16 Pro",
                 price: "R$ 6.432,00",
                 versions: [
@@ -85,21 +85,21 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 6.432,00",
-                        colors: ["Titânio deserto", "Titânio natural", "Titânio branco"],
+                        colors: ["Titânio-deserto", "Titânio natural", "Titânio branco"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB",
                         price: "R$ 7.052,00",
-                        colors: ["Titânio deserto", "Titânio preto", "Titânio branco"],
+                        colors: ["Titânio-deserto", "Titânio preto", "Titânio branco"],
                         availability: "Encomenda"
                     },
                 ]
             },
             {
                 key: "iphone16promax",
-                src: "/images/smartphones/iphone16promax.png",
+                src: "/images/smartphones/apple/iphone16promax.png",
                 product: "Apple iPhone 16 Pro Max",
                 price: "R$ 7.602,00",
                 versions: [
@@ -107,7 +107,7 @@ const data = {
                         condition: "Lacrado",
                         storage: "256GB",
                         price: "R$ 7.602,00",
-                        colors: ["Titânio deserto"],
+                        colors: ["Titânio-deserto"],
                         availability: "Encomenda"
                     }
                 ]
@@ -169,14 +169,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "64GB/3GB RAM",
+                        storage: "64GB/3GB",
                         price: "R$ 909,00",
                         colors: ["Verde", "Azul", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "128GB/4GB RAM",
+                        storage: "128GB/4GB",
                         price: "R$ 1.039,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda"
@@ -191,7 +191,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128GB/4GB RAM",
+                        storage: "128GB/4GB",
                         price: "R$ 1.329,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -206,21 +206,21 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128GB/4GB RAM",
+                        storage: "128GB/4GB",
                         price: "R$ 1.129,00",
                         colors: ["Azul", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "128GB/8GB RAM",
+                        storage: "128GB/8GB",
                         price: "R$ 1.209,00",
                         colors: ["Azul", "Silver"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.309,00",
                         colors: ["Azul", "Preto"],
                         availability: "Encomenda"
@@ -235,7 +235,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.479,00",
                         colors: ["Branco", "Cinza", "Preto"],
                         availability: "Encomenda"
@@ -250,14 +250,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128GB/6GB RAM",
+                        storage: "128GB/6GB",
                         price: "R$ 1.229,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.379,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda"
@@ -272,7 +272,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128GB/6GB RAM",
+                        storage: "128GB/6GB",
                         price: "R$ 1.259,00",
                         colors: ["Branco", "Preto"],
                         availability: "Encomenda"
@@ -287,28 +287,28 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128GB/4GB RAM",
+                        storage: "128GB/4GB",
                         price: "R$ 1.120,00",
                         colors: ["Azul", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/4GB RAM",
+                        storage: "256GB/4GB",
                         price: "R$ 1.189,00",
                         colors: ["Azul", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.279,00",
                         colors: ["Azul"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.160,00",
                         colors: ["Azul"],
                         availability: "Pronta-entrega"
@@ -323,14 +323,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.629,00",
                         colors: ["Roxo", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512GB/12GB RAM",
+                        storage: "512GB/12GB",
                         price: "R$ 1.909,00",
                         colors: ["Azul", "Preto"],
                         availability: "Encomenda"
@@ -345,7 +345,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/12GB RAM",
+                        storage: "256GB/12GB",
                         price: "R$ 2.059,00",
                         colors: ["Azul", "Preto"],
                         availability: "Encomenda"
@@ -360,14 +360,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 2.349,00",
                         colors: ["Cinza", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512GB/12GB RAM",
+                        storage: "512GB/12GB",
                         price: "R$ 2.539,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -382,14 +382,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 2.149,00",
                         colors: ["Verde", "Preto", "Silver"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512GB/12GB RAM",
+                        storage: "512GB/12GB",
                         price: "R$ 2.379,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -404,14 +404,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/12GB RAM",
+                        storage: "256GB/12GB",
                         price: "R$ 2.759,00",
                         colors: ["Verde", "Preto", "Silver"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512GB/12GB RAM",
+                        storage: "512GB/12GB",
                         price: "R$ 3.009,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -426,7 +426,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 2.559,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -441,14 +441,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "512GB/12GB RAM",
+                        storage: "512GB/12GB",
                         price: "R$ 3.739,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "1TB/16GB RAM",
+                        storage: "1TB/16GB",
                         price: "R$ 4.379,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -463,7 +463,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.279,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -478,14 +478,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128GB/6GB RAM",
+                        storage: "128GB/6GB",
                         price: "R$ 1.209,00",
                         colors: ["Verde", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.269,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -500,7 +500,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.309,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -515,21 +515,21 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128GB/6GB RAM",
+                        storage: "128GB/6GB",
                         price: "R$ 1.349,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "128GB/8GB RAM",
+                        storage: "128GB/8GB",
                         price: "R$ 1.379,00",
                         colors: ["Azul", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.549,00",
                         colors: ["Azul", "Preto", "Verde"],
                         availability: "Encomenda"
@@ -544,21 +544,21 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128GB/6GB RAM",
+                        storage: "128GB/6GB",
                         price: "R$ 1.509,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.959,00",
                         colors: ["Azul", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.999,00",
                         colors: ["Roxo"],
                         availability: "Encomenda"
@@ -573,7 +573,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.999,00",
                         colors: ["Roxo"],
                         availability: "Encomenda"
@@ -588,14 +588,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 2.509,00",
                         colors: ["Azul", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512GB/12GB RAM",
+                        storage: "512GB/12GB",
                         price: "R$ 2.789,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -610,7 +610,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 2.149,00",
                         colors: ["Azul"],
                         availability: "Encomenda"
@@ -625,14 +625,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 2.729,00",
                         colors: ["Roxo", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512GB/12GB RAM",
+                        storage: "512GB/12GB",
                         price: "R$ 3.109,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -647,14 +647,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128GB/6GB RAM",
+                        storage: "128GB/6GB",
                         price: "R$ 1.469,00",
                         colors: ["Azul", "Roxo", "Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 1.619,00",
                         colors: ["Azul", "Vrde", "Preto"],
                         availability: "Encomenda"
@@ -669,7 +669,7 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 2.229,00",
                         colors: ["Azul"],
                         availability: "Encomenda"
@@ -684,14 +684,14 @@ const data = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256GB/8GB RAM",
+                        storage: "256GB/8GB",
                         price: "R$ 3.009,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512GB/12GB RAM",
+                        storage: "512GB/12GB",
                         price: "R$ 3.309,00",
                         colors: ["Preto"],
                         availability: "Encomenda"
@@ -824,7 +824,7 @@ function Products() {
                         onClick={toggleFilter}
                     />
                 </div>
-                <div className="relative">
+                <div className="Filter relative">
                     {isFilterOpen && (
                         <div className="w-48 bg-dark-bg-3 border border-borderColor rounded-lg shadow-lg p-4 text-white absolute z-30 -right-16 top-5">
                             <img
