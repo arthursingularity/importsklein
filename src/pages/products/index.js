@@ -776,7 +776,7 @@ function Products() {
                 {isProductVisible &&
                     <img
                         src='/images/icons/close.svg'
-                        className='absolute cursor-pointer w-8 z-40 top-[77px] ml-[310px]'
+                        className='absolute cursor-pointer w-8 z-40 top-[77px] ml-[310px] buttonHover'
                         onClick={handleCloseProductComponent}
                     />
                 }
