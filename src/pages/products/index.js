@@ -19,7 +19,12 @@ const data = {
                         storage: "128GB",
                         price: "R$ 3.632,00",
                         colors: ["Azul", "Estelar", "Meia-noite"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/apple/iphone13.jpg",
+                            Estelar: "/images/smartphones/apple/iphone13estelar.jpg",
+                            "Meia-noite": "/images/smartphones/apple/iphone13meianoite.jpg",
+                        }
                     }
                 ]
             },
@@ -34,7 +39,10 @@ const data = {
                         storage: "128GB",
                         price: "R$ 4.304,00",
                         colors: ["Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/apple/iphone14.jpg",
+                        }
                     }
                 ]
             },
@@ -48,8 +56,14 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 4.830,00",
-                        colors: ["Preto", "Azul", "Verde", "Rosa"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul claro", "Verde", "Rosa"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/apple/iphone15.jpg",
+                            "Azul claro": "/images/smartphones/apple/iphone15azul.jpg",
+                            Verde: "/images/smartphones/apple/iphone15verde.jpg",
+                            Rosa: "/images/smartphones/apple/iphone15rosa.jpg",
+                        }
                     }
                 ]
             },
@@ -64,14 +78,27 @@ const data = {
                         storage: "128GB",
                         price: "R$ 5.102,00",
                         colors: ["Preto", "Ultramarino", "Branco", "Verde", "Rosa"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/apple/iphone16.jpg",
+                            Ultramarino: "/images/smartphones/apple/iphone16ultramarino.jpg",
+                            Branco: "/images/smartphones/apple/iphone16branco.jpg",
+                            Verde: "/images/smartphones/apple/iphone16verde.jpg",
+                            Rosa: "/images/smartphones/apple/iphone16rosa.jpg",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB",
                         price: "R$ 6.132,00",
-                        colors: ["Ultramarino", "Branco", "Preto", "Rosa"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Ultramarino", "Branco", "Rosa"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/apple/iphone16.jpg",
+                            Ultramarino: "/images/smartphones/apple/iphone16ultramarino.jpg",
+                            Branco: "/images/smartphones/apple/iphone16branco.jpg",
+                            Rosa: "/images/smartphones/apple/iphone16rosa.jpg",
+                        }
                     }
                 ]
             },
@@ -86,14 +113,24 @@ const data = {
                         storage: "128GB",
                         price: "R$ 6.432,00",
                         colors: ["Titânio-deserto", "Titânio natural", "Titânio branco"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            "Titânio-deserto": "/images/smartphones/apple/iphone16pro.jpg",
+                            "Titânio natural": "/images/smartphones/apple/iphone16protitanionatural.jpg",
+                            "Titânio branco": "/images/smartphones/apple/iphone16protitaniobranco.jpg",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB",
                         price: "R$ 7.052,00",
                         colors: ["Titânio-deserto", "Titânio preto", "Titânio branco"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            "Titânio-deserto": "/images/smartphones/apple/iphone16pro.jpg",
+                            "Titânio preto": "/images/smartphones/apple/iphone16protitaniopreto.jpg",
+                            "Titânio branco": "/images/smartphones/apple/iphone16protitaniobranco.jpg",
+                        }
                     },
                 ]
             },
@@ -108,7 +145,10 @@ const data = {
                         storage: "256GB",
                         price: "R$ 7.602,00",
                         colors: ["Titânio-deserto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            "Titânio-deserto": "/images/smartphones/apple/iphone16promax.png",
+                        }
                     }
                 ]
             }
@@ -124,8 +164,11 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 1.140,00",
-                        colors: ["Azul Claro"],
-                        availability: "Encomenda"
+                        colors: ["Azul claro"],
+                        availability: "Encomenda",
+                        images: {
+                            "Azul claro": "/images/smartphones/samsung/galaxya15.png",
+                        }
                     }
                 ]
             },
@@ -140,7 +183,11 @@ const data = {
                         storage: "128GB",
                         price: "R$ 2.690,00",
                         colors: ["Grafite", "Verde"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Grafite: "/images/smartphones/samsung/galaxys23fe.jpg",
+                            Verde: "/images/smartphones/samsung/galaxys23feverde.jpg",
+                        }
                     }
                 ]
             },
@@ -155,7 +202,10 @@ const data = {
                         storage: "256GB",
                         price: "R$ 4.710,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/samsung/galaxys23ultra.png",
+                        }
                     }
                 ]
             },
