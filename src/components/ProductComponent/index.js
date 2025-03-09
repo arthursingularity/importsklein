@@ -43,12 +43,12 @@ function ProductComponent() {
                 <div className="mt-8 bg-dark-bg-3 border border-borderColor rounded p-5">
                     <p className="font-regular text-2xl text-center leading-none mt-1">Apple iPhone 16 Pro Max</p>
                     <div className="flex space-x-4 font-thin justify-center mt-3">
-                        <p className="text-lg">256GB</p>
-                        <p className="text-lg">Titânio Natural</p>
+                        <p className="text-lg leading-tight">256GB</p>
+                        <p className="text-lg leading-tight">Titânio Natural</p>
                     </div>
                     <div className="flex space-x-4 font-thin justify-center">
-                        <p className="text-lg">Lacrado</p>
-                        <p className="text-lg">Encomenda</p>
+                        <p className="text-lg leading-tight">Lacrado</p>
+                        <p className="text-lg leading-tight">Encomenda</p>
                     </div>
                     <hr className="border-1 border-borderColor mt-4" />
                     <div className="flex justify-center items-center mt-6 space-x-6">
