@@ -81,14 +81,14 @@ const productData = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 6.432,00",
-                        colors: ["Titânio Deserto", "Titânio Natural", "Titânio Branco"],
+                        colors: ["Titânio-deserto", "Titânio natural", "Titânio branco"],
                         availability: "Encomenda"
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB",
                         price: "R$ 7.052,00",
-                        colors: ["Titânio Deserto", "Titânio Preto", "Titânio Branco"],
+                        colors: ["Titânio-deserto", "Titânio preto", "Titânio branco"],
                         availability: "Encomenda"
                     },
                 ]
@@ -103,7 +103,7 @@ const productData = {
                         condition: "Lacrado",
                         storage: "256GB",
                         price: "R$ 7.602,00",
-                        colors: ["Titânio deserto"],
+                        colors: ["Titânio-deserto"],
                         availability: "Encomenda"
                     }
                 ]
@@ -743,10 +743,10 @@ const colorMap = {
     Branco: "#ffffff",
     "Meia-noite": "#404447",
     "Azul Claro": "#d2e0e5",
-    "Titânio Deserto": "#c1a693",
-    "Titânio Natural": "#c4bfb5",
-    "Titânio Branco": "#f2f1ed",
-    "Titânio Preto": "#404447",
+    "Titânio-deserto": "#c1a693",
+    "Titânio natural": "#c4bfb5",
+    "Titânio branco": "#f2f1ed",
+    "Titânio preto": "#404447",
     "White lilac": "#ebd1d4",
     "Marble black": "#404447",
 };
