@@ -3,11 +3,13 @@ import { useState } from "react";
 import NavBar from "../../components/NavBar";
 import ProductBrand from "../../components/ProductBrand";
 import SmartphonesComponent from "../../components/SmartphonesComponent";
+import ProductComponent from "../../components/ProductComponent";
 
 const data = {
     Smartphones: {
         Apple: [
             {
+                code: "iphone13",
                 src: "/images/smartphones/iphone13.jpg",
                 product: "Apple iPhone 13",
                 price: "R$ 3.632,00",
@@ -72,7 +74,7 @@ const data = {
             },
             {
                 src: "/images/smartphones/iphone16pro.jpg",
-                product: "Apple iPhone 16 PRO",
+                product: "Apple iPhone 16 Pro",
                 price: "R$ 6.432,00",
                 versions: [
                     {
@@ -93,7 +95,7 @@ const data = {
             },
             {
                 src: "/images/smartphones/iphone16promax.png",
-                product: "Apple iPhone 16 PRO MAX",
+                product: "Apple iPhone 16 Pro Max",
                 price: "R$ 7.602,00",
                 versions: [
                     {
@@ -705,6 +707,7 @@ function Products() {
     const [sortType, setSortType] = useState(null);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [selectedFilter, setSelectedFilter] = useState(null);
+    const [isProductVisible, setIsProductVisible] = useState(false); // Estado para controlar a visibilidade do ProductComponent
 
     const toggleFilter = () => setIsFilterOpen(!isFilterOpen);
 
@@ -722,49 +725,68 @@ function Products() {
 
     const sortProducts = (products) => {
         if (!products) return [];
-    
+
         let filteredProducts = [...products];
-    
-        // Filtrar por disponibilidade
+
+        // Filtrar por "Pronta-entrega" ou "Encomenda"
         if (selectedFilter === "pronta-entrega") {
-            filteredProducts = filteredProducts.filter(item => 
+            filteredProducts = filteredProducts.filter(item =>
                 item.versions.some(version => version.availability === "Pronta-entrega")
             );
         } else if (selectedFilter === "encomenda") {
-            filteredProducts = filteredProducts.filter(item => 
+            filteredProducts = filteredProducts.filter(item =>
                 item.versions.some(version => version.availability === "Encomenda")
             );
         }
-    
-        // Ordenação alfabética padrão
+
+        // Aplicar ordenação alfabética sempre
         filteredProducts.sort((a, b) => a.product.localeCompare(b.product));
-    
-        if (!sortType) return filteredProducts;
-    
-        return filteredProducts.sort((a, b) => {
-            const priceA = a.versions
-                ? Math.min(...a.versions.map(v => Number(v.price.replace("R$ ", "").replace(".", "").replace(",", "."))))
-                : Number(a.price.replace("R$ ", "").replace(".", "").replace(",", "."));
-    
-            const priceB = b.versions
-                ? Math.min(...b.versions.map(v => Number(v.price.replace("R$ ", "").replace(".", "").replace(",", "."))))
-                : Number(b.price.replace("R$ ", "").replace(".", "").replace(",", "."));
-    
-            return sortType === "price-asc" ? priceA - priceB : priceB - priceA;
-        });
+
+        // Aplicar ordenação por preço se necessário
+        if (sortType === "price-asc" || sortType === "price-desc") {
+            filteredProducts.sort((a, b) => {
+                const priceA = a.versions
+                    ? Math.min(...a.versions.map(v => Number(v.price.replace("R$ ", "").replace(".", "").replace(",", "."))))
+                    : Number(a.price.replace("R$ ", "").replace(".", "").replace(",", "."));
+
+                const priceB = b.versions
+                    ? Math.min(...b.versions.map(v => Number(v.price.replace("R$ ", "").replace(".", "").replace(",", "."))))
+                    : Number(b.price.replace("R$ ", "").replace(".", "").replace(",", "."));
+
+                return sortType === "price-asc" ? priceA - priceB : priceB - priceA;
+            });
+        }
+
+        return filteredProducts;
     };
-    
+
+    const handleSmartphoneClick = () => {
+        setIsProductVisible(true);
+    };
+
+    const handleCloseProductComponent = () => {
+        setIsProductVisible(false);
+    };
+
 
     return (
         <div>
             <NavBar />
             <div className="flex justify-center items-center">
+                {isProductVisible &&
+                    <img
+                        src='/images/icons/close.svg'
+                        className='absolute cursor-pointer w-8 z-40 top-[77px] ml-[310px]'
+                        onClick={handleCloseProductComponent}
+                    />
+                }
+                {isProductVisible && <ProductComponent />}
                 <ProductBrand />
                 <div className="absolute flex justify-center ml-72">
                     <img
                         src="/images/icons/filter.svg"
                         className="bg-dark-bg-3 mt-20 p-1 hover:bg-dark-bg-4 cursor-pointer rounded"
-                        style={{ width: "40px" }}
+                        style={{ width: "33px" }}
                         onClick={toggleFilter}
                     />
                 </div>
@@ -824,7 +846,7 @@ function Products() {
                 </div>
             </div>
             {location.pathname.startsWith("/smartphones") && (
-                <div className="flex flex-col items-center">
+                <div className={`flex flex-col items-center ${isProductVisible ? 'hidden' : ''}`}>
                     <div className="space-y-2 mt-6 pb-4">
                         {capitalizedBrand ? (
                             data.Smartphones[capitalizedBrand] ? (
@@ -837,14 +859,11 @@ function Products() {
                                                     key={idx}
                                                     src={item.src}
                                                     product={item.product}
-                                                    price={
-                                                        item.storage
-                                                            ? Math.min(
-                                                                ...item.storage.map(s =>
-                                                                    Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
-                                                            ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-                                                            : item.price
-                                                    }
+                                                    price={item.storage ? Math.min(
+                                                        ...item.storage.map(s =>
+                                                            Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
+                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : item.price}
+                                                    onClick={handleSmartphoneClick}
                                                 />
                                             ))}
                                         </div>
@@ -867,21 +886,17 @@ function Products() {
                                                 key={idx}
                                                 src={item.src}
                                                 product={item.product}
-                                                price={
-                                                    item.storage
-                                                        ? Math.min(
-                                                            ...item.storage.map(s =>
-                                                                Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
-                                                        ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-                                                        : item.price
-                                                }
+                                                price={item.storage ? Math.min(
+                                                    ...item.storage.map(s =>
+                                                        Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
+                                                ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : item.price}
+                                                onClick={handleSmartphoneClick}
                                             />
                                         ))
                                     ) : null;
                                 })}
                             </div>
                         )}
-
                     </div>
                 </div>
             )}

@@ -20,6 +20,7 @@ module.exports = {
         'dark-bg-3': '#313740',
         'dark-bg-4': '#49525F',
         'borderColor': '#4b5563',
+        'verde': '#33DE9A',
       },
     },
   },

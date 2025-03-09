@@ -6,29 +6,57 @@ import SmartphonesComponent from '../../components/SmartphonesComponent';
 import Footer from '../../components/Footer';
 
 const data = {
-    Apple: [
-        {
-            src: "/images/smartphones/iphone13.jpg",
-            product: "Apple IPhone 13 (128GB)",
-            storage: [
-                { size: "128GB", price: "R$ 3.632,00" },
-            ]
-        },
-        {
-            src: "/images/smartphones/iphone14.jpg",
-            product: "Apple IPhone 14 (128GB)",
-            storage: [
-                { size: "128GB", price: "R$ 4.304,00" },
-            ]
-        },
+    destaques: [
         {
             src: "/images/smartphones/iphone15.jpg",
-            product: "Apple IPhone 15 (128GB)",
-            storage: [
-                { size: "128GB", price: "R$ 4.830,00" },
-            ]
+            product: "Apple iPhone 15",
+            price: "R$ 4.830,00",
         },
-    ]
+        {
+            src: "/images/smartphones/realme/note60.png",
+            product: "Realme Note 60",
+            price: "R$ 899,00",
+        },
+        {
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.160,00",
+        },
+    ],
+    novidades: [
+        {
+            src: "/images/smartphones/iphone15.jpg",
+            product: "Apple iPhone 15",
+            price: "R$ 4.830,00",
+        },
+        {
+            src: "/images/smartphones/realme/note60.png",
+            product: "Realme Note 60",
+            price: "R$ 899,00",
+        },
+        {
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.160,00",
+        },
+    ],
+    prontaEntrega: [
+        {
+            src: "/images/smartphones/motorola/motog30.png",
+            product: "Moto G30",
+            price: "R$ 599,00",
+        },
+        {
+            src: "/images/smartphones/realme/note60.png",
+            product: "Realme Note 60",
+            price: "R$ 899,00",
+        },
+        {
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.160,00",
+        },
+    ],
 };
 
 const categorias = [
@@ -49,14 +77,14 @@ function Home() {
     const [popUpVisible, setPopUpVisible] = useState(true);
     const [colunas, setColunas] = useState(4);
 
-    useEffect(() => {
+    useEffect(() => { //Responsividade
         const updateColumns = () => {
             const width = window.innerWidth;
-            if (width < 610) setColunas(4);  // Mínimo 2 grupos de 4
-            else if (width < 740) setColunas(5); // 5 + 3
-            else if (width < 820) setColunas(6); // 6 + 2
-            else if (width < 910) setColunas(7); // 6 + 2
-            else setColunas(8);  // Única linha com 8
+            if (width < 610) setColunas(4);
+            else if (width < 740) setColunas(5);
+            else if (width < 820) setColunas(6);
+            else if (width < 910) setColunas(7);
+            else setColunas(8);
         };
 
         updateColumns();
@@ -171,27 +199,82 @@ function Home() {
                             </div>
                         ))}
                     </div>
-                    <div className="flex justify-center mt-16">
+                    <div className="flex justify-center mt-14">
                         <div className="space-y-2">
                             <p className="text-white text-xl font-regular">Destaques</p>
-                            {Object.keys(data).map((brand, index) => (
-                                <div key={index}>
-                                    <div className="grid grid-cols-3 gap-1.5">
-                                        {data[brand].map((item, idx) => (
-                                            <SmartphonesComponent
-                                                key={idx}
-                                                src={item.src}
-                                                product={item.product}
-                                                price={
-                                                    item.storage
-                                                        ? Math.min(...item.storage.map(s => Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-                                                        : item.price
-                                                }
-                                            />
-                                        ))}
-                                    </div>
+                            {Array.isArray(data["destaques"]) && data["destaques"].length > 0 ? (
+                                <div className="grid grid-cols-3 gap-1.5">
+                                    {data["destaques"].map((item, idx) => (
+                                        <SmartphonesComponent
+                                            key={item.id || idx}
+                                            src={item.src}
+                                            product={item.product}
+                                            price={
+                                                item.storage && Array.isArray(item.storage) && item.storage.length > 0
+                                                    ? Math.min(
+                                                        ...item.storage.map(s => {
+                                                            const price = Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."));
+                                                            return isNaN(price) ? Infinity : price;
+                                                        })
+                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                    : item.price
+                                            }
+                                        />
+                                    ))}
                                 </div>
-                            ))}
+                            ) : null}
+                        </div>
+                    </div>
+                    <div className="flex justify-center mt-8">
+                        <div className="space-y-2">
+                            <p className="text-white text-xl font-regular">Novidades</p>
+                            {Array.isArray(data["novidades"]) && data["novidades"].length > 0 ? (
+                                <div className="grid grid-cols-3 gap-1.5">
+                                    {data["novidades"].map((item, idx) => (
+                                        <SmartphonesComponent
+                                            key={item.id || idx}
+                                            src={item.src}
+                                            product={item.product}
+                                            price={
+                                                item.storage && Array.isArray(item.storage) && item.storage.length > 0
+                                                    ? Math.min(
+                                                        ...item.storage.map(s => {
+                                                            const price = Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."));
+                                                            return isNaN(price) ? Infinity : price;
+                                                        })
+                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                    : item.price
+                                            }
+                                        />
+                                    ))}
+                                </div>
+                            ) : null}
+                        </div>
+                    </div>
+                    <div className="flex justify-center mt-8">
+                        <div className="space-y-2">
+                            <p className="text-white text-xl font-regular">Pronta-entrega</p>
+                            {Array.isArray(data["prontaEntrega"]) && data["prontaEntrega"].length > 0 ? (
+                                <div className="grid grid-cols-3 gap-1.5">
+                                    {data["prontaEntrega"].map((item, idx) => (
+                                        <SmartphonesComponent
+                                            key={item.id || idx}
+                                            src={item.src}
+                                            product={item.product}
+                                            price={
+                                                item.storage && Array.isArray(item.storage) && item.storage.length > 0
+                                                    ? Math.min(
+                                                        ...item.storage.map(s => {
+                                                            const price = Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."));
+                                                            return isNaN(price) ? Infinity : price;
+                                                        })
+                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                    : item.price
+                                            }
+                                        />
+                                    ))}
+                                </div>
+                            ) : null}
                         </div>
                     </div>
                     <div className="flex justify-center mt-10">
@@ -219,11 +302,6 @@ function Home() {
                                     <img src="./images/cliente7.jpg" className="w-24 rounded-lg border border-borderColor" />
                                     <img src="./images/cliente8.jpg" className="w-24 rounded-lg border border-borderColor" />
                                     <img src="./images/cliente9.jpg" className="w-24 rounded-lg border border-borderColor" />
-                                </div>
-                                <div className="flex space-x-3 mt-3">
-                                    <img src="./images/cliente10.jpg" className="w-24 rounded-lg border border-borderColor" />
-                                    <img src="./images/cliente11.jpg" className="w-24 rounded-lg border border-borderColor" />
-                                    <img src="./images/cliente12.jpg" className="w-24 rounded-lg border border-borderColor" />
                                 </div>
                             </div>
                         </div>
@@ -260,7 +338,6 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <Footer />
                 </div>

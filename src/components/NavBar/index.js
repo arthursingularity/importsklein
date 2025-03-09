@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import './navbar.css'
+import ProductPageComponent from '../ProductComponent'
 
 function NavBar() {
     return (
-        <div className="bg-dark-bg-2 p-3 flex justify-center items-center fixed w-full z-40">
+        <div className="bg-dark-bg-2 p-3 flex justify-center items-center fixed w-full z-50 border-b border-borderColor">
             <Link to="/">
                 <img src="/images/importsKleinLogo.png" style={{ width: 75 }}  className='buttonHover'/>
             </Link>
