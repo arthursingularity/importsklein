@@ -1,4 +1,4 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import NavBar from "../../components/NavBar";
 import ProductBrand from "../../components/ProductBrand";
@@ -9,7 +9,7 @@ const data = {
     Smartphones: {
         Apple: [
             {
-                code: "iphone13",
+                key: "iphone13",
                 src: "/images/smartphones/iphone13.jpg",
                 product: "Apple iPhone 13",
                 price: "R$ 3.632,00",
@@ -24,6 +24,7 @@ const data = {
                 ]
             },
             {
+                key: "iphone14",
                 src: "/images/smartphones/iphone14.jpg",
                 product: "Apple iPhone 14",
                 price: "R$ 4.304,00",
@@ -38,6 +39,7 @@ const data = {
                 ]
             },
             {
+                key: "iphone15",
                 src: "/images/smartphones/iphone15.jpg",
                 product: "Apple iPhone 15",
                 price: "R$ 4.830,00",
@@ -52,6 +54,7 @@ const data = {
                 ]
             },
             {
+                key: "iphone16",
                 src: "/images/smartphones/iphone16.jpg",
                 product: "Apple iPhone 16",
                 price: "R$ 5.102,00",
@@ -73,6 +76,7 @@ const data = {
                 ]
             },
             {
+                key: "iphone16pro",
                 src: "/images/smartphones/iphone16pro.jpg",
                 product: "Apple iPhone 16 Pro",
                 price: "R$ 6.432,00",
@@ -94,6 +98,7 @@ const data = {
                 ]
             },
             {
+                key: "iphone16promax",
                 src: "/images/smartphones/iphone16promax.png",
                 product: "Apple iPhone 16 Pro Max",
                 price: "R$ 7.602,00",
@@ -110,6 +115,7 @@ const data = {
         ],
         Samsung: [
             {
+                key: "galaxya15",
                 src: "/images/smartphones/samsung/galaxya15.png",
                 product: "Samsung Galaxy A15 5G",
                 price: "R$ 1.140,00",
@@ -118,12 +124,13 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 1.140,00",
-                        colors: ["Azul claro"],
+                        colors: ["Azul Claro"],
                         availability: "Encomenda"
                     }
                 ]
             },
             {
+                key: "galaxys23fe",
                 src: "/images/smartphones/samsung/galaxys23fe.jpg",
                 product: "Samsung Galaxy S23 FE",
                 price: "R$ 2.690,00",
@@ -138,6 +145,7 @@ const data = {
                 ]
             },
             {
+                key: "galaxys23ultra",
                 src: "/images/smartphones/samsung/galaxys23ultra.png",
                 product: "Samsung Galaxy S23 Ultra",
                 price: "R$ 4.710,00",
@@ -154,6 +162,7 @@ const data = {
         ],
         Xiaomi: [
             {
+                key: "redmia3",
                 src: "/images/smartphones/xiaomi/redmia3.png",
                 product: "Redmi A3",
                 price: "R$ 909,00",
@@ -175,6 +184,7 @@ const data = {
                 ],
             },
             {
+                key: "redmia4",
                 src: "/images/smartphones/xiaomi/redmia4.png",
                 product: "Redmi A4 5G",
                 price: "R$ 1.329,00",
@@ -189,6 +199,7 @@ const data = {
                 ],
             },
             {
+                key: "redmi12",
                 src: "/images/smartphones/xiaomi/redmi124g.png",
                 product: "Redmi 12 4G",
                 price: "R$ 1.129,00",
@@ -217,6 +228,7 @@ const data = {
                 ],
             },
             {
+                key: "redmia125g",
                 src: "/images/smartphones/xiaomi/redmi125g.png",
                 product: "Redmi 12 5G - Global",
                 price: "R$ 1.479,00",
@@ -231,6 +243,7 @@ const data = {
                 ],
             },
             {
+                key: "redmi13",
                 src: "/images/smartphones/xiaomi/redmi13.png",
                 product: "Redmi 13 4G",
                 price: "R$ 1.229,00",
@@ -252,6 +265,7 @@ const data = {
                 ],
             },
             {
+                key: "redmia13c",
                 src: "/images/smartphones/xiaomi/redmi13c.png",
                 product: "Redmi 13C 5G - Global",
                 price: "R$ 1.259,00",
@@ -266,6 +280,7 @@ const data = {
                 ],
             },
             {
+                key: "redmia14c",
                 src: "/images/smartphones/xiaomi/redmi14c.png",
                 product: "Redmi 14C",
                 price: "R$ 1.120,00",
@@ -301,6 +316,7 @@ const data = {
                 ]
             },
             {
+                key: "pocom6pro",
                 src: "/images/smartphones/xiaomi/pocom6pro.png",
                 product: "Poco M6 Pro 4G NFC",
                 price: "R$ 1.629,00",
@@ -322,6 +338,7 @@ const data = {
                 ],
             },
             {
+                key: "pocox6",
                 src: "/images/smartphones/xiaomi/pocox6.png",
                 product: "Poco X6 5G NFC",
                 price: "R$ 2.059,00",
@@ -336,6 +353,7 @@ const data = {
                 ],
             },
             {
+                key: "pocox6pro",
                 src: "/images/smartphones/xiaomi/pocox6pro.jpg",
                 product: "Poco X6 Pro 5G NFC",
                 price: "R$ 2.349,00",
@@ -357,6 +375,7 @@ const data = {
                 ],
             },
             {
+                key: "pocox7",
                 src: "/images/smartphones/xiaomi/pocox7.png",
                 product: "Poco X7",
                 price: "R$ 2.149,00",
@@ -378,6 +397,7 @@ const data = {
                 ],
             },
             {
+                key: "pocox7pro",
                 src: "/images/smartphones/xiaomi/pocox7pro.png",
                 product: "Poco X7 Pro",
                 price: "R$ 2.759,00",
@@ -399,6 +419,7 @@ const data = {
                 ],
             },
             {
+                key: "pocof6",
                 src: "/images/smartphones/xiaomi/pocof6.png",
                 product: "Poco F6 5G NFC",
                 price: "R$ 2.559,00",
@@ -413,6 +434,7 @@ const data = {
                 ],
             },
             {
+                key: "pocof6pro",
                 src: "/images/smartphones/xiaomi/pocof6pro.png",
                 product: "Poco F6 Pro 5G NFC",
                 price: "R$ 3.739,00",
@@ -434,6 +456,7 @@ const data = {
                 ],
             },
             {
+                key: "pococ65",
                 src: "/images/smartphones/xiaomi/pococ65.png",
                 product: "Poco C65 4G NFC",
                 price: "R$ 1.279,00",
@@ -448,6 +471,7 @@ const data = {
                 ],
             },
             {
+                key: "pococ75",
                 src: "/images/smartphones/xiaomi/pococ75.png",
                 product: "Poco C75 4G NFC",
                 price: "R$ 1.209,00",
@@ -469,6 +493,7 @@ const data = {
                 ],
             },
             {
+                key: "redmi12s",
                 src: "/images/smartphones/xiaomi/redmi12s.png",
                 product: "Redmi 12S 4G",
                 price: "R$ 1.309,00",
@@ -483,6 +508,7 @@ const data = {
                 ],
             },
             {
+                key: "redminote13",
                 src: "/images/smartphones/xiaomi/redminote13.jpg",
                 product: "Redmi Note 13 4G",
                 price: "R$ 1.349,00",
@@ -511,6 +537,7 @@ const data = {
                 ],
             },
             {
+                key: "redminote135g",
                 src: "/images/smartphones/xiaomi/redminote135g.png",
                 product: "Redmi Note 13 5G NFC",
                 price: "R$ 1.509,00",
@@ -539,6 +566,7 @@ const data = {
                 ],
             },
             {
+                key: "redminote13pro",
                 src: "/images/smartphones/xiaomi/redminote13pro.png",
                 product: "Redmi Note 13 Pro 4G",
                 price: "R$ 1.999,00",
@@ -553,6 +581,7 @@ const data = {
                 ],
             },
             {
+                key: "redminote13pro5g",
                 src: "/images/smartphones/xiaomi/redminote13pro5g.png",
                 product: "Redmi Note 13 Pro 5G NFC",
                 price: "R$ 2.509,00",
@@ -574,6 +603,7 @@ const data = {
                 ],
             },
             {
+                key: "redminote13pro5gglobal",
                 src: "/images/smartphones/xiaomi/redminote13pro5gglobal.png",
                 product: "Redmi Note 13 Pro 5G - Global",
                 price: "R$ 2.149,00",
@@ -588,6 +618,7 @@ const data = {
                 ],
             },
             {
+                key: "redminote13proplus",
                 src: "/images/smartphones/xiaomi/redminote13proplus.png",
                 product: "Redmi Note 13 Pro Plus 5G NFC",
                 price: "R$ 2.729,00",
@@ -609,6 +640,7 @@ const data = {
                 ],
             },
             {
+                key: "redminote14",
                 src: "/images/smartphones/xiaomi/redminote14.png",
                 product: "Redmi Note 14 4G",
                 price: "R$ 1.469,00",
@@ -630,6 +662,7 @@ const data = {
                 ],
             },
             {
+                key: "redminote14pro",
                 src: "/images/smartphones/xiaomi/redminote14pro.png",
                 product: "Redmi Note 14 Pro 4G",
                 price: "R$ 2.229,00",
@@ -644,6 +677,7 @@ const data = {
                 ],
             },
             {
+                key: "redminote14proplus",
                 src: "/images/smartphones/xiaomi/redminote14proplus.png",
                 product: "Redmi Note 14 Pro Plus 5G",
                 price: "R$ 3.009,00",
@@ -667,6 +701,7 @@ const data = {
         ],
         Motorola: [
             {
+                key: "motog30",
                 src: "/images/smartphones/motorola/motog30.png",
                 product: "Moto G30",
                 price: "R$ 599,00",
@@ -683,6 +718,7 @@ const data = {
         ],
         Realme: [
             {
+                key: "note60",
                 src: "/images/smartphones/realme/note60.png",
                 product: "Realme Note 60",
                 price: "R$ 899,00",
@@ -701,15 +737,26 @@ const data = {
 };
 
 function Products() {
-    const { brand } = useParams();
+    const { brand, product } = useParams();
     const capitalizedBrand = brand ? brand.charAt(0).toUpperCase() + brand.slice(1) : '';
     const location = useLocation();
     const [sortType, setSortType] = useState(null);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [selectedFilter, setSelectedFilter] = useState(null);
-    const [isProductVisible, setIsProductVisible] = useState(false); // Estado para controlar a visibilidade do ProductComponent
+    const navigate = useNavigate();
 
     const toggleFilter = () => setIsFilterOpen(!isFilterOpen);
+
+    if (product) {
+        return (
+            <div>
+                <NavBar />
+                <div className="flex justify-center">
+                    <ProductComponent productKey={product} />
+                </div>
+            </div>
+        );
+    }
 
     const handleSort = (type) => {
         setSortType(type);
@@ -760,27 +807,14 @@ function Products() {
         return filteredProducts;
     };
 
-    const handleSmartphoneClick = () => {
-        setIsProductVisible(true);
+    const handleSmartphoneClick = (brand, key) => {
+        navigate(`/smartphones/${brand.toLowerCase()}/${key}`);
     };
-
-    const handleCloseProductComponent = () => {
-        setIsProductVisible(false);
-    };
-
 
     return (
         <div>
             <NavBar />
             <div className="flex justify-center items-center">
-                {isProductVisible &&
-                    <img
-                        src='/images/icons/close.svg'
-                        className='absolute cursor-pointer w-8 z-40 top-[77px] ml-[310px] buttonHover'
-                        onClick={handleCloseProductComponent}
-                    />
-                }
-                {isProductVisible && <ProductComponent />}
                 <ProductBrand />
                 <div className="absolute flex justify-center ml-72">
                     <img
@@ -846,7 +880,7 @@ function Products() {
                 </div>
             </div>
             {location.pathname.startsWith("/smartphones") && (
-                <div className={`flex flex-col items-center ${isProductVisible ? 'hidden' : ''}`}>
+                <div className="flex flex-col items-center">
                     <div className="space-y-2 mt-6 pb-4">
                         {capitalizedBrand ? (
                             data.Smartphones[capitalizedBrand] ? (
@@ -863,7 +897,7 @@ function Products() {
                                                         ...item.storage.map(s =>
                                                             Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
                                                     ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : item.price}
-                                                    onClick={handleSmartphoneClick}
+                                                    onClick={() => handleSmartphoneClick(capitalizedBrand, item.key)} // Passando a marca e a key corretamente
                                                 />
                                             ))}
                                         </div>
@@ -890,7 +924,7 @@ function Products() {
                                                     ...item.storage.map(s =>
                                                         Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
                                                 ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : item.price}
-                                                onClick={handleSmartphoneClick}
+                                                onClick={() => handleSmartphoneClick(brandKey, item.key)}
                                             />
                                         ))
                                     ) : null;
