@@ -69,7 +69,7 @@ const data = {
             },
             {
                 key: "iphone16",
-                src: "/images/smartphones/apple/iphone16.jpg",
+                src: "/images/smartphones/apple/iphone16verde.jpg",
                 product: "Apple iPhone 16",
                 price: "R$ 5.102,00",
                 versions: [
@@ -947,7 +947,7 @@ function Products() {
                                                         ...item.storage.map(s =>
                                                             Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
                                                     ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : item.price}
-                                                    onClick={() => handleSmartphoneClick(capitalizedBrand, item.key)} // Passando a marca e a key corretamente
+                                                    onClick={() => handleSmartphoneClick(capitalizedBrand, item.key)}
                                                 />
                                             ))}
                                         </div>

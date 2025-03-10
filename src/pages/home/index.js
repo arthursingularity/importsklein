@@ -8,7 +8,8 @@ import Footer from '../../components/Footer';
 const data = {
     destaques: [
         {
-            src: "/images/smartphones/iphone15.jpg",
+            link: "/smartphones/apple/iphone15",
+            src: "/images/smartphones/apple/iphone15.jpg",
             product: "Apple iPhone 15",
             price: "R$ 4.830,00",
         },
@@ -22,10 +23,25 @@ const data = {
             product: "Redmi 14C",
             price: "R$ 1.160,00",
         },
+        {
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.160,00",
+        },
+        {
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.160,00",
+        },
+        {
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.160,00",
+        },
     ],
     novidades: [
         {
-            src: "/images/smartphones/iphone15.jpg",
+            src: "/images/smartphones/apple/iphone15.jpg",
             product: "Apple iPhone 15",
             price: "R$ 4.830,00",
         },
@@ -203,23 +219,24 @@ function Home() {
                         <div className="space-y-2">
                             <p className="text-white text-xl font-regular">Destaques</p>
                             {Array.isArray(data["destaques"]) && data["destaques"].length > 0 ? (
-                                <div className="grid grid-cols-3 gap-1.5">
+                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
                                     {data["destaques"].map((item, idx) => (
-                                        <SmartphonesComponent
-                                            key={item.id || idx}
-                                            src={item.src}
-                                            product={item.product}
-                                            price={
-                                                item.storage && Array.isArray(item.storage) && item.storage.length > 0
-                                                    ? Math.min(
-                                                        ...item.storage.map(s => {
-                                                            const price = Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."));
-                                                            return isNaN(price) ? Infinity : price;
-                                                        })
-                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-                                                    : item.price
-                                            }
-                                        />
+                                            <SmartphonesComponent
+                                                key={item.id || idx}
+                                                src={item.src}
+                                                product={item.product}
+                                                price={
+                                                    item.storage && Array.isArray(item.storage) && item.storage.length > 0
+                                                        ? Math.min(
+                                                            ...item.storage.map(s => {
+                                                                const price = Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."));
+                                                                return isNaN(price) ? Infinity : price;
+                                                            })
+                                                        ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                        : item.price
+                                                }
+                                                link={item.link}
+                                            />
                                     ))}
                                 </div>
                             ) : null}
