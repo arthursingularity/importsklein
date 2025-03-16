@@ -1090,10 +1090,8 @@ function ProductComponent({ productKey }) {
   };
 
   const handleBuy = () => {
-    // Número de WhatsApp (remova os espaços e formate conforme necessário)
     const phone = "5522996122610";
-    // Monta a mensagem conforme os dados do Resume
-    const message = `Olá, tudo bem?\n\nDesejo finalizar a compra do seguinte produto:\n\n${safeProduct.product}\n${selectedVariant}\n${selectedColor}\n${selectedCondition}\n${selectedAvailability}\n\n${finalPrice}`;
+    const message = `Olá 👋, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*\n*${selectedVariant}*\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\nValor: *${finalPrice}*\n\nAguardo seu retorno, obrigado! 😊`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
