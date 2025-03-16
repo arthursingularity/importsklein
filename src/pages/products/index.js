@@ -992,7 +992,7 @@ const data = {
             },
         ]
     },
-    Fones: {
+    Musica: {
         Apple: [
             {
                 key: "airpods4",

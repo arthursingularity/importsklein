@@ -77,7 +77,7 @@ const data = {
 
 const categorias = [
     { nome: "Smartphones", img: "/images/celulares.png", link: "/smartphones" },
-    { nome: "Tablets", img: "/images/tablets.png", link: "/smartphones" },
+    { nome: "Tablets", img: "/images/tablets.png", link: "/tablets" },
     { nome: "Música", img: "/images/fones.png", link: "/musica" },
     { nome: "Carregadores", img: "/images/carregadores.png", link: "/carregadores" },
     { nome: "Acessórios", img: "/images/acessorios.png", link: "/acessorios" },

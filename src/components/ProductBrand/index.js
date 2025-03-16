@@ -49,8 +49,8 @@ function ProductBrand({ category }) {
                     />
                 </div>
             )}
-            {category === "fones" && (
-                <p className="text-2xl text-white font-regular mt-[115px]">Fones de ouvido</p>
+            {category === "musica" && (
+                <p className="text-2xl text-white font-regular mt-[115px]">Musica</p>
             )}
             {category === "smartwatches" && (
                 <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
@@ -61,8 +61,8 @@ function ProductBrand({ category }) {
             {category === "acessorios" && (
                 <p className="text-2xl text-white font-regular mt-[115px]">Acessorios</p>
             )}
-            {category === "som" && (
-                <p className="text-2xl text-white font-regular mt-[115px]">Som</p>
+            {category === "tablets" && (
+                <p className="text-2xl text-white font-regular mt-[115px]">Tablets</p>
             )}
             {category === "chaveiros" && (
                 <p className="text-2xl text-white font-regular mt-[115px]">Chaveiros</p>

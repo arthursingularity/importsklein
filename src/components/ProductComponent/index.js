@@ -988,7 +988,7 @@ const productData = {
             },
         ]
     },
-    Fones: {
+    Musica: {
         Apple: [
             {
                 key: "airpods4",
