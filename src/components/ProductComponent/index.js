@@ -10,6 +10,7 @@ const productData = {
                 product: "Apple iPhone 13",
                 price: "R$ 3.632,00",
                 garantia: "1 ano",
+                message: "Acima de 2 unidades, cada um sai por R$ 11,99",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -988,6 +989,30 @@ const productData = {
             },
         ]
     },
+    Tablets: {
+        Apple: [
+            {
+                key: "ipad10",
+                src: "/images/smartphones/apple/iphone13.jpg",
+                product: "Apple iPad 10",
+                price: "R$ 2.879,00",
+                garantia: "1 ano",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        storage: "64GB",
+                        price: "R$ 2.879,00",
+                        colors: ["Azul", "Silver"],
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/apple/iphone13.jpg",
+                            Silver: "/images/smartphones/apple/iphone13estelar.jpg",
+                        }
+                    }
+                ]
+            },
+        ]
+    },
     Musica: {
         Apple: [
             {
@@ -1169,11 +1194,11 @@ const productData = {
                 key: "chaveirocolecionavel",
                 src: "/images/chaveiros/chaveiros.png",
                 product: "Chaveiro Colecionável",
-                price: "R$ 12,99",
+                price: "R$ 13,99",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 35,00",
+                        price: "R$ 13,99",
                         colors: ["Minion1", "Minion2", "Minion3", "Minion4", "Minion5",
                             "Stitch1", "Stitch2", "Stitch3", "Stitch4", "Stitch5",
                             "Patrick1", "Patrick2", "Patrick3",
@@ -1191,6 +1216,7 @@ const productData = {
                             "Ursopooh1", // Ursinho Pooh
                             "Alegria1", "Nojinho1", "Raiva1", "Tristeza1", "Inveja1",],
                         colorType: "img",
+                        message: "Acima de 2 unidades, cada um sai por R$ 11,99",
                         availability: "Pronta-entrega",
                         images: {
                             Minion1: "/images/chaveiros/minion1.png",
@@ -1455,8 +1481,8 @@ function ProductComponent({ productKey }) {
                 <div className="flex">
                     <div className="flex justify-center">
                         <div
-                            className={`ProductImageDiv ${safeProduct.versions.some(v => v.colorType === "img") ? "p-0 overflow-hidden" : "p-14"
-                                } bg-white relative border border-borderColor mt-4 lg:mt-0 w-[310px] h-[280px] lg:w-[480px] lg:h-[480px] flex items-center rounded`}
+                            className={`ProductImageDiv ${safeProduct.versions.some(v => v.colorType === "img") ? "p-0 overflow-hidden" : "p-[85px]"
+                                } bg-white relative border border-borderColor mt-4 lg:mt-0 w-[310px] h-[280px] lg:w-[480px] lg:h-[433px] flex items-center rounded`}
                         >
                             <img src={selectedImage} alt={safeProduct.product} />
                         </div>
@@ -1580,6 +1606,7 @@ function ProductComponent({ productKey }) {
                 <p className="text-[33px] font-medium rounded mt-4 lg:hidden leading-tight">
                     {finalPrice}
                 </p>
+                <p className="Messaage font-light text-[16px] text-verde">{safeProduct.versions[0]?.message && `${safeProduct.versions[0].message}`}</p>
                 {safeProduct.garantia && (
                     <p className="font-thin leading-none">
                         Garantia: <span className="font-regular">{safeProduct.garantia}</span>

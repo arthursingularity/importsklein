@@ -992,6 +992,30 @@ const data = {
             },
         ]
     },
+    Tablets: {
+        Apple: [
+            {
+                key: "ipad10",
+                src: "/images/smartphones/apple/iphone13.jpg",
+                product: "Apple iPad 10",
+                price: "R$ 2.879,00",
+                garantia: "1 ano",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        storage: "64GB",
+                        price: "R$ 2.879,00",
+                        colors: ["Azul", "Silver"],
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/apple/iphone13.jpg",
+                            Silver: "/images/smartphones/apple/iphone13estelar.jpg",
+                        }
+                    }
+                ]
+            },
+        ]
+    },
     Musica: {
         Apple: [
             {
