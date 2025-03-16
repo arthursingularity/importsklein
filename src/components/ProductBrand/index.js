@@ -56,19 +56,19 @@ function ProductBrand({ category }) {
                 <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
             )}
             {category === "carregadores" && (
-                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Carregadores</p>
             )}
             {category === "acessorios" && (
-                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Acessorios</p>
             )}
             {category === "som" && (
-                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Som</p>
             )}
             {category === "chaveiros" && (
-                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Chaveiros</p>
             )}
             {category === "eletronicos" && (
-                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Eletrônicos</p>
             )}
         </div>
     );

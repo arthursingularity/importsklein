@@ -5,7 +5,7 @@ import ProductPageComponent from '../ProductComponent'
 function NavBar() {
     return (
         <div className='fixed z-50 w-full'>
-            <p className='bg-dark-bg font-light text-white text-center py-1'><span className='font-medium'>Frete grátis</span> para Nova Friburgo!</p>
+            <p className='bg-dark-bg font-light text-white text-center py-1 md:hidden'><span className='font-medium'>Frete grátis</span> para Nova Friburgo!</p>
             <div className="bg-dark-bg-2 p-3 flex justify-center items-center w-full border-b border-borderColor">
                 <Link to="/">
                     <img src="/images/importsKleinLogo.png" style={{ width: 75 }} className='buttonHover' />

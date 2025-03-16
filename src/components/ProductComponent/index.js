@@ -9,6 +9,7 @@ const productData = {
                 src: "/images/smartphones/apple/iphone13.jpg",
                 product: "Apple iPhone 13",
                 price: "R$ 3.632,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -29,6 +30,7 @@ const productData = {
                 src: "/images/smartphones/apple/iphone14.jpg",
                 product: "Apple iPhone 14",
                 price: "R$ 4.304,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -47,6 +49,7 @@ const productData = {
                 src: "/images/smartphones/apple/iphone15.jpg",
                 product: "Apple iPhone 15",
                 price: "R$ 4.830,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -68,6 +71,7 @@ const productData = {
                 src: "/images/smartphones/apple/iphone16verde.jpg",
                 product: "Apple iPhone 16",
                 price: "R$ 5.102,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -103,6 +107,7 @@ const productData = {
                 src: "/images/smartphones/apple/iphone16pro.jpg",
                 product: "Apple iPhone 16 Pro",
                 price: "R$ 6.432,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -135,6 +140,7 @@ const productData = {
                 src: "/images/smartphones/apple/iphone16promax.png",
                 product: "Apple iPhone 16 Pro Max",
                 price: "R$ 7.602,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -155,6 +161,7 @@ const productData = {
                 src: "/images/smartphones/samsung/galaxya15.png",
                 product: "Samsung Galaxy A15 5G",
                 price: "R$ 1.140,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -173,6 +180,7 @@ const productData = {
                 src: "/images/smartphones/samsung/galaxys23fe.jpg",
                 product: "Samsung Galaxy S23 FE",
                 price: "R$ 2.690,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -192,6 +200,7 @@ const productData = {
                 src: "/images/smartphones/samsung/galaxys23ultra.png",
                 product: "Samsung Galaxy S23 Ultra",
                 price: "R$ 4.710,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -212,6 +221,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redmia3.png",
                 product: "Redmi A3",
                 price: "R$ 909,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -244,6 +254,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redmia4.png",
                 product: "Redmi A4 5G",
                 price: "R$ 1.329,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -262,6 +273,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redmi124g.png",
                 product: "Redmi 12 4G",
                 price: "R$ 1.129,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -303,6 +315,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redmi125g.png",
                 product: "Redmi 12 5G - Global",
                 price: "R$ 1.479,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -323,6 +336,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redmi13.png",
                 product: "Redmi 13 4G",
                 price: "R$ 1.229,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -352,6 +366,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redmi13c.png",
                 product: "Redmi 13C 5G - Global",
                 price: "R$ 1.259,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -371,6 +386,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redmi14c.png",
                 product: "Redmi 14C",
                 price: "R$ 1.120,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -422,6 +438,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/pocom6pro.png",
                 product: "Poco M6 Pro 4G NFC",
                 price: "R$ 1.629,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -452,6 +469,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/pocox6.png",
                 product: "Poco X6 5G NFC",
                 price: "R$ 2.059,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -471,6 +489,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/pocox6pro.jpg",
                 product: "Poco X6 Pro 5G NFC",
                 price: "R$ 2.349,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -500,6 +519,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/pocox7.png",
                 product: "Poco X7",
                 price: "R$ 2.149,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -530,6 +550,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/pocox7pro.png",
                 product: "Poco X7 Pro",
                 price: "R$ 2.759,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -560,6 +581,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/pocof6.png",
                 product: "Poco F6 5G NFC",
                 price: "R$ 2.559,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -578,6 +600,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/pocof6pro.png",
                 product: "Poco F6 Pro 5G NFC",
                 price: "R$ 3.739,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -606,6 +629,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/pococ65.png",
                 product: "Poco C65 4G NFC",
                 price: "R$ 1.279,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -624,6 +648,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/pococ75.png",
                 product: "Poco C75 4G NFC",
                 price: "R$ 1.209,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -653,6 +678,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redmi12s.png",
                 product: "Redmi 12S 4G",
                 price: "R$ 1.309,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -671,6 +697,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redminote13.png",
                 product: "Redmi Note 13 4G",
                 price: "R$ 1.349,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -713,6 +740,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redminote135g.png",
                 product: "Redmi Note 13 5G NFC",
                 price: "R$ 1.509,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -742,6 +770,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redminote13pro.png",
                 product: "Redmi Note 13 Pro 4G",
                 price: "R$ 1.999,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -760,6 +789,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redminote13pro5g.png",
                 product: "Redmi Note 13 Pro 5G NFC",
                 price: "R$ 2.509,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -789,6 +819,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redminote13pro5gglobal.png",
                 product: "Redmi Note 13 Pro 5G - Global",
                 price: "R$ 2.149,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -807,6 +838,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redminote13proplus.png",
                 product: "Redmi Note 13 Pro Plus 5G NFC",
                 price: "R$ 2.729,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -836,6 +868,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redminote14.png",
                 product: "Redmi Note 14 4G",
                 price: "R$ 1.469,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -868,6 +901,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redminote14pro.png",
                 product: "Redmi Note 14 Pro 4G",
                 price: "R$ 2.229,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -886,6 +920,7 @@ const productData = {
                 src: "/images/smartphones/xiaomi/redminote14proplus.png",
                 product: "Redmi Note 14 Pro Plus 5G",
                 price: "R$ 3.009,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -916,6 +951,7 @@ const productData = {
                 src: "/images/smartphones/motorola/motog30.png",
                 product: "Moto G30",
                 price: "R$ 599,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Seminovo",
@@ -936,6 +972,7 @@ const productData = {
                 src: "/images/smartphones/realme/note60.png",
                 product: "Realme Note 60",
                 price: "R$ 899,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -958,6 +995,7 @@ const productData = {
                 src: "/images/fones/airpods4.png",
                 product: "AirPods 4 - abafamento de ruído",
                 price: "R$ 1.699,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -975,6 +1013,7 @@ const productData = {
                 src: "/images/fones/airpodspro2.png",
                 product: "AirPods Pro 2",
                 price: "R$ 1.799,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -992,6 +1031,7 @@ const productData = {
                 src: "/images/fones/airpods3.png",
                 product: "AirPods 3",
                 price: "R$ 1.499,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -1011,6 +1051,7 @@ const productData = {
                 src: "/images/fones/kaidikd790.png",
                 product: "Kaidi KD-790 TWS",
                 price: "R$ 85,00",
+                garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -1032,6 +1073,7 @@ const productData = {
                 src: "/images/smartwatches/applewatchse2estelar.jpg",
                 product: "Apple Watch SE 2",
                 price: "R$ 1.999,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         size: "40mm",
@@ -1062,6 +1104,7 @@ const productData = {
                 src: "/images/smartwatches/applewatch10silver.jpg",
                 product: "Apple Watch Series 10",
                 price: "R$ 3.990,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         size: "46mm",
@@ -1081,6 +1124,7 @@ const productData = {
                 src: "/images/smartwatches/applewatchultra2.png",
                 product: "Apple Watch Ultra 2",
                 price: "R$ 6.700,00",
+                garantia: "1 ano",
                 versions: [
                     {
                         size: "49mm",
@@ -1095,6 +1139,100 @@ const productData = {
                 ],
             },
         ],
+    },
+    Carregadores: {
+        Padrão: [
+            {
+                key: "cabousbclight",
+                src: "/images/carregadores/cabousbclight.png",
+                product: "Cabo de USB-C para Lightning",
+                price: "R$ 35,00",
+                garantia: "6 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/carregadores/cabousbclight.png",
+                        },
+                    }
+                ],
+
+            },
+        ]
+    },
+    Chaveiros: {
+        Padrão: [
+            {
+                key: "chaveirocolecionavel",
+                src: "/images/chaveiros/chaveiros.png",
+                product: "Chaveiro Colecionável",
+                price: "R$ 12,99",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Minion1", "Minion2", "Minion3", "Minion4", "Minion5",
+                            "Stitch1", "Stitch2", "Stitch3", "Stitch4", "Stitch5",
+                            "Patrick1", "Patrick2", "Patrick3",
+                            "Minnie1",
+
+                            // Super-Heróis (Marvel)
+                            "Spiderman1", "Ironman1", "Ironman2", "Blackpanther1",
+                            "Hulk1", "Captainamerica1", "Captainamerica2", "Thor1",
+
+                            // Animes
+                            "Goku1", "Goku2", "Majinboo1", // Dragon Ball
+                            "Naruto1", "Kakashi1", "Gaara1", "Itachi1", // Naruto
+
+                            // Outros
+                            "Ursopooh1", // Ursinho Pooh
+                            "Alegria1", "Nojinho1", "Raiva1", "Tristeza1", "Inveja1",],
+                        colorType: "img",
+                        availability: "Pronta-entrega",
+                        images: {
+                            Minion1: "/images/chaveiros/minion1.png",
+                            Minion2: "/images/chaveiros/minion2.png",
+                            Minion3: "/images/chaveiros/minion3.png",
+                            Minion4: "/images/chaveiros/minion4.png",
+                            Minion5: "/images/chaveiros/minion5.png",
+                            Stitch1: "/images/chaveiros/stitch1.png",
+                            Stitch2: "/images/chaveiros/stitch2.png",
+                            Stitch3: "/images/chaveiros/stitch3.png",
+                            Stitch4: "/images/chaveiros/stitch4.png",
+                            Stitch5: "/images/chaveiros/stitch5.png",
+                            Patrick1: "/images/chaveiros/patrick1.png",
+                            Patrick2: "/images/chaveiros/patrick2.png",
+                            Patrick3: "/images/chaveiros/patrick3.png",
+                            Minnie1: "/images/chaveiros/minnie1.png",
+                            Spiderman1: "/images/chaveiros/spiderman1.png",
+                            Ironman1: "/images/chaveiros/ironman1.png",
+                            Ironman2: "/images/chaveiros/ironman2.png",
+                            Blackpanther1: "/images/chaveiros/blackpanther1.png",
+                            Hulk1: "/images/chaveiros/hulk1.png",
+                            Captainamerica1: "/images/chaveiros/captainamerica1.png",
+                            Captainamerica2: "/images/chaveiros/captainamerica2.png",
+                            Thor1: "/images/chaveiros/thor1.png",
+                            Goku1: "/images/chaveiros/goku1.png",
+                            Goku2: "/images/chaveiros/goku2.png",
+                            Majinboo1: "/images/chaveiros/majinboo1.png",
+                            Naruto1: "/images/chaveiros/naruto1.png",
+                            Kakashi1: "/images/chaveiros/kakashi1.png",
+                            Gaara1: "/images/chaveiros/gaara1.png",
+                            Itachi1: "/images/chaveiros/itachi1.png",
+                            Ursopooh1: "/images/chaveiros/ursopooh1.png",
+                            Alegria1: "/images/chaveiros/alegria1.png",
+                            Nojinho1: "/images/chaveiros/nojinho1.png",
+                            Raiva1: "/images/chaveiros/raiva1.png",
+                            Tristeza1: "/images/chaveiros/tristeza1.png",
+                            Inveja1: "/images/chaveiros/inveja1.png",
+                        },
+                    }
+                ]
+            },
+        ]
     }
 };
 
@@ -1316,7 +1454,10 @@ function ProductComponent({ productKey }) {
                 </div>
                 <div className="flex">
                     <div className="flex justify-center">
-                        <div className="bg-white relative p-14 mt-4 lg:mt-0 w-[310px] h-[280px] lg:w-[480px] lg:h-[475px] flex items-center rounded">
+                        <div
+                            className={`ProductImageDiv ${safeProduct.versions.some(v => v.colorType === "img") ? "p-0 overflow-hidden" : "p-14"
+                                } bg-white relative border border-borderColor mt-4 lg:mt-0 w-[310px] h-[280px] lg:w-[480px] lg:h-[520px] flex items-center rounded`}
+                        >
                             <img src={selectedImage} alt={safeProduct.product} />
                         </div>
                     </div>
@@ -1332,7 +1473,7 @@ function ProductComponent({ productKey }) {
                         <div className="OptionsPcView">
                             {variantOptions.length > 0 && (
                                 <div>
-                                    <p className="font-light text-xl mt-4">{variantLabel}</p>
+                                    <p className="font-light text-xl mt-2.5">{variantLabel}</p>
                                     <div className="flex space-x-2">
                                         {variantOptions.map((option, index) => {
                                             const isSelected = option === selectedVariant;
@@ -1354,21 +1495,35 @@ function ProductComponent({ productKey }) {
                             )}
                             {availableColors.length > 0 && (
                                 <div>
-                                    <p className="font-light text-xl mt-5">Cor - <span className="font-medium">{selectedColor}</span></p>
-                                    <div className="flex space-x-2">
+                                    <p className="font-light text-xl mt-5">
+                                        Cor - <span className="font-medium">{selectedColor}</span>
+                                    </p>
+                                    <div className="grid grid-cols-5 gap-2 mt-2">
                                         {availableColors.map((color, index) => {
                                             const isSelected = color === selectedColor;
+                                            const selectedVersion = safeProduct.versions.find(version =>
+                                                version.colors.includes(color)
+                                            );
+
                                             return (
                                                 <div
                                                     key={index}
                                                     onClick={() => setSelectedColor(color)}
-                                                    className={`border rounded-lg w-12 h-12 flex items-center justify-center mt-1 hover:border-blue-500 ${isSelected ? "border-blue-500" : "border-gray-400"
+                                                    className={`border rounded-lg w-12 h-12 flex items-center justify-center hover:border-blue-500 ${isSelected ? "border-blue-500" : "border-gray-400"
                                                         }`}
                                                 >
-                                                    <div
-                                                        className="w-10 h-10 rounded flex justify-center cursor-pointer"
-                                                        style={{ backgroundColor: colorMap[color] }}
-                                                    ></div>
+                                                    {selectedVersion?.colorType === "img" ? (
+                                                        <img
+                                                            src={selectedVersion.images[color]}
+                                                            alt={color}
+                                                            className="w-10 h-10 rounded cursor-pointer"
+                                                        />
+                                                    ) : (
+                                                        <div
+                                                            className="w-10 h-10 rounded cursor-pointer"
+                                                            style={{ backgroundColor: colorMap[color] }}
+                                                        ></div>
+                                                    )}
                                                 </div>
                                             );
                                         })}
@@ -1422,22 +1577,14 @@ function ProductComponent({ productKey }) {
                         </div>
                     </div>
                 </div>
-                <p className="text-[33px] font-medium rounded mt-4 lg:hidden">
+                <p className="text-[33px] font-medium rounded mt-4 lg:hidden leading-tight">
                     {finalPrice}
                 </p>
-                <div className="space-x-4 font-light lg:mt-4">
-                    {productData.Smartphones.Apple.some(
-                        (item) => item.key === productKey
-                    ) ? (
-                        <p className="text-[16px] leading-none text-verde">
-                            Acompanha: capinha, película e um brinde exclusivo Imports Klein!
-                        </p>
-                    ) : (
-                        <p className="text-[16px] leading-tight text-verde">
-                            Acompanha um brinde exclusivo Imports Klein!
-                        </p>
-                    )}
-                </div>
+                {safeProduct.garantia && (
+                    <p className="font-thin leading-none">
+                        Garantia: <span className="font-regular">{safeProduct.garantia}</span>
+                    </p>
+                )}
                 <div className="Options lg:hidden">
                     {variantOptions.length > 0 && (
                         <div>
@@ -1463,21 +1610,35 @@ function ProductComponent({ productKey }) {
                     )}
                     {availableColors.length > 0 && (
                         <div>
-                            <p className="font-light text-xl mt-5">Cor - <span className="font-medium">{selectedColor}</span></p>
-                            <div className="flex space-x-2">
+                            <p className="font-light text-xl mt-5">
+                                Cor - <span className="font-medium">{selectedColor}</span>
+                            </p>
+                            <div className="grid grid-cols-5 gap-2 mt-2">
                                 {availableColors.map((color, index) => {
                                     const isSelected = color === selectedColor;
+                                    const selectedVersion = safeProduct.versions.find(version =>
+                                        version.colors.includes(color)
+                                    );
+
                                     return (
                                         <div
                                             key={index}
                                             onClick={() => setSelectedColor(color)}
-                                            className={`border rounded-lg w-12 h-12 flex items-center justify-center mt-1 hover:border-blue-500 ${isSelected ? "border-blue-500" : "border-gray-400"
+                                            className={`border rounded-lg w-12 h-12 flex items-center justify-center hover:border-blue-500 ${isSelected ? "border-blue-500" : "border-gray-400"
                                                 }`}
                                         >
-                                            <div
-                                                className="w-10 h-10 rounded flex justify-center cursor-pointer"
-                                                style={{ backgroundColor: colorMap[color] }}
-                                            ></div>
+                                            {selectedVersion?.colorType === "img" ? (
+                                                <img
+                                                    src={selectedVersion.images[color]}
+                                                    alt={color}
+                                                    className="w-10 h-10 rounded cursor-pointer"
+                                                />
+                                            ) : (
+                                                <div
+                                                    className="w-10 h-10 rounded cursor-pointer"
+                                                    style={{ backgroundColor: colorMap[color] }}
+                                                ></div>
+                                            )}
                                         </div>
                                     );
                                 })}
@@ -1530,12 +1691,27 @@ function ProductComponent({ productKey }) {
                     )}
                 </div>
                 <hr className="border-1 border-borderColor mt-6" />
-                <p className="font-light text-verde mt-4">Disponível</p>
-                <button
-                    onClick={handleBuy}
-                    className="text-center mt-2 text-black font-medium bg-verde p-1 rounded-lg buttonHover w-[310px] h-[40px]"
-                >Comprar agora
-                </button>
+                <div className="space-x-4 font-light mt-4 text-center">
+                    {productData.Smartphones.Apple.some(
+                        (item) => item.key === productKey
+                    ) ? (
+                        <p className="text-[14px] leading-none text-verde">
+                            Acompanha: capinha, película e um brinde exclusivo Imports Klein!
+                        </p>
+                    ) : (
+                        <p className="text-[16px] leading-none text-verde">
+                            Acompanha um brinde exclusivo Imports Klein!
+                        </p>
+                    )}
+                </div>
+                <div className="flex justify-center mt-4">
+                    <button
+                        onClick={handleBuy}
+                        className="text-black font-medium bg-verde p-1 rounded-lg buttonHover w-[310px] h-[40px]"
+                    >Comprar agora
+                    </button>
+                </div>
+
                 <hr className="border-1 border-borderColor mt-6" />
                 <div className="mt-7 flex justify-center">
                     <div>
