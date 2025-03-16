@@ -69,7 +69,7 @@ const data = {
             },
             {
                 key: "iphone16",
-                src: "/images/smartphones/apple/iphone16verde.jpg",
+                src: "/images/smartphones/apple/iphone16.jpg",
                 product: "Apple iPhone 16",
                 price: "R$ 5.102,00",
                 versions: [
@@ -77,13 +77,13 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB",
                         price: "R$ 5.102,00",
-                        colors: ["Preto", "Ultramarino", "Branco", "Verde", "Rosa"],
+                        colors: ["Verde", "Ultramarino", "Branco", "Preto", "Rosa"],
                         availability: "Encomenda",
                         images: {
+                            Verde: "/images/smartphones/apple/iphone16verde.jpg",
                             Preto: "/images/smartphones/apple/iphone16.jpg",
                             Ultramarino: "/images/smartphones/apple/iphone16ultramarino.jpg",
                             Branco: "/images/smartphones/apple/iphone16branco.jpg",
-                            Verde: "/images/smartphones/apple/iphone16verde.jpg",
                             Rosa: "/images/smartphones/apple/iphone16rosa.jpg",
                         }
                     },
@@ -783,17 +783,168 @@ const data = {
                 ]
             },
         ]
+    },
+    Fones: {
+        Apple: [
+            {
+                key: "airpods4",
+                src: "/images/fones/airpods4.png",
+                product: "AirPods 4 - abafamento de ruído",
+                price: "R$ 1.699,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 1.699,00",
+                        colors: ["Branco"],
+                        availability: "Encomenda",
+                        images: {
+                            Branco: "/images/fones/airpods4.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "airpodspro2",
+                src: "/images/fones/airpodspro2.png",
+                product: "AirPods Pro 2",
+                price: "R$ 1.799,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 1.799,00",
+                        colors: ["Branco"],
+                        availability: "Encomenda",
+                        images: {
+                            Branco: "/images/fones/airpods4.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "airpods3",
+                src: "/images/fones/airpods3.png",
+                product: "AirPods 3",
+                price: "R$ 1.499,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 1.499,00",
+                        colors: ["Branco"],
+                        availability: "Encomenda",
+                        images: {
+                            Branco: "/images/fones/airpodspro2.png",
+                        },
+                    },
+                ],
+            },
+        ],
+        Kaidi: [
+            {
+                key: "kd790",
+                src: "/images/fones/kaidikd790.png",
+                product: "Kaidi KD-790 TWS",
+                price: "R$ 1.499,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 1.499,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/fones/kaidikd790.png",
+                        },
+                    },
+                ],
+            },
+        ]
+    },
+    Smartwatches: {
+        Apple: [
+            {
+                key: "applewatchse2",
+                src: "/images/smartwatches/applewatchse2estelar.jpg",
+                product: "Apple Watch SE 2",
+                price: "R$ 1.999,00",
+                versions: [
+                    {
+                        size: "40mm",
+                        condition: "Lacrado",
+                        price: "R$ 1.999,00",
+                        colors: ["Meia-noite", "Estelar"],
+                        availability: "Encomenda",
+                        images: {
+                            Branco: "/images/fones/airpods4.png",
+                        },
+                    },
+                    {
+                        size: "44mm",
+                        condition: "Lacrado",
+                        price: "R$ 2.250,00",
+                        colors: ["Meia-noite"],
+                        availability: "Encomenda",
+                        images: {
+                            Branco: "/images/fones/airpods4.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "applewatch10",
+                src: "/images/smartwatches/applewatch10silver.jpg",
+                product: "Apple Watch Series 10",
+                price: "R$ 3.990,00",
+                versions: [
+                    {
+                        size: "46mm",
+                        condition: "Lacrado",
+                        price: "R$ 3.990,00",
+                        colors: ["Silver", "Rose"],
+                        availability: "Encomenda",
+                        images: {
+                            Silver: "/images/smartwatches/applewatch10silver.jpg",
+                            Rose: "/images/smartwatches/applewatch10rose.jpg",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "applewatchultra2",
+                src: "/images/smartwatches/applewatchultra2.png",
+                product: "Apple Watch Ultra 2",
+                price: "R$ 6.700,00",
+                versions: [
+                    {
+                        size: "49mm",
+                        condition: "Lacrado",
+                        price: "R$ 6.700,00",
+                        colors: ["Silver", "Rose"],
+                        availability: "Encomenda",
+                        images: {
+                            "Orange Ocean Band": "/images/smartwatches/applewatchultra2.png",
+                        },
+                    }
+                ],
+            },
+        ],
     }
 };
 
 function Products() {
     const { brand, product } = useParams();
-    const capitalizedBrand = brand ? brand.charAt(0).toUpperCase() + brand.slice(1) : '';
     const location = useLocation();
     const [sortType, setSortType] = useState(null);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [selectedFilter, setSelectedFilter] = useState(null);
+
+    const categoryFromPath = location.pathname.split('/')[1];
+    const capitalizedCategory = categoryFromPath
+        ? categoryFromPath.charAt(0).toUpperCase() + categoryFromPath.slice(1)
+        : '';
+
+    const capitalizedBrand = brand ? brand.charAt(0).toUpperCase() + brand.slice(1) : '';
     const navigate = useNavigate();
+    const pathCategory = location.pathname.split("/")[1];
+    const category = pathCategory.charAt(0).toUpperCase() + pathCategory.slice(1);
 
     const toggleFilter = () => setIsFilterOpen(!isFilterOpen);
 
@@ -857,15 +1008,14 @@ function Products() {
         return filteredProducts;
     };
 
-    const handleSmartphoneClick = (brand, key) => {
-        navigate(`/smartphones/${brand.toLowerCase()}/${key}`);
+    const handleProductClick = (brand, key) => {
+        navigate(`/${categoryFromPath}/${brand.toLowerCase()}/${key}`);
     };
 
     return (
         <div>
             <NavBar />
             <div className="flex justify-center items-center">
-                <ProductBrand />
                 <div className="absolute flex justify-center ml-72">
                     <img
                         src="/images/icons/filter.svg"
@@ -874,68 +1024,73 @@ function Products() {
                         onClick={toggleFilter}
                     />
                 </div>
-                <div className="Filter relative">
+                <ProductBrand category={categoryFromPath} />
+
+                <div className="Filter absolute z-30 top-[91px] ml-[129px]">
                     {isFilterOpen && (
-                        <div className="w-48 bg-dark-bg-3 border border-borderColor rounded-lg shadow-lg p-4 text-white absolute z-30 -right-16 top-5">
-                            <img
-                                className="top-2 right-2 w-7 absolute cursor-pointer"
-                                src="/images/icons/close.svg"
-                                onClick={toggleFilter}
-                            />
-                            <h2 className="text-xl font-medium">Ordenar por</h2>
-                            <ul className="space-y-3 mt-5">
-                                <li>
-                                    <button
-                                        onClick={resetSort}
-                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === null ? "text-blue-400" : ""}`}
-                                    >
-                                        Ordem alfabética
-                                    </button>
-                                </li>
-                                <li>
-                                    <button
-                                        onClick={() => handleSort("price-asc")}
-                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "price-asc" ? "text-blue-400" : ""}`}
-                                    >
-                                        Preço crescente
-                                    </button>
-                                </li>
-                                <li>
-                                    <button
-                                        onClick={() => handleSort("price-desc")}
-                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "price-desc" ? "text-blue-400" : ""}`}
-                                    >
-                                        Preço decrescente
-                                    </button>
-                                </li>
-                                <li>
-                                    <button
-                                        onClick={() => handleSort("pronta-entrega")}
-                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "pronta-entrega" ? "text-blue-400" : ""}`}
-                                    >
-                                        Pronta-entrega
-                                    </button>
-                                </li>
-                                <li>
-                                    <button
-                                        onClick={() => handleSort("encomenda")}
-                                        className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "encomenda" ? "text-blue-400" : ""}`}
-                                    >
-                                        Encomenda
-                                    </button>
-                                </li>
-                            </ul>
+                        <div className="">
+                            <div className="w-48 bg-dark-bg-3 border border-borderColor rounded-lg shadow-lg p-4 text-white">
+                                <img
+                                    className="top-2 right-2 w-7 absolute cursor-pointer"
+                                    src="/images/icons/close.svg"
+                                    onClick={toggleFilter}
+                                />
+                                <h2 className="text-xl font-medium">Ordenar por</h2>
+                                <ul className="space-y-3 mt-5">
+                                    <li>
+                                        <button
+                                            onClick={resetSort}
+                                            className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === null ? "text-blue-400" : ""}`}
+                                        >
+                                            Ordem alfabética
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            onClick={() => handleSort("price-asc")}
+                                            className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "price-asc" ? "text-blue-400" : ""}`}
+                                        >
+                                            Preço crescente
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            onClick={() => handleSort("price-desc")}
+                                            className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "price-desc" ? "text-blue-400" : ""}`}
+                                        >
+                                            Preço decrescente
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            onClick={() => handleSort("pronta-entrega")}
+                                            className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "pronta-entrega" ? "text-blue-400" : ""}`}
+                                        >
+                                            Pronta-entrega
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            onClick={() => handleSort("encomenda")}
+                                            className={`w-full text-left font-regular hover:text-blue-400 ${selectedFilter === "encomenda" ? "text-blue-400" : ""}`}
+                                        >
+                                            Encomenda
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
                     )}
                 </div>
             </div>
-            {location.pathname.startsWith("/smartphones") && (
+            {data[capitalizedCategory] ? (
                 <div className="flex flex-col items-center">
                     <div className="space-y-2 mt-6 pb-4">
-                        {capitalizedBrand ? (
-                            data.Smartphones[capitalizedBrand] ? (
+                        {brand ? (
+                            data[capitalizedCategory][capitalizedBrand] ? (  // Use capitalizedBrand aqui
                                 (() => {
-                                    const filteredProducts = sortProducts(data.Smartphones[capitalizedBrand]);
+                                    const filteredProducts = sortProducts(data[capitalizedCategory][capitalizedBrand]);
                                     return filteredProducts.length > 0 ? (
                                         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
                                             {filteredProducts.map((item, idx) => (
@@ -943,11 +1098,16 @@ function Products() {
                                                     key={idx}
                                                     src={item.src}
                                                     product={item.product}
-                                                    price={item.storage ? Math.min(
-                                                        ...item.storage.map(s =>
-                                                            Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
-                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : item.price}
-                                                    onClick={() => handleSmartphoneClick(capitalizedBrand, item.key)}
+                                                    price={
+                                                        item.versions
+                                                            ? Math.min(
+                                                                ...item.versions.map(v =>
+                                                                    Number(v.price.replace("R$ ", "").replace(".", "").replace(",", "."))
+                                                                )
+                                                            ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                            : item.price
+                                                    }
+                                                    onClick={() => handleProductClick(capitalizedBrand, item.key)}  // também pode usar capitalizedBrand aqui
                                                 />
                                             ))}
                                         </div>
@@ -962,19 +1122,24 @@ function Products() {
                             )
                         ) : (
                             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
-                                {Object.keys(data.Smartphones).map((brandKey) => {
-                                    const filteredProducts = sortProducts(data.Smartphones[brandKey]);
+                                {Object.keys(data[capitalizedCategory]).map((brandKey) => {
+                                    const filteredProducts = sortProducts(data[capitalizedCategory][brandKey]);
                                     return filteredProducts.length > 0 ? (
                                         filteredProducts.map((item, idx) => (
                                             <SmartphonesComponent
                                                 key={idx}
                                                 src={item.src}
                                                 product={item.product}
-                                                price={item.storage ? Math.min(
-                                                    ...item.storage.map(s =>
-                                                        Number(s.price.replace("R$ ", "").replace(".", "").replace(",", ".")))
-                                                ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : item.price}
-                                                onClick={() => handleSmartphoneClick(brandKey, item.key)}
+                                                price={
+                                                    item.versions
+                                                        ? Math.min(
+                                                            ...item.versions.map(v =>
+                                                                Number(v.price.replace("R$ ", "").replace(".", "").replace(",", "."))
+                                                            )
+                                                        ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                        : item.price
+                                                }
+                                                onClick={() => handleProductClick(brandKey, item.key)}
                                             />
                                         ))
                                     ) : null;
@@ -983,6 +1148,10 @@ function Products() {
                         )}
                     </div>
                 </div>
+            ) : (
+                <p className="text-white font-light text-center mt-6">
+                    Categoria não encontrada.
+                </p>
             )}
         </div>
     );
