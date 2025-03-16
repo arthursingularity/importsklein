@@ -1481,8 +1481,8 @@ function ProductComponent({ productKey }) {
                 <div className="flex">
                     <div className="flex justify-center">
                         <div
-                            className={`ProductImageDiv ${safeProduct.versions.some(v => v.colorType === "img") ? "p-0 overflow-hidden" : "p-[85px]"
-                                } bg-white relative border border-borderColor mt-4 lg:mt-0 w-[310px] h-[280px] lg:w-[480px] lg:h-[433px] flex items-center rounded`}
+                            className={`ProductImageDiv ${safeProduct.versions.some(v => v.colorType === "img") ? "p-0 overflow-hidden" : "p-14"
+                                } bg-white relative border border-borderColor mt-4 lg:mt-0 w-[310px] h-[280px] lg:w-[480px] lg:h-[510px] flex items-center rounded`}
                         >
                             <img src={selectedImage} alt={safeProduct.product} />
                         </div>
@@ -1493,13 +1493,18 @@ function ProductComponent({ productKey }) {
                             {variantOptions.length > 0 ? ` (${selectedVariant})` : ""}
                             {availableColors.length > 0 ? ` - ${selectedColor}` : ""}
                         </p>
-                        <p className="text-[28px] font-regular rounded mt-3">
+                        <p className="text-[28px] font-regular rounded mt-4 leading-tight">
                             {finalPrice}
                         </p>
+                        {safeProduct.garantia && (
+                            <p className="font-thin leading-none">
+                                Garantia: <span className="font-light">{safeProduct.garantia}</span>
+                            </p>
+                        )}
                         <div className="OptionsPcView">
                             {variantOptions.length > 0 && (
                                 <div>
-                                    <p className="font-light text-xl mt-2.5">{variantLabel}</p>
+                                    <p className="font-light text-xl mt-4">{variantLabel}</p>
                                     <div className="flex space-x-2">
                                         {variantOptions.map((option, index) => {
                                             const isSelected = option === selectedVariant;
@@ -1608,7 +1613,7 @@ function ProductComponent({ productKey }) {
                 </p>
                 <p className="Messaage font-light text-[16px] text-verde">{safeProduct.versions[0]?.message && `${safeProduct.versions[0].message}`}</p>
                 {safeProduct.garantia && (
-                    <p className="font-thin leading-none">
+                    <p className="font-thin leading-none lg:hidden">
                         Garantia: <span className="font-regular">{safeProduct.garantia}</span>
                     </p>
                 )}
