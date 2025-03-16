@@ -1094,7 +1094,7 @@ function ProductComponent({ productKey }) {
   
     const productUrl = window.location.href;
   
-    const message = `Olá 👋, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*\n*${selectedVariant}*\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\n💰 Valor: *${finalPrice}*\n🔗 Link do produto: ${productUrl}\n\nAguardo seu retorno, obrigado! 😊`;
+    const message = `Olá, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*\n*${selectedVariant}*\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\n Valor: *${finalPrice}*\n Link do produto: ${productUrl}\n\nAguardo seu retorno, obrigado!`;
   
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
