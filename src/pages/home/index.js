@@ -183,7 +183,7 @@ function Home() {
                 </div>
             )}
             <div className="flex justify-center">
-                <div className="mt-12">
+                <div className="mt-[85px]">
                     <p className="text-white font-regular text-3xl text-center p-8" style={{ lineHeight: "0.75" }}>
                         <span className="font-thin text-xl">Tudo o que você precisa,</span>
                         <br />

@@ -65,7 +65,7 @@ const productData = {
             },
             {
                 key: "iphone16",
-                src: "/images/smartphones/apple/iphone16.jpg",
+                src: "/images/smartphones/apple/iphone16verde.jpg",
                 product: "Apple iPhone 16",
                 price: "R$ 5.102,00",
                 versions: [
@@ -217,15 +217,25 @@ const productData = {
                         condition: "Lacrado",
                         storage: "64GB/3GB",
                         price: "R$ 909,00",
-                        colors: ["Verde", "Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Verde", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmia3.png",
+                            Verde: "/images/smartphones/xiaomi/redmia3.png",
+                            Azul: "/images/smartphones/xiaomi/redmia3.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "128GB/4GB",
                         price: "R$ 1.039,00",
                         colors: ["Preto", "Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmia3.png",
+                            Azul: "/images/smartphones/xiaomi/redmia3.png",
+                        }
+
                     }
                 ],
             },
@@ -240,7 +250,10 @@ const productData = {
                         storage: "128GB/4GB",
                         price: "R$ 1.329,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmia4.png",
+                        }
                     }
                 ],
             },
@@ -254,22 +267,34 @@ const productData = {
                         condition: "Lacrado",
                         storage: "128GB/4GB",
                         price: "R$ 1.129,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi124g.png",
+                            Azul: "/images/smartphones/xiaomi/redmi124g.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "128GB/8GB",
                         price: "R$ 1.209,00",
                         colors: ["Azul", "Silver"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redmi124g.png",
+                            Silver: "/images/smartphones/xiaomi/redmi124g.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.309,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi124g.png",
+                            Azul: "/images/smartphones/xiaomi/redmi124g.png",
+                        }
                     }
                 ],
             },
@@ -283,8 +308,13 @@ const productData = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.479,00",
-                        colors: ["Branco", "Cinza", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Branco", "Cinza"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi125g.png",
+                            Branco: "/images/smartphones/xiaomi/redmi125g.png",
+                            Cinza: "/images/smartphones/xiaomi/redmi125g.png",
+                        }
                     }
                 ],
             },
@@ -299,14 +329,21 @@ const productData = {
                         storage: "128GB/6GB",
                         price: "R$ 1.229,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi13.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.379,00",
                         colors: ["Preto", "Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi13.png",
+                            Azul: "/images/smartphones/xiaomi/redmi13.png",
+                        }
                     },
                 ],
             },
@@ -321,7 +358,11 @@ const productData = {
                         storage: "128GB/6GB",
                         price: "R$ 1.259,00",
                         colors: ["Branco", "Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Branco: "/images/smartphones/xiaomi/redmi13c.png",
+                            Preto: "/images/smartphones/xiaomi/redmi13c.png",
+                        }
                     }
                 ],
             },
@@ -335,29 +376,44 @@ const productData = {
                         condition: "Lacrado",
                         storage: "128GB/4GB",
                         price: "R$ 1.120,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi14c.png",
+                            Azul: "/images/smartphones/xiaomi/redmi14c.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/4GB",
                         price: "R$ 1.189,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi14c.png",
+                            Azul: "/images/smartphones/xiaomi/redmi14c.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.279,00",
                         colors: ["Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redmi14c.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.160,00",
                         colors: ["Azul"],
-                        availability: "Pronta-entrega"
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi14c.png",
+                            Azul: "/images/smartphones/xiaomi/redmi14c.png",
+                        }
                     },
                 ]
             },
@@ -371,15 +427,23 @@ const productData = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.629,00",
-                        colors: ["Roxo", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Roxo"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocom6pro.png",
+                            Roxo: "/images/smartphones/xiaomi/pocom6pro.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 1.909,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocom6pro.png",
+                            Azul: "/images/smartphones/xiaomi/pocom6pro.png",
+                        }
                     }
                 ],
             },
@@ -393,8 +457,12 @@ const productData = {
                         condition: "Lacrado",
                         storage: "256GB/12GB",
                         price: "R$ 2.059,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocox6.png",
+                            Azul: "/images/smartphones/xiaomi/pocox6.png",
+                        }
                     }
                 ],
             },
@@ -409,14 +477,21 @@ const productData = {
                         storage: "256GB/8GB",
                         price: "R$ 2.349,00",
                         colors: ["Cinza", "Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Cinza: "/images/smartphones/xiaomi/pocox6pro.jpg",
+                            Preto: "/images/smartphones/xiaomi/pocox6pro.jpg",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 2.539,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocox6pro.jpg",
+                        }
                     }
                 ],
             },
@@ -430,15 +505,23 @@ const productData = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 2.149,00",
-                        colors: ["Verde", "Preto", "Silver"],
-                        availability: "Encomenda"
+                        colors: ["Silver", "Preto", "Verde"],
+                        availability: "Encomenda",
+                        images: {
+                            Silver: "/images/smartphones/xiaomi/pocox7.png",
+                            Preto: "/images/smartphones/xiaomi/pocox7.png",
+                            Verde: "/images/smartphones/xiaomi/pocox7.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 2.379,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocox7.png",
+                        }
                     }
                 ],
             },
@@ -453,14 +536,22 @@ const productData = {
                         storage: "256GB/12GB",
                         price: "R$ 2.759,00",
                         colors: ["Verde", "Preto", "Silver"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Verde: "/images/smartphones/xiaomi/pocox7pro.png",
+                            Preto: "/images/smartphones/xiaomi/pocox7pro.png",
+                            Silver: "/images/smartphones/xiaomi/pocox7pro.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 3.009,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocox7pro.png",
+                        }
                     }
                 ],
             },
@@ -475,7 +566,10 @@ const productData = {
                         storage: "256GB/8GB",
                         price: "R$ 2.559,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocof6.png",
+                        }
                     }
                 ],
             },
@@ -490,14 +584,20 @@ const productData = {
                         storage: "512GB/12GB",
                         price: "R$ 3.739,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocof6pro.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "1TB/16GB",
                         price: "R$ 4.379,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocof6pro.png",
+                        }
                     }
                 ],
             },
@@ -512,7 +612,10 @@ const productData = {
                         storage: "256GB/8GB",
                         price: "R$ 1.279,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pococ65.png",
+                        }
                     }
                 ],
             },
@@ -527,14 +630,21 @@ const productData = {
                         storage: "128GB/6GB",
                         price: "R$ 1.209,00",
                         colors: ["Verde", "Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Verde: "/images/smartphones/xiaomi/pococ75.png",
+                            Preto: "/images/smartphones/xiaomi/pococ75.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.269,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pococ75.png",
+                        }
                     }
                 ],
             },
@@ -549,13 +659,16 @@ const productData = {
                         storage: "256GB/8GB",
                         price: "R$ 1.309,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi12s.png",
+                        }
                     }
                 ],
             },
             {
                 key: "redminote13",
-                src: "/images/smartphones/xiaomi/redminote13.jpg",
+                src: "/images/smartphones/xiaomi/redminote13.png",
                 product: "Redmi Note 13 4G",
                 price: "R$ 1.349,00",
                 versions: [
@@ -564,21 +677,34 @@ const productData = {
                         storage: "128GB/6GB",
                         price: "R$ 1.349,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "128GB/8GB",
                         price: "R$ 1.379,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13.png",
+                            Azul: "/images/smartphones/xiaomi/redminote13azul.jpg",
+                        }
+
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.549,00",
-                        colors: ["Azul", "Preto", "Verde"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul", "Verde"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13.png",
+                            Azul: "/images/smartphones/xiaomi/redminote13azul.jpg",
+                            Verde: "/images/smartphones/xiaomi/redminote13azul.jpg",
+                        }
                     }
                 ],
             },
@@ -593,21 +719,21 @@ const productData = {
                         storage: "128GB/6GB",
                         price: "R$ 1.509,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote135g.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.959,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
-                    },
-                    {
-                        condition: "Lacrado",
-                        storage: "256GB/8GB",
-                        price: "R$ 1.999,00",
-                        colors: ["Roxo"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul",],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote135g.png",
+                            Azul: "/images/smartphones/xiaomi/redminote135g.png",
+                        }
                     }
                 ],
             },
@@ -622,7 +748,10 @@ const productData = {
                         storage: "256GB/8GB",
                         price: "R$ 1.999,00",
                         colors: ["Roxo"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Roxo: "/images/smartphones/xiaomi/redminote13pro.png",
+                        }
                     }
                 ],
             },
@@ -636,15 +765,22 @@ const productData = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 2.509,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13pro5g.png",
+                            Azul: "/images/smartphones/xiaomi/redminote13pro5g.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 2.789,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13pro5g.png",
+                        }
                     },
                 ],
             },
@@ -659,7 +795,10 @@ const productData = {
                         storage: "256GB/8GB",
                         price: "R$ 2.149,00",
                         colors: ["Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redminote13pro5gglobal.png",
+                        }
                     }
                 ],
             },
@@ -673,15 +812,22 @@ const productData = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 2.729,00",
-                        colors: ["Roxo", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Roxo"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13proplus.png",
+                            Roxo: "/images/smartphones/xiaomi/redminote13proplus.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 3.109,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13proplus.png",
+                        }
                     },
                 ],
             },
@@ -695,15 +841,25 @@ const productData = {
                         condition: "Lacrado",
                         storage: "128GB/6GB",
                         price: "R$ 1.469,00",
-                        colors: ["Azul", "Roxo", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul", "Roxo"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote14.png",
+                            Azul: "/images/smartphones/xiaomi/redminote14.png",
+                            Roxo: "/images/smartphones/xiaomi/redminote14.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.619,00",
-                        colors: ["Azul", "Vrde", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul", "Verde"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote14.png",
+                            Azul: "/images/smartphones/xiaomi/redminote14.png",
+                            Verde: "/images/smartphones/xiaomi/redminote14.png",
+                        }
                     },
                 ],
             },
@@ -718,7 +874,10 @@ const productData = {
                         storage: "256GB/8GB",
                         price: "R$ 2.229,00",
                         colors: ["Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redminote14pro.png",
+                        }
                     }
                 ],
             },
@@ -733,14 +892,20 @@ const productData = {
                         storage: "256GB/8GB",
                         price: "R$ 3.009,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote14proplus.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 3.309,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote14proplus.png",
+                        }
                     }
                 ],
             },
@@ -757,7 +922,10 @@ const productData = {
                         storage: "128GB",
                         price: "R$ 599,00",
                         colors: ["White lilac"],
-                        availability: "Pronta-entrega"
+                        availability: "Pronta-entrega",
+                        images: {
+                            "White lilac": "/images/smartphones/motorola/motog30.png",
+                        }
                     }
                 ]
             },
@@ -774,7 +942,10 @@ const productData = {
                         storage: "128GB",
                         price: "R$ 899,00",
                         colors: ["Marble black"],
-                        availability: "Pronta-entrega"
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Marble black": "/images/smartphones/realme/note60.png"
+                        }
                     }
                 ]
             },
@@ -884,7 +1055,7 @@ const productData = {
                         },
                     },
                 ],
-                
+
             },
             {
                 key: "applewatch10",
@@ -928,408 +1099,500 @@ const productData = {
 };
 
 const colorMap = {
-  Azul: "#246180",
-  Preto: "#404447",
-  Verde: "#cae0bf",
-  Rosa: "#f1b9dc",
-  Estelar: "#ffffff",
-  MeiaNoite: "#0f1a1d",
-  Ultramarino: "#9baff9",
-  Branco: "#ffffff",
-  Grafite: "#404447",
-  Rose: "#e7c9bf",
-  Silver: "#d0d0d2",
-  "Meia-noite": "#404447",
-  "Azul claro": "#d2e0e5",
-  "Titânio-deserto": "#c1a693",
-  "Titânio natural": "#c4bfb5",
-  "Titânio branco": "#f2f1ed",
-  "Titânio preto": "#404447",
-  "White lilac": "#ebd1d4",
-  "Marble black": "#404447",
-  "Oceano Laranja": "#f45f29",
+    Azul: "#246180",
+    Preto: "#404447",
+    Verde: "#cae0bf",
+    Rosa: "#f1b9dc",
+    Estelar: "#ffffff",
+    MeiaNoite: "#0f1a1d",
+    Ultramarino: "#9baff9",
+    Branco: "#ffffff",
+    Grafite: "#404447",
+    Rose: "#e7c9bf",
+    Roxo: "#ad9cd0",
+    Cinza: "#b7b7b7",
+    Silver: "#d0d0d2",
+    "Meia-noite": "#404447",
+    "Azul claro": "#d2e0e5",
+    "Titânio-deserto": "#c1a693",
+    "Titânio natural": "#c4bfb5",
+    "Titânio branco": "#f2f1ed",
+    "Titânio preto": "#404447",
+    "White lilac": "#ebd1d4",
+    "Marble black": "#404447",
+    "Oceano Laranja": "#f45f29",
 };
 
 function ProductComponent({ productKey }) {
-  const { brand } = useParams();
-  const location = useLocation();
+    const { brand } = useParams();
+    const location = useLocation();
 
-  // Se o parâmetro "category" não estiver em useParams(), extrai do pathname
-  let { category } = useParams();
-  if (!category) {
-    const pathSegments = location.pathname.split("/");
-    category = pathSegments[1] || "smartphones";
-  }
-  const capitalizedCategory =
-    category.charAt(0).toUpperCase() + category.slice(1);
-  const capitalizedBrand =
-    brand && brand.length > 0
-      ? brand.charAt(0).toUpperCase() + brand.slice(1)
-      : null;
+    // Se o parâmetro "category" não estiver em useParams(), extrai do pathname
+    let { category } = useParams();
+    if (!category) {
+        const pathSegments = location.pathname.split("/");
+        category = pathSegments[1] || "smartphones";
+    }
+    const capitalizedCategory =
+        category.charAt(0).toUpperCase() + category.slice(1);
+    const capitalizedBrand =
+        brand && brand.length > 0
+            ? brand.charAt(0).toUpperCase() + brand.slice(1)
+            : null;
 
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-  // Busca o produto usando a marca, se disponível; caso contrário, busca globalmente na categoria
-  let product =
-    capitalizedBrand &&
-    productData[capitalizedCategory] &&
-    productData[capitalizedCategory][capitalizedBrand]
-      ? productData[capitalizedCategory][capitalizedBrand].find(
-          (item) => item.key === productKey
+    // Busca o produto usando a marca, se disponível; caso contrário, busca globalmente na categoria
+    let product =
+        capitalizedBrand &&
+            productData[capitalizedCategory] &&
+            productData[capitalizedCategory][capitalizedBrand]
+            ? productData[capitalizedCategory][capitalizedBrand].find(
+                (item) => item.key === productKey
+            )
+            : Object.values(productData[capitalizedCategory] || {})
+                .flat()
+                .find((item) => item.key === productKey);
+
+    // Para evitar que os hooks sejam chamados condicionalmente, usamos um objeto padrão se o produto não for encontrado
+    const safeProduct = product || { versions: [{}] };
+
+    // Determina qual propriedade de variação usar: "storage" ou "size"
+    const variantKey =
+        safeProduct.versions[0]?.storage
+            ? "storage"
+            : safeProduct.versions[0]?.size
+                ? "size"
+                : null;
+    const variantLabel =
+        variantKey === "storage"
+            ? "Armazenamento"
+            : variantKey === "size"
+                ? "Tamanho"
+                : "";
+    const variantOptions = variantKey
+        ? Array.from(
+            new Set(
+                safeProduct.versions
+                    .map((version) => version[variantKey])
+                    .filter(Boolean)
+            )
         )
-      : Object.values(productData[capitalizedCategory] || {})
-          .flat()
-          .find((item) => item.key === productKey);
+        : [];
 
-  // Para evitar que os hooks sejam chamados condicionalmente, usamos um objeto padrão se o produto não for encontrado
-  const safeProduct = product || { versions: [{}] };
+    // Valores iniciais para os estados
+    const defaultVersion = safeProduct.versions[0] || {};
+    const initialVariant = variantOptions[0] || "";
+    const initialCondition = defaultVersion.condition || "";
+    const initialAvailability = defaultVersion.availability || "";
+    const initialColor = defaultVersion.colors ? defaultVersion.colors[0] : "";
+    const initialPrice = defaultVersion.price || "R$ 0,00";
+    const initialImage = safeProduct.src || "/images/default-image.jpg";
 
-  // Determina qual propriedade de variação usar: "storage" ou "size"
-  const variantKey =
-    safeProduct.versions[0]?.storage
-      ? "storage"
-      : safeProduct.versions[0]?.size
-      ? "size"
-      : null;
-  const variantLabel =
-    variantKey === "storage"
-      ? "Armazenamento"
-      : variantKey === "size"
-      ? "Tamanho"
-      : "";
-  const variantOptions = variantKey
-    ? Array.from(
-        new Set(
-          safeProduct.versions
-            .map((version) => version[variantKey])
-            .filter(Boolean)
-        )
-      )
-    : [];
+    // Hooks incondicionais
+    const [selectedVariant, setSelectedVariant] = useState(initialVariant);
+    const [selectedCondition, setSelectedCondition] = useState(initialCondition);
+    const [selectedAvailability, setSelectedAvailability] = useState(initialAvailability);
+    const [selectedColor, setSelectedColor] = useState(initialColor);
+    const [finalPrice, setFinalPrice] = useState(initialPrice);
+    const [selectedImage, setSelectedImage] = useState(initialImage);
 
-  // Valores iniciais para os estados
-  const defaultVersion = safeProduct.versions[0] || {};
-  const initialVariant = variantOptions[0] || "";
-  const initialCondition = defaultVersion.condition || "";
-  const initialAvailability = defaultVersion.availability || "";
-  const initialColor = defaultVersion.colors ? defaultVersion.colors[0] : "";
-  const initialPrice = defaultVersion.price || "R$ 0,00";
-  const initialImage = safeProduct.src || "/images/default-image.jpg";
+    // Atualiza imagem e preço conforme a versão selecionada
+    useEffect(() => {
+        if (safeProduct) {
+            const selectedVersion = safeProduct.versions.find((version) => {
+                const variantMatch = variantKey
+                    ? (version[variantKey] || "") === selectedVariant
+                    : true;
+                return (
+                    variantMatch &&
+                    (version.condition || "") === selectedCondition &&
+                    (version.availability || "") === selectedAvailability &&
+                    version.colors &&
+                    version.colors.includes(selectedColor)
+                );
+            });
+            if (selectedVersion) {
+                setSelectedImage(selectedVersion.images[selectedColor]);
+                setFinalPrice(selectedVersion.price);
+            } else {
+                setSelectedImage(safeProduct.src || "/images/default-image.jpg");
+                setFinalPrice(defaultVersion.price || "R$ 0,00");
+            }
+        }
+    }, [
+        selectedVariant,
+        selectedCondition,
+        selectedAvailability,
+        selectedColor,
+        safeProduct,
+        variantKey,
+        defaultVersion.price,
+        safeProduct.src,
+    ]);
 
-  // Hooks incondicionais
-  const [selectedVariant, setSelectedVariant] = useState(initialVariant);
-  const [selectedCondition, setSelectedCondition] = useState(initialCondition);
-  const [selectedAvailability, setSelectedAvailability] = useState(initialAvailability);
-  const [selectedColor, setSelectedColor] = useState(initialColor);
-  const [finalPrice, setFinalPrice] = useState(initialPrice);
-  const [selectedImage, setSelectedImage] = useState(initialImage);
+    useEffect(() => {
+        const colors = getColorsForSelectedVariant();
+        if (colors.length > 0 && !colors.includes(selectedColor)) {
+            setSelectedColor(colors[0]);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [selectedVariant, safeProduct]);
 
-  // Atualiza imagem e preço conforme a versão selecionada
-  useEffect(() => {
-    if (safeProduct) {
-      const selectedVersion = safeProduct.versions.find((version) => {
-        const variantMatch = variantKey
-          ? (version[variantKey] || "") === selectedVariant
-          : true;
-        return (
-          variantMatch &&
-          (version.condition || "") === selectedCondition &&
-          (version.availability || "") === selectedAvailability &&
-          version.colors &&
-          version.colors.includes(selectedColor)
-        );
-      });
-      if (selectedVersion) {
-        setSelectedImage(selectedVersion.images[selectedColor]);
-        setFinalPrice(selectedVersion.price);
-      } else {
-        setSelectedImage(safeProduct.src || "/images/default-image.jpg");
-        setFinalPrice(defaultVersion.price || "R$ 0,00");
-      }
-    }
-  }, [
-    selectedVariant,
-    selectedCondition,
-    selectedAvailability,
-    selectedColor,
-    safeProduct,
-    variantKey,
-    defaultVersion.price,
-    safeProduct.src,
-  ]);
-
-  // Opções para condição e disponibilidade
-  const conditionOptions = Array.from(
-    new Set(safeProduct.versions.map((version) => version.condition).filter(Boolean))
-  );
-  const availabilityOptions = Array.from(
-    new Set(safeProduct.versions.map((version) => version.availability).filter(Boolean))
-  ).filter((option) => option === "Encomenda" || option === "Pronta-entrega");
-
-  // Para as cores, se houver variação, busca as cores da versão que possui a opção selecionada; caso contrário, utiliza as cores da primeira versão
-  const getColorsForSelectedVariant = () => {
-    if (variantOptions.length > 0 && variantKey) {
-      const selectedVersion = safeProduct.versions.find(
-        (version) => version[variantKey] === selectedVariant
-      );
-      if (selectedVersion) {
-        return selectedVersion.colors || [];
-      }
-    }
-    return safeProduct.versions[0]?.colors || [];
-  };
-
-  const availableColors = getColorsForSelectedVariant();
-
-  const handleBackClick = () => {
-    if (window.history.length > 1) {
-      navigate(-1);
-    } else {
-      navigate("/");
-    }
-  };
-
-  const handleBuy = () => {
-    const phone = "5522996122610";
-  
-    const productUrl = window.location.href;
-  
-    const message = `Olá, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*\n*${selectedVariant}*\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\n Valor: *${finalPrice}*\n Link do produto: ${productUrl}\n\nAguardo seu retorno, obrigado!`;
-  
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-  };
-
-  // Renderização: se o produto não foi encontrado, exibe mensagem; caso contrário, exibe os detalhes
-  if (!product) {
-    return (
-      <div className="absolute z-30 top-[70px] text-white pb-2">
-        <img
-          src="/images/icons/close.svg"
-          className="absolute cursor-pointer w-8 z-40 top-[6px] ml-[317px] buttonHover"
-          onClick={handleBackClick}
-          alt="Fechar"
-        />
-        <div className="bg-dark-bg-2 p-6 rounded-xl w-[355px] border border-borderColor">
-          <p className="font-regular text-2xl">Produto não encontrado</p>
-        </div>
-      </div>
+    // Opções para condição e disponibilidade
+    const conditionOptions = Array.from(
+        new Set(safeProduct.versions.map((version) => version.condition).filter(Boolean))
     );
-  }
+    const availabilityOptions = Array.from(
+        new Set(safeProduct.versions.map((version) => version.availability).filter(Boolean))
+    ).filter((option) => option === "Encomenda" || option === "Pronta-entrega");
 
-  return (
-    <div className="absolute z-30 top-[70px] text-white pb-2">
-      <img
-        src="/images/icons/close.svg"
-        className="absolute cursor-pointer w-8 z-40 top-[6px] ml-[317px] buttonHover"
-        onClick={handleBackClick}
-        alt="Fechar"
-      />
-      <div className="bg-dark-bg-2 p-6 rounded-xl w-[355px] border border-borderColor">
-        <p className="font-regular text-2xl">{safeProduct.product}</p>
-        <div className="flex justify-center mt-6">
-          <div className="bg-white p-14 w-[310px] h-[280px] flex items-center rounded">
-            <img src={selectedImage} alt={safeProduct.product} />
-          </div>
-        </div>
-        <div className="Options">
-          {variantOptions.length > 0 && (
-            <div>
-              <p className="font-light text-xl mt-5">{variantLabel}</p>
-              <div className="flex space-x-2">
-                {variantOptions.map((option, index) => {
-                  const isSelected = option === selectedVariant;
-                  return (
-                    <div
-                      key={index}
-                      onClick={() => setSelectedVariant(option)}
-                      className={`border p-2 rounded mt-2 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${
-                        isSelected
-                          ? "border-blue-500 bg-gray-700"
-                          : "border-blue-500 border-gray-400"
-                      }`}
-                    >
-                      <p className="font-light">{option}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-          {availableColors.length > 0 && (
-            <div>
-              <p className="font-light text-xl mt-5">Cor - {selectedColor}</p>
-              <div className="flex space-x-2">
-                {availableColors.map((color, index) => {
-                  const isSelected = color === selectedColor;
-                  return (
-                    <div
-                      key={index}
-                      onClick={() => setSelectedColor(color)}
-                      className={`border rounded-lg w-12 h-12 flex items-center justify-center mt-1 hover:border-blue-500 ${
-                        isSelected ? "border-blue-500" : "border-gray-400"
-                      }`}
-                    >
-                      <div
-                        className="w-10 h-10 rounded flex justify-center cursor-pointer"
-                        style={{ backgroundColor: colorMap[color] }}
-                      ></div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-          {conditionOptions.length > 0 && (
-            <div>
-              <p className="font-light text-xl mt-5">Condição</p>
-              <div className="flex space-x-2">
-                {conditionOptions.map((option, index) => {
-                  const isSelected = option === selectedCondition;
-                  return (
-                    <div
-                      key={index}
-                      onClick={() => setSelectedCondition(option)}
-                      className={`border p-2 rounded mt-2 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${
-                        isSelected
-                          ? "border-blue-500 bg-gray-700"
-                          : "border-blue-500 border-gray-400"
-                      }`}
-                    >
-                      <p className="font-light">{option}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-          {availabilityOptions.length > 0 && (
-            <div>
-              <p className="font-light text-xl mt-5">Disponibilidade</p>
-              <div className="flex space-x-2">
-                {availabilityOptions.map((option, index) => {
-                  const isSelected = option === selectedAvailability;
-                  return (
-                    <div
-                      key={index}
-                      onClick={() => setSelectedAvailability(option)}
-                      className={`border p-2 rounded mt-2 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${
-                        isSelected
-                          ? "border-blue-500 bg-gray-700"
-                          : "border-blue-500 border-gray-400"
-                      }`}
-                    >
-                      <p className="font-light">{option}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-        </div>
-        <div className="Resume mt-8 bg-dark-bg-3 border border-borderColor rounded p-5">
-          <p className="font-regular text-center leading-none mt-1 text-[27px]">
-            {safeProduct.product}
-          </p>
-          <div className="flex space-x-4 font-light justify-center mt-3">
-            {variantOptions.length > 0 && (
-              <p className="text-lg leading-tight">{selectedVariant}</p>
-            )}
-            {availableColors.length > 0 && (
-              <p className="text-lg leading-tight">{selectedColor}</p>
-            )}
-          </div>
-          <div className="flex space-x-4 font-light justify-center">
-            {conditionOptions.length > 0 && (
-              <p className="text-lg leading-tight">{selectedCondition}</p>
-            )}
-            {availabilityOptions.length > 0 && (
-              <p className="text-lg leading-tight">{selectedAvailability}</p>
-            )}
-          </div>
-          <hr className="border-1 border-borderColor mt-4" />
-          <div className="flex justify-center items-center py-6 space-x-6">
-            <p className="text-center text-xl font-medium bg-dark-bg-3 rounded">
-              {finalPrice}
-            </p>
-            <p
-                onClick={handleBuy}
-                className="text-center text-black font-regular bg-verde bg-dark-bg-3 p-1 w-[115px] rounded buttonHover"
-            >
-              Comprar
-            </p>
-          </div>
-          <hr className="border-1 border-borderColor" />
-          <div className="flex space-x-4 font-light justify-center mt-5">
-            {productData.Smartphones.Apple.some(
-              (item) => item.key === productKey
-            ) ? (
-              <p className="text-lg leading-tight text-verde text-center">
-                Acompanha: capinha, película e um brinde exclusivo Imports Klein!
-              </p>
-            ) : (
-              <p className="text-lg leading-tight text-verde text-center">
-                Acompanha um brinde exclusivo Imports Klein!
-              </p>
-            )}
-          </div>
-        </div>
-        <div className="mt-7 flex justify-center">
-          <div>
-            <p className="text-xl font-light text-center">Formas de pagamento</p>
-            <div className="flex justify-center mt-4">
-              <div className="text-white rounded-2xl">
-                <div className="space-y-3">
-                  <div className="flex justify-center">
-                    <div
-                      className="flex justify-center items-center bg-dark-bg-3 rounded border border-borderColor leading-tight"
-                      style={{ width: "308px", height: "70px" }}
-                    >
-                      <img src="/images/maquininha.png" className="w-10" alt="Maquininha" />
-                      <p className="font-light">
-                        Cartão de débito ou crédito em até 18x
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex justify-center space-x-3">
-                    <div className="flex justify-center">
-                      <div
-                        className="flex items-center justify-center border border-borderColor bg-dark-bg-3 space-x-2 rounded leading-tight"
-                        style={{ width: "119px", height: "60px" }}
-                      >
-                        <img src="/images/pixIcon.svg" className="w-7" alt="Pix" />
-                        <p className="font-light">Pix</p>
-                      </div>
-                    </div>
-                    <div className="flex justify-center">
-                      <div
-                        className="flex items-center justify-center bg-dark-bg-3 border border-borderColor space-x-3 rounded leading-tight"
-                        style={{ width: "177px", height: "60px" }}
-                      >
-                        <img src="/images/cash-icon.svg" className="w-8" alt="Dinheiro" />
-                        <p className="font-light">Dinheiro</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex justify-center mt-4">
-                    <div
-                      className="flex justify-center items-center bg-dark-bg-3 border border-borderColor pl-3 pr-1 rounded leading-tight"
-                      style={{ width: "308px", height: "70px" }}
-                    >
-                      <img src="/images/aparelhoEntrada.png" className="w-8" alt="Aparelho Entrada" />
-                      <p className="font-light ml-3">
-                        Aceitamos o seu aparelho android ou iOS como entrada
-                      </p>
-                    </div>
-                  </div>
+    // Para as cores, se houver variação, busca as cores da versão que possui a opção selecionada; caso contrário, utiliza as cores da primeira versão
+    const getColorsForSelectedVariant = () => {
+        if (variantOptions.length > 0 && variantKey) {
+            const selectedVersion = safeProduct.versions.find(
+                (version) => version[variantKey] === selectedVariant
+            );
+            if (selectedVersion) {
+                return selectedVersion.colors || [];
+            }
+        }
+        return safeProduct.versions[0]?.colors || [];
+    };
+
+    const availableColors = getColorsForSelectedVariant();
+
+    const handleBackClick = () => {
+        if (window.history.length > 1) {
+            navigate(-1);
+        } else {
+            navigate("/");
+        }
+    };
+
+    const handleBuy = () => {
+        const phone = "5522996122610";
+
+        const productUrl = window.location.href;
+
+        const message = `Olá, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*\n*${selectedVariant}*\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\n Valor: *${finalPrice}*\n Link do produto: ${productUrl}\n\nAguardo seu retorno, obrigado!`;
+
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+    };
+
+    // Renderização: se o produto não foi encontrado, exibe mensagem; caso contrário, exibe os detalhes
+    if (!product) {
+        return (
+            <div className="absolute z-30 top-[70px] text-white pb-2">
+                <img
+                    src="/images/icons/close.svg"
+                    className="absolute cursor-pointer w-7 z-40 top-[0px] ml-[327px] buttonHover"
+                    onClick={handleBackClick}
+                    alt="Fechar"
+                />
+                <div className="bg-dark-bg-2 p-6 rounded-xl border border-borderColor">
+                    <p className="font-regular text-2xl">Produto não encontrado</p>
                 </div>
-              </div>
             </div>
-          </div>
+        );
+    }
+
+    return (
+        <div className="absolute z-30 top-[104px] text-white pb-2">
+            <img
+                src="/images/icons/close.svg"
+                className="absolute cursor-pointer w-8 z-40 top-[2px] right-[2px] buttonHover"
+                onClick={handleBackClick}
+                alt="Fechar"
+            />
+            <div className="bg-dark-bg-2 p-5 rounded-xl w-[355px] lg:w-[830px] border border-borderColor">
+                <div className="block lg:hidden">
+                    <p className="font-light text-[18px] flex leading-none">
+                        {safeProduct.product}
+                        {variantOptions.length > 0 ? ` (${selectedVariant})` : ""}
+                        {availableColors.length > 0 ? ` - ${selectedColor}` : ""}
+                    </p>
+                </div>
+                <div className="flex">
+                    <div className="flex justify-center">
+                        <div className="bg-white relative p-14 mt-4 lg:mt-0 w-[310px] h-[280px] lg:w-[480px] lg:h-[475px] flex items-center rounded">
+                            <img src={selectedImage} alt={safeProduct.product} />
+                        </div>
+                    </div>
+                    <div className="PcProductView hidden lg:block ml-7">
+                        <p className="font-regular text-[24px] flex leading-tight">
+                            {safeProduct.product}
+                            {variantOptions.length > 0 ? ` (${selectedVariant})` : ""}
+                            {availableColors.length > 0 ? ` - ${selectedColor}` : ""}
+                        </p>
+                        <p className="text-[28px] font-regular rounded mt-3">
+                            {finalPrice}
+                        </p>
+                        <div className="OptionsPcView">
+                            {variantOptions.length > 0 && (
+                                <div>
+                                    <p className="font-light text-xl mt-4">{variantLabel}</p>
+                                    <div className="flex space-x-2">
+                                        {variantOptions.map((option, index) => {
+                                            const isSelected = option === selectedVariant;
+                                            return (
+                                                <div
+                                                    key={index}
+                                                    onClick={() => setSelectedVariant(option)}
+                                                    className={`border p-2 rounded mt-1 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                                        ? "border-blue-500 bg-gray-700"
+                                                        : "border-blue-500 border-gray-400"
+                                                        }`}
+                                                >
+                                                    <p className="font-light">{option}</p>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )}
+                            {availableColors.length > 0 && (
+                                <div>
+                                    <p className="font-light text-xl mt-5">Cor - <span className="font-medium">{selectedColor}</span></p>
+                                    <div className="flex space-x-2">
+                                        {availableColors.map((color, index) => {
+                                            const isSelected = color === selectedColor;
+                                            return (
+                                                <div
+                                                    key={index}
+                                                    onClick={() => setSelectedColor(color)}
+                                                    className={`border rounded-lg w-12 h-12 flex items-center justify-center mt-1 hover:border-blue-500 ${isSelected ? "border-blue-500" : "border-gray-400"
+                                                        }`}
+                                                >
+                                                    <div
+                                                        className="w-10 h-10 rounded flex justify-center cursor-pointer"
+                                                        style={{ backgroundColor: colorMap[color] }}
+                                                    ></div>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )}
+                            {conditionOptions.length > 0 && (
+                                <div>
+                                    <p className="font-light text-xl mt-5">Condição</p>
+                                    <div className="flex space-x-2">
+                                        {conditionOptions.map((option, index) => {
+                                            const isSelected = option === selectedCondition;
+                                            return (
+                                                <div
+                                                    key={index}
+                                                    onClick={() => setSelectedCondition(option)}
+                                                    className={`border p-2 rounded mt-1 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                                        ? "border-blue-500 bg-gray-700"
+                                                        : "border-blue-500 border-gray-400"
+                                                        }`}
+                                                >
+                                                    <p className="font-light">{option}</p>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )}
+                            {availabilityOptions.length > 0 && (
+                                <div>
+                                    <p className="font-light text-xl mt-5">Disponibilidade</p>
+                                    <div className="flex space-x-2">
+                                        {availabilityOptions.map((option, index) => {
+                                            const isSelected = option === selectedAvailability;
+                                            return (
+                                                <div
+                                                    key={index}
+                                                    onClick={() => setSelectedAvailability(option)}
+                                                    className={`border p-2 rounded mt-1 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                                        ? "border-blue-500 bg-gray-700"
+                                                        : "border-blue-500 border-gray-400"
+                                                        }`}
+                                                >
+                                                    <p className="font-light">{option}</p>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+                <p className="text-[33px] font-medium rounded mt-4 lg:hidden">
+                    {finalPrice}
+                </p>
+                <div className="space-x-4 font-light lg:mt-4">
+                    {productData.Smartphones.Apple.some(
+                        (item) => item.key === productKey
+                    ) ? (
+                        <p className="text-[16px] leading-none text-verde">
+                            Acompanha: capinha, película e um brinde exclusivo Imports Klein!
+                        </p>
+                    ) : (
+                        <p className="text-[16px] leading-tight text-verde">
+                            Acompanha um brinde exclusivo Imports Klein!
+                        </p>
+                    )}
+                </div>
+                <div className="Options lg:hidden">
+                    {variantOptions.length > 0 && (
+                        <div>
+                            <p className="font-light text-xl mt-4">{variantLabel}</p>
+                            <div className="flex space-x-2">
+                                {variantOptions.map((option, index) => {
+                                    const isSelected = option === selectedVariant;
+                                    return (
+                                        <div
+                                            key={index}
+                                            onClick={() => setSelectedVariant(option)}
+                                            className={`border p-2 rounded mt-1 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                                ? "border-blue-500 bg-gray-700"
+                                                : "border-blue-500 border-gray-400"
+                                                }`}
+                                        >
+                                            <p className="font-light">{option}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )}
+                    {availableColors.length > 0 && (
+                        <div>
+                            <p className="font-light text-xl mt-5">Cor - <span className="font-medium">{selectedColor}</span></p>
+                            <div className="flex space-x-2">
+                                {availableColors.map((color, index) => {
+                                    const isSelected = color === selectedColor;
+                                    return (
+                                        <div
+                                            key={index}
+                                            onClick={() => setSelectedColor(color)}
+                                            className={`border rounded-lg w-12 h-12 flex items-center justify-center mt-1 hover:border-blue-500 ${isSelected ? "border-blue-500" : "border-gray-400"
+                                                }`}
+                                        >
+                                            <div
+                                                className="w-10 h-10 rounded flex justify-center cursor-pointer"
+                                                style={{ backgroundColor: colorMap[color] }}
+                                            ></div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )}
+                    {conditionOptions.length > 0 && (
+                        <div>
+                            <p className="font-light text-xl mt-5">Condição</p>
+                            <div className="flex space-x-2">
+                                {conditionOptions.map((option, index) => {
+                                    const isSelected = option === selectedCondition;
+                                    return (
+                                        <div
+                                            key={index}
+                                            onClick={() => setSelectedCondition(option)}
+                                            className={`border p-2 rounded mt-1 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                                ? "border-blue-500 bg-gray-700"
+                                                : "border-blue-500 border-gray-400"
+                                                }`}
+                                        >
+                                            <p className="font-light">{option}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )}
+                    {availabilityOptions.length > 0 && (
+                        <div>
+                            <p className="font-light text-xl mt-5">Disponibilidade</p>
+                            <div className="flex space-x-2">
+                                {availabilityOptions.map((option, index) => {
+                                    const isSelected = option === selectedAvailability;
+                                    return (
+                                        <div
+                                            key={index}
+                                            onClick={() => setSelectedAvailability(option)}
+                                            className={`border p-2 rounded mt-1 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                                ? "border-blue-500 bg-gray-700"
+                                                : "border-blue-500 border-gray-400"
+                                                }`}
+                                        >
+                                            <p className="font-light">{option}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )}
+                </div>
+                <hr className="border-1 border-borderColor mt-6" />
+                <p className="font-light text-verde mt-4">Disponível</p>
+                <button
+                    onClick={handleBuy}
+                    className="text-center mt-2 text-black font-medium bg-verde p-1 rounded-lg buttonHover w-[310px] h-[40px]"
+                >Comprar agora
+                </button>
+                <hr className="border-1 border-borderColor mt-6" />
+                <div className="mt-7 flex justify-center">
+                    <div>
+                        <p className="text-xl font-light text-center">Formas de pagamento</p>
+                        <div className="flex justify-center mt-4">
+                            <div className="text-white rounded-2xl">
+                                <div className="space-y-3">
+                                    <div className="flex justify-center">
+                                        <div
+                                            className="flex justify-center items-center bg-dark-bg-3 rounded border border-borderColor leading-tight"
+                                            style={{ width: "308px", height: "70px" }}
+                                        >
+                                            <img src="/images/maquininha.png" className="w-10" alt="Maquininha" />
+                                            <p className="font-light">
+                                                Cartão de débito ou crédito em até 18x
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex justify-center space-x-3">
+                                        <div className="flex justify-center">
+                                            <div
+                                                className="flex items-center justify-center border border-borderColor bg-dark-bg-3 space-x-2 rounded leading-tight"
+                                                style={{ width: "119px", height: "60px" }}
+                                            >
+                                                <img src="/images/pixIcon.svg" className="w-7" alt="Pix" />
+                                                <p className="font-light">Pix</p>
+                                            </div>
+                                        </div>
+                                        <div className="flex justify-center">
+                                            <div
+                                                className="flex items-center justify-center bg-dark-bg-3 border border-borderColor space-x-3 rounded leading-tight"
+                                                style={{ width: "177px", height: "60px" }}
+                                            >
+                                                <img src="/images/cash-icon.svg" className="w-8" alt="Dinheiro" />
+                                                <p className="font-light">Dinheiro</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="flex justify-center mt-4">
+                                        <div
+                                            className="flex justify-center items-center bg-dark-bg-3 border border-borderColor pl-3 pr-1 rounded leading-tight"
+                                            style={{ width: "308px", height: "70px" }}
+                                        >
+                                            <img src="/images/aparelhoEntrada.png" className="w-8" alt="Aparelho Entrada" />
+                                            <p className="font-light ml-3">
+                                                Aceitamos o seu aparelho android ou iOS como entrada
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default ProductComponent;

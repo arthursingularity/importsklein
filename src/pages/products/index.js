@@ -69,7 +69,7 @@ const data = {
             },
             {
                 key: "iphone16",
-                src: "/images/smartphones/apple/iphone16.jpg",
+                src: "/images/smartphones/apple/iphone16verde.jpg",
                 product: "Apple iPhone 16",
                 price: "R$ 5.102,00",
                 versions: [
@@ -221,15 +221,25 @@ const data = {
                         condition: "Lacrado",
                         storage: "64GB/3GB",
                         price: "R$ 909,00",
-                        colors: ["Verde", "Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Verde", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmia3.png",
+                            Verde: "/images/smartphones/xiaomi/redmia3.png",
+                            Azul: "/images/smartphones/xiaomi/redmia3.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "128GB/4GB",
                         price: "R$ 1.039,00",
                         colors: ["Preto", "Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmia3.png",
+                            Azul: "/images/smartphones/xiaomi/redmia3.png",
+                        }
+                        
                     }
                 ],
             },
@@ -244,7 +254,10 @@ const data = {
                         storage: "128GB/4GB",
                         price: "R$ 1.329,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmia4.png",
+                        }
                     }
                 ],
             },
@@ -258,22 +271,34 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB/4GB",
                         price: "R$ 1.129,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi124g.png",
+                            Azul: "/images/smartphones/xiaomi/redmi124g.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "128GB/8GB",
                         price: "R$ 1.209,00",
                         colors: ["Azul", "Silver"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redmi124g.png",
+                            Silver: "/images/smartphones/xiaomi/redmi124g.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.309,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi124g.png",
+                            Azul: "/images/smartphones/xiaomi/redmi124g.png",
+                        }
                     }
                 ],
             },
@@ -287,8 +312,13 @@ const data = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.479,00",
-                        colors: ["Branco", "Cinza", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Branco", "Cinza"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi125g.png",
+                            Branco: "/images/smartphones/xiaomi/redmi125g.png",
+                            Cinza: "/images/smartphones/xiaomi/redmi125g.png",
+                        }
                     }
                 ],
             },
@@ -303,14 +333,21 @@ const data = {
                         storage: "128GB/6GB",
                         price: "R$ 1.229,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi13.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.379,00",
                         colors: ["Preto", "Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi13.png",
+                            Azul: "/images/smartphones/xiaomi/redmi13.png",
+                        }
                     },
                 ],
             },
@@ -325,7 +362,11 @@ const data = {
                         storage: "128GB/6GB",
                         price: "R$ 1.259,00",
                         colors: ["Branco", "Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Branco: "/images/smartphones/xiaomi/redmi13c.png",
+                            Preto: "/images/smartphones/xiaomi/redmi13c.png",
+                        }
                     }
                 ],
             },
@@ -339,29 +380,44 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB/4GB",
                         price: "R$ 1.120,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi14c.png",
+                            Azul: "/images/smartphones/xiaomi/redmi14c.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/4GB",
                         price: "R$ 1.189,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi14c.png",
+                            Azul: "/images/smartphones/xiaomi/redmi14c.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.279,00",
                         colors: ["Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redmi14c.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.160,00",
                         colors: ["Azul"],
-                        availability: "Pronta-entrega"
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi14c.png",
+                            Azul: "/images/smartphones/xiaomi/redmi14c.png",
+                        }
                     },
                 ]
             },
@@ -375,15 +431,23 @@ const data = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.629,00",
-                        colors: ["Roxo", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Roxo"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocom6pro.png",
+                            Roxo: "/images/smartphones/xiaomi/pocom6pro.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 1.909,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocom6pro.png",
+                            Azul: "/images/smartphones/xiaomi/pocom6pro.png",
+                        }
                     }
                 ],
             },
@@ -397,8 +461,12 @@ const data = {
                         condition: "Lacrado",
                         storage: "256GB/12GB",
                         price: "R$ 2.059,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocox6.png",
+                            Azul: "/images/smartphones/xiaomi/pocox6.png",
+                        }
                     }
                 ],
             },
@@ -413,14 +481,21 @@ const data = {
                         storage: "256GB/8GB",
                         price: "R$ 2.349,00",
                         colors: ["Cinza", "Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Cinza: "/images/smartphones/xiaomi/pocox6pro.jpg",
+                            Preto: "/images/smartphones/xiaomi/pocox6pro.jpg",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 2.539,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocox6pro.jpg",
+                        }
                     }
                 ],
             },
@@ -434,15 +509,23 @@ const data = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 2.149,00",
-                        colors: ["Verde", "Preto", "Silver"],
-                        availability: "Encomenda"
+                        colors: ["Silver", "Preto", "Verde"],
+                        availability: "Encomenda",
+                        images: {
+                            Silver: "/images/smartphones/xiaomi/pocox7.png",
+                            Preto: "/images/smartphones/xiaomi/pocox7.png",
+                            Verde: "/images/smartphones/xiaomi/pocox7.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 2.379,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocox7.png",
+                        }
                     }
                 ],
             },
@@ -457,14 +540,22 @@ const data = {
                         storage: "256GB/12GB",
                         price: "R$ 2.759,00",
                         colors: ["Verde", "Preto", "Silver"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Verde: "/images/smartphones/xiaomi/pocox7pro.png",
+                            Preto: "/images/smartphones/xiaomi/pocox7pro.png",
+                            Silver: "/images/smartphones/xiaomi/pocox7pro.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 3.009,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocox7pro.png",
+                        }
                     }
                 ],
             },
@@ -479,7 +570,10 @@ const data = {
                         storage: "256GB/8GB",
                         price: "R$ 2.559,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocof6.png",
+                        }
                     }
                 ],
             },
@@ -494,14 +588,20 @@ const data = {
                         storage: "512GB/12GB",
                         price: "R$ 3.739,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocof6pro.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "1TB/16GB",
                         price: "R$ 4.379,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pocof6pro.png",
+                        }
                     }
                 ],
             },
@@ -516,7 +616,10 @@ const data = {
                         storage: "256GB/8GB",
                         price: "R$ 1.279,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pococ65.png",
+                        }
                     }
                 ],
             },
@@ -531,14 +634,21 @@ const data = {
                         storage: "128GB/6GB",
                         price: "R$ 1.209,00",
                         colors: ["Verde", "Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Verde: "/images/smartphones/xiaomi/pococ75.png",
+                            Preto: "/images/smartphones/xiaomi/pococ75.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.269,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/pococ75.png",
+                        }
                     }
                 ],
             },
@@ -553,13 +663,16 @@ const data = {
                         storage: "256GB/8GB",
                         price: "R$ 1.309,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redmi12s.png",
+                        }
                     }
                 ],
             },
             {
                 key: "redminote13",
-                src: "/images/smartphones/xiaomi/redminote13.jpg",
+                src: "/images/smartphones/xiaomi/redminote13.png",
                 product: "Redmi Note 13 4G",
                 price: "R$ 1.349,00",
                 versions: [
@@ -568,21 +681,34 @@ const data = {
                         storage: "128GB/6GB",
                         price: "R$ 1.349,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "128GB/8GB",
                         price: "R$ 1.379,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13.png",
+                            Azul: "/images/smartphones/xiaomi/redminote13azul.jpg",
+                        }
+                        
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.549,00",
-                        colors: ["Azul", "Preto", "Verde"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul", "Verde"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13.png",
+                            Azul: "/images/smartphones/xiaomi/redminote13azul.jpg",
+                            Verde: "/images/smartphones/xiaomi/redminote13azul.jpg",
+                        }
                     }
                 ],
             },
@@ -597,21 +723,21 @@ const data = {
                         storage: "128GB/6GB",
                         price: "R$ 1.509,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote135g.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.959,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
-                    },
-                    {
-                        condition: "Lacrado",
-                        storage: "256GB/8GB",
-                        price: "R$ 1.999,00",
-                        colors: ["Roxo"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul", ],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote135g.png",
+                            Azul: "/images/smartphones/xiaomi/redminote135g.png",
+                        }
                     }
                 ],
             },
@@ -626,7 +752,10 @@ const data = {
                         storage: "256GB/8GB",
                         price: "R$ 1.999,00",
                         colors: ["Roxo"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Roxo: "/images/smartphones/xiaomi/redminote13pro.png",
+                        }
                     }
                 ],
             },
@@ -640,15 +769,22 @@ const data = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 2.509,00",
-                        colors: ["Azul", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13pro5g.png",
+                            Azul: "/images/smartphones/xiaomi/redminote13pro5g.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 2.789,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13pro5g.png",
+                        }
                     },
                 ],
             },
@@ -663,7 +799,10 @@ const data = {
                         storage: "256GB/8GB",
                         price: "R$ 2.149,00",
                         colors: ["Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redminote13pro5gglobal.png",
+                        }
                     }
                 ],
             },
@@ -677,15 +816,22 @@ const data = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 2.729,00",
-                        colors: ["Roxo", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Roxo"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13proplus.png",
+                            Roxo: "/images/smartphones/xiaomi/redminote13proplus.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 3.109,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote13proplus.png",
+                        }
                     },
                 ],
             },
@@ -699,15 +845,25 @@ const data = {
                         condition: "Lacrado",
                         storage: "128GB/6GB",
                         price: "R$ 1.469,00",
-                        colors: ["Azul", "Roxo", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul", "Roxo"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote14.png",
+                            Azul: "/images/smartphones/xiaomi/redminote14.png",
+                            Roxo: "/images/smartphones/xiaomi/redminote14.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.619,00",
-                        colors: ["Azul", "Vrde", "Preto"],
-                        availability: "Encomenda"
+                        colors: ["Preto", "Azul", "Verde"],
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote14.png",
+                            Azul: "/images/smartphones/xiaomi/redminote14.png",
+                            Verde: "/images/smartphones/xiaomi/redminote14.png",
+                        }
                     },
                 ],
             },
@@ -722,7 +878,10 @@ const data = {
                         storage: "256GB/8GB",
                         price: "R$ 2.229,00",
                         colors: ["Azul"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redminote14pro.png",
+                        }
                     }
                 ],
             },
@@ -737,14 +896,20 @@ const data = {
                         storage: "256GB/8GB",
                         price: "R$ 3.009,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote14proplus.png",
+                        }
                     },
                     {
                         condition: "Lacrado",
                         storage: "512GB/12GB",
                         price: "R$ 3.309,00",
                         colors: ["Preto"],
-                        availability: "Encomenda"
+                        availability: "Encomenda",
+                        images: {
+                            Preto: "/images/smartphones/xiaomi/redminote14proplus.png",
+                        }
                     }
                 ],
             },
@@ -761,7 +926,10 @@ const data = {
                         storage: "128GB",
                         price: "R$ 599,00",
                         colors: ["White lilac"],
-                        availability: "Pronta-entrega"
+                        availability: "Pronta-entrega",
+                        images: {
+                            "White lilac": "/images/smartphones/motorola/motog30.png",
+                        }
                     }
                 ]
             },
@@ -778,7 +946,10 @@ const data = {
                         storage: "128GB",
                         price: "R$ 899,00",
                         colors: ["Marble black"],
-                        availability: "Pronta-entrega"
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Marble black": "/images/smartphones/realme/note60.png"
+                        }
                     }
                 ]
             },
@@ -1021,13 +1192,12 @@ function Products() {
                 <div className="absolute flex justify-center ml-72">
                     <img
                         src="/images/icons/filter.svg"
-                        className="bg-dark-bg-3 mt-20 p-1 hover:bg-dark-bg-4 cursor-pointer rounded"
+                        className="bg-dark-bg-3 mt-[113px] p-1 hover:bg-dark-bg-4 cursor-pointer rounded"
                         style={{ width: "33px" }}
                         onClick={toggleFilter}
                     />
                 </div>
                 <ProductBrand category={categoryFromPath} />
-
                 <div className="Filter absolute z-30 top-[91px] ml-[129px]">
                     {isFilterOpen && (
                         <div className="">

@@ -16,7 +16,7 @@ function ProductBrand({ category }) {
     return (
         <div className="flex justify-center">
             {category === "smartphones" && (
-                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-20 flex space-x-1">
+                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-[115px] flex space-x-1">
                     <img
                         src="/images/appleLogo.svg"
                         className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}
@@ -50,25 +50,25 @@ function ProductBrand({ category }) {
                 </div>
             )}
             {category === "fones" && (
-                <p className="text-2xl text-white font-regular mt-20">Fones de ouvido</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Fones de ouvido</p>
             )}
             {category === "smartwatches" && (
-                <p className="text-2xl text-white font-regular mt-20">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
             )}
             {category === "carregadores" && (
-                <p className="text-2xl text-white font-regular mt-20">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
             )}
             {category === "acessorios" && (
-                <p className="text-2xl text-white font-regular mt-20">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
             )}
             {category === "som" && (
-                <p className="text-2xl text-white font-regular mt-20">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
             )}
             {category === "chaveiros" && (
-                <p className="text-2xl text-white font-regular mt-20">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
             )}
             {category === "eletronicos" && (
-                <p className="text-2xl text-white font-regular mt-20">Smartwatches</p>
+                <p className="text-2xl text-white font-regular mt-[115px]">Smartwatches</p>
             )}
         </div>
     );
