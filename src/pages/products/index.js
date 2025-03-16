@@ -843,11 +843,11 @@ const data = {
                 key: "kd790",
                 src: "/images/fones/kaidikd790.png",
                 product: "Kaidi KD-790 TWS",
-                price: "R$ 1.499,00",
+                price: "R$ 85,00",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 1.499,00",
+                        price: "R$ 85,00",
                         colors: ["Branco"],
                         availability: "Pronta-entrega",
                         images: {
@@ -870,10 +870,11 @@ const data = {
                         size: "40mm",
                         condition: "Lacrado",
                         price: "R$ 1.999,00",
-                        colors: ["Meia-noite", "Estelar"],
+                        colors: ["Estelar", "Meia-noite"],
                         availability: "Encomenda",
                         images: {
-                            Branco: "/images/fones/airpods4.png",
+                            Estelar: "/images/smartwatches/applewatchse2estelar.jpg",
+                            "Meia-noite": "/images/smartwatches/applewatchse2meianoite.jpg",
                         },
                     },
                     {
@@ -883,10 +884,11 @@ const data = {
                         colors: ["Meia-noite"],
                         availability: "Encomenda",
                         images: {
-                            Branco: "/images/fones/airpods4.png",
+                            "Meia-noite": "/images/smartwatches/applewatchse2meianoite.jpg",
                         },
                     },
                 ],
+                
             },
             {
                 key: "applewatch10",
@@ -917,10 +919,10 @@ const data = {
                         size: "49mm",
                         condition: "Lacrado",
                         price: "R$ 6.700,00",
-                        colors: ["Silver", "Rose"],
+                        colors: ["Oceano Laranja"],
                         availability: "Encomenda",
                         images: {
-                            "Orange Ocean Band": "/images/smartwatches/applewatchultra2.png",
+                            "Oceano Laranja": "/images/smartwatches/applewatchultra2.png",
                         },
                     }
                 ],
