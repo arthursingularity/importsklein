@@ -19,9 +19,9 @@ function App() {
         <Route path='/smartphones' element={<Products />} />
         <Route path='/smartphones/:brand' element={<Products />} />
         <Route path="/smartphones/:brand/:product" element={<Products />} />
-        <Route path='/fones' element={<Products />} />
-        <Route path='/fones/:brand' element={<Products />} />
-        <Route path='/fones/:brand/:product' element={<Products />} />
+        <Route path='/musica' element={<Products />} />
+        <Route path='/musica/:brand' element={<Products />} />
+        <Route path='/musica/:brand/:product' element={<Products />} />
         <Route path='/carregadores' element={<Products />} />
         <Route path='/carregadores/:brand' element={<Products />} />
         <Route path='/carregadores/:brand/:product' element={<Products />} />
@@ -31,9 +31,6 @@ function App() {
         <Route path='/smartwatches' element={<Products />} />
         <Route path='/smartwatches/:brand' element={<Products />} />
         <Route path='/smartwatches/:brand/:product' element={<Products />} />
-        <Route path='/som' element={<Products />} />
-        <Route path='/som/:brand' element={<Products />} />
-        <Route path='/som/:brand/:product' element={<Products />} />
         <Route path='/eletronicos' element={<Products />} />
         <Route path='/eletronicos/:brand' element={<Products />} />
         <Route path='/eletronicos/:brand/:product' element={<Products />} />

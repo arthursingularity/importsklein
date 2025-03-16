@@ -16,7 +16,7 @@ function ProductBrand({ category }) {
     return (
         <div className="flex justify-center">
             {category === "smartphones" && (
-                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-[115px] flex space-x-1">
+                <div className="SmartphonesBrand p-1 border border-borderColor rounded-lg mt-[118px] flex space-x-1">
                     <img
                         src="/images/appleLogo.svg"
                         className={`p-2 border border-borderColor rounded cursor-pointer hover:bg-dark-bg-4 ${isCurrentBrand('Apple') ? 'bg-dark-bg-4' : ''}`}

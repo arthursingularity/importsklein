@@ -77,11 +77,11 @@ const data = {
 
 const categorias = [
     { nome: "Smartphones", img: "/images/celulares.png", link: "/smartphones" },
-    { nome: "Fones", img: "/images/fones.png", link: "/fones" },
+    { nome: "Tablets", img: "/images/tablets.png", link: "/smartphones" },
+    { nome: "Música", img: "/images/fones.png", link: "/musica" },
     { nome: "Carregadores", img: "/images/carregadores.png", link: "/carregadores" },
-    { nome: "Acessórios", img: "/images/capas.png", link: "/acessorios" },
+    { nome: "Acessórios", img: "/images/acessorios.png", link: "/acessorios" },
     { nome: "Smartwatches", img: "/images/smartwatches.png", link: "/smartwatches" },
-    { nome: "Som", img: "/images/som.png", link: "/som" },
     { nome: "Eletrônicos", img: "/images/eletronicos.png", link: "/eletronicos" },
     { nome: "Chaveiros", img: "/images/chaveiros.png", link: "/chaveiros" }
 ];

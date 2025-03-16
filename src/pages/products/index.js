@@ -1168,7 +1168,7 @@ const data = {
         ]
     },
     Chaveiros: {
-        Padrão: [
+        Padrao: [
             {
                 key: "chaveirocolecionavel",
                 src: "/images/chaveiros/chaveiros.png",

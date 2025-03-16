@@ -1164,7 +1164,7 @@ const productData = {
         ]
     },
     Chaveiros: {
-        Padrão: [
+        Padrao: [
             {
                 key: "chaveirocolecionavel",
                 src: "/images/chaveiros/chaveiros.png",
@@ -1413,7 +1413,7 @@ function ProductComponent({ productKey }) {
 
         const productUrl = window.location.href;
 
-        const message = `Olá, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*\n*${selectedVariant}*\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\n Valor: *${finalPrice}*\n Link do produto: ${productUrl}\n\nAguardo seu retorno, obrigado!`;
+        const message = `Olá, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*\n*${selectedVariant}*\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\n Valor: *${finalPrice}*\n\n Link do produto: ${productUrl}\n\nAguardo seu retorno, obrigado!`;
 
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
@@ -1456,13 +1456,13 @@ function ProductComponent({ productKey }) {
                     <div className="flex justify-center">
                         <div
                             className={`ProductImageDiv ${safeProduct.versions.some(v => v.colorType === "img") ? "p-0 overflow-hidden" : "p-14"
-                                } bg-white relative border border-borderColor mt-4 lg:mt-0 w-[310px] h-[280px] lg:w-[480px] lg:h-[520px] flex items-center rounded`}
+                                } bg-white relative border border-borderColor mt-4 lg:mt-0 w-[310px] h-[280px] lg:w-[480px] lg:h-[480px] flex items-center rounded`}
                         >
                             <img src={selectedImage} alt={safeProduct.product} />
                         </div>
                     </div>
                     <div className="PcProductView hidden lg:block ml-7">
-                        <p className="font-regular text-[24px] flex leading-tight">
+                        <p className="font-light text-[24px] flex leading-tight">
                             {safeProduct.product}
                             {variantOptions.length > 0 ? ` (${selectedVariant})` : ""}
                             {availableColors.length > 0 ? ` - ${selectedColor}` : ""}
@@ -1495,7 +1495,7 @@ function ProductComponent({ productKey }) {
                             )}
                             {availableColors.length > 0 && (
                                 <div>
-                                    <p className="font-light text-xl mt-5">
+                                    <p className="font-light text-xl mt-3">
                                         Cor - <span className="font-medium">{selectedColor}</span>
                                     </p>
                                     <div className="grid grid-cols-5 gap-2 mt-2">
