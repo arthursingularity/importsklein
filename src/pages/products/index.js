@@ -996,7 +996,7 @@ const data = {
         Apple: [
             {
                 key: "ipad10",
-                src: "/images/smartphones/apple/iphone13.jpg",
+                src: "/images/tablets/ipad10azul.png",
                 product: "Apple iPad 10",
                 price: "R$ 2.879,00",
                 garantia: "1 ano",
@@ -1008,8 +1008,8 @@ const data = {
                         colors: ["Azul", "Silver"],
                         availability: "Encomenda",
                         images: {
-                            Azul: "/images/smartphones/apple/iphone13.jpg",
-                            Silver: "/images/smartphones/apple/iphone13estelar.jpg",
+                            Azul: "/images/tablets/ipad10azul.png",
+                            Silver: "/images/tablets/ipad10silver.png",
                         }
                     }
                 ]
@@ -1257,6 +1257,64 @@ const data = {
                             Tristeza1: "/images/chaveiros/tristeza1.png",
                             Inveja1: "/images/chaveiros/inveja1.png",
                         },
+                    }
+                ]
+            },
+        ]
+    },
+    Acessorios: {
+        Capinha: [
+            {
+                key: "capinhasiliconeapple",
+                src: "/images/acessorios/capinhasiliconeapple.png",
+                product: "Capa de Silicone para iPhone (Modelos 11 a 16)",
+                price: "R$ 50,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 50,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhasiliconeapple.png",
+                        }
+                    }
+                ]
+            },
+            {
+                key: "capinhamagsafeiphone",
+                src: "/images/acessorios/capinhamagsafeiphone.png",
+                product: "Capa transparente com MagSafe para iPhone (Modelos 11 a 16)",
+                price: "R$ 40,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 40,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhamagsafeiphone.png",
+                        }
+                    }
+                ]
+            },
+            {
+                key: "capinhavidroiphone",
+                src: "/images/acessorios/capinhavidroiphone.png",
+                product: "Capa de vidro para iPhone (Modelos 11 a 16)",
+                price: "R$ 45,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 45,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
+                        }
                     }
                 ]
             },

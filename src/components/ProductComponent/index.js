@@ -993,7 +993,7 @@ const productData = {
         Apple: [
             {
                 key: "ipad10",
-                src: "/images/smartphones/apple/iphone13.jpg",
+                src: "/images/tablets/ipad10azul.png",
                 product: "Apple iPad 10",
                 price: "R$ 2.879,00",
                 garantia: "1 ano",
@@ -1005,8 +1005,8 @@ const productData = {
                         colors: ["Azul", "Silver"],
                         availability: "Encomenda",
                         images: {
-                            Azul: "/images/smartphones/apple/iphone13.jpg",
-                            Silver: "/images/smartphones/apple/iphone13estelar.jpg",
+                            Azul: "/images/tablets/ipad10azul.png",
+                            Silver: "/images/tablets/ipad10silver.png",
                         }
                     }
                 ]
@@ -1259,6 +1259,46 @@ const productData = {
                 ]
             },
         ]
+    },
+    Acessorios: {
+        Capinha: [
+            {
+                key: "capinhasiliconeapple",
+                src: "/images/acessorios/capinhasiliconeapple.png",
+                product: "Capinha de Silicone para iPhone (Modelos 11 a 16)",
+                price: "R$ 50,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 50,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhasiliconeapple.png",
+                        }
+                    }
+                ]
+            },
+            {
+                key: "capinhavidroiphone",
+                src: "/images/acessorios/capinhavidroiphone.png",
+                product: "Capa de vidro para iPhone (Modelos 11 a 16)",
+                price: "R$ 45,00",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 45,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
+                        }
+                    }
+                ]
+            },
+        ]
     }
 };
 
@@ -1285,6 +1325,7 @@ const colorMap = {
     "White lilac": "#ebd1d4",
     "Marble black": "#404447",
     "Oceano Laranja": "#f45f29",
+    "Consultar disponibilidade": "#cae0bf",
 };
 
 function ProductComponent({ productKey }) {
