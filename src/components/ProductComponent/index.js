@@ -1265,17 +1265,126 @@ const productData = {
             {
                 key: "capinhasiliconeapple",
                 src: "/images/acessorios/capinhasiliconeapple.png",
-                product: "Capinha de Silicone para iPhone (Modelos 11 a 16)",
-                price: "R$ 50,00",
+                product: "Capinha de Silicone para iPhone",
+                price: "R$ 35,00",
+                versions: [
+                    {
+                        model: "11",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capinhasiliconeapple.png",
+                            Branco: "/images/acessorios/capinhasiliconeapple.png",
+                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
+                            Azul: "/images/acessorios/capinhasiliconeapple.png",
+                            Verde: "/images/acessorios/capinhasiliconeapple.png",
+                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
+                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
+                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
+                        }
+                    },
+                    {
+                        model: "12",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capinhasiliconeapple.png",
+                            Branco: "/images/acessorios/capinhasiliconeapple.png",
+                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
+                            Azul: "/images/acessorios/capinhasiliconeapple.png",
+                            Verde: "/images/acessorios/capinhasiliconeapple.png",
+                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
+                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
+                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
+                        }
+                    },
+                    {
+                        model: "13",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capinhasiliconeapple.png",
+                            Branco: "/images/acessorios/capinhasiliconeapple.png",
+                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
+                            Azul: "/images/acessorios/capinhasiliconeapple.png",
+                            Verde: "/images/acessorios/capinhasiliconeapple.png",
+                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
+                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
+                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
+                        }
+                    },
+                    {
+                        model: "14",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capinhasiliconeapple.png",
+                            Branco: "/images/acessorios/capinhasiliconeapple.png",
+                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
+                            Azul: "/images/acessorios/capinhasiliconeapple.png",
+                            Verde: "/images/acessorios/capinhasiliconeapple.png",
+                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
+                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
+                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
+                        }
+                    },
+                    {
+                        model: "15",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capinhasiliconeapple.png",
+                            Branco: "/images/acessorios/capinhasiliconeapple.png",
+                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
+                            Azul: "/images/acessorios/capinhasiliconeapple.png",
+                            Verde: "/images/acessorios/capinhasiliconeapple.png",
+                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
+                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
+                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
+                        }
+                    },
+                    {
+                        model: "16",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capinhasiliconeapple.png",
+                            Branco: "/images/acessorios/capinhasiliconeapple.png",
+                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
+                            Azul: "/images/acessorios/capinhasiliconeapple.png",
+                            Verde: "/images/acessorios/capinhasiliconeapple.png",
+                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
+                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
+                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
+                        }
+                    }
+                ]
+            },
+            {
+                key: "capinhamagsafeiphone",
+                src: "/images/acessorios/capinhamagsafeiphone.png",
+                product: "Capa transparente com MagSafe para iPhone (Modelos 11 a 16)",
+                price: "R$ 40,00",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 50,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
+                        price: "R$ 40,00",
+                        colors: ["Transparente"],
                         availability: "Pronta-entrega",
                         images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhasiliconeapple.png",
+                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
                         }
                     }
                 ]
@@ -1316,6 +1425,8 @@ const colorMap = {
     Roxo: "#ad9cd0",
     Cinza: "#b7b7b7",
     Silver: "#d0d0d2",
+    Vermelho: "#d8202f",
+    Amarelo: "#ffcd02",
     "Meia-noite": "#404447",
     "Azul claro": "#d2e0e5",
     "Titânio-deserto": "#c1a693",
@@ -1326,6 +1437,7 @@ const colorMap = {
     "Marble black": "#404447",
     "Oceano Laranja": "#f45f29",
     "Consultar disponibilidade": "#cae0bf",
+    "Transparente": "#ffffff",
 };
 
 function ProductComponent({ productKey }) {
@@ -1368,13 +1480,17 @@ function ProductComponent({ productKey }) {
             ? "storage"
             : safeProduct.versions[0]?.size
                 ? "size"
-                : null;
+                : safeProduct.versions[0]?.model
+                    ? "model"
+                    : null;
     const variantLabel =
         variantKey === "storage"
             ? "Armazenamento"
             : variantKey === "size"
                 ? "Tamanho"
-                : "";
+                : variantKey === "model"
+                    ? "Modelo"
+                    : "";
     const variantOptions = variantKey
         ? Array.from(
             new Set(
@@ -1545,15 +1661,19 @@ function ProductComponent({ productKey }) {
                         <div className="OptionsPcView">
                             {variantOptions.length > 0 && (
                                 <div>
-                                    <p className="font-light text-xl mt-4">{variantLabel}</p>
-                                    <div className="flex space-x-2">
+                                    <p className="font-light text-xl mt-4">
+                                        {variantKey === "model"
+                                            ? `Modelo - ${selectedVariant}`
+                                            : variantLabel}
+                                    </p>
+                                    <div className="grid grid-cols-5 gap-2 mt-2">
                                         {variantOptions.map((option, index) => {
                                             const isSelected = option === selectedVariant;
                                             return (
                                                 <div
                                                     key={index}
                                                     onClick={() => setSelectedVariant(option)}
-                                                    className={`border p-2 rounded mt-1 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                                    className={`border p-2 w-12 h-12 rounded mt-1 flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
                                                         ? "border-blue-500 bg-gray-700"
                                                         : "border-blue-500 border-gray-400"
                                                         }`}
@@ -1661,17 +1781,21 @@ function ProductComponent({ productKey }) {
                 <div className="Options lg:hidden">
                     {variantOptions.length > 0 && (
                         <div>
-                            <p className="font-light text-xl mt-4">{variantLabel}</p>
-                            <div className="flex space-x-2">
+                            <p className="font-light text-xl mt-4">
+                                {variantKey === "model"
+                                    ? `Modelo - ${selectedVariant}`
+                                    : variantLabel}
+                            </p>
+                            <div className="grid grid-cols-5 gap-2 mt-2">
                                 {variantOptions.map((option, index) => {
                                     const isSelected = option === selectedVariant;
                                     return (
                                         <div
                                             key={index}
                                             onClick={() => setSelectedVariant(option)}
-                                            className={`border p-2 rounded mt-1 px-2.5 h-[37px] flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
-                                                ? "border-blue-500 bg-gray-700"
-                                                : "border-blue-500 border-gray-400"
+                                            className={`border p-2 w-12 h-12 rounded mt-1 flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                                    ? "border-blue-500 bg-gray-700"
+                                                    : "border-blue-500 border-gray-400"
                                                 }`}
                                         >
                                             <p className="font-light">{option}</p>
