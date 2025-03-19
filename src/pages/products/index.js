@@ -1020,7 +1020,7 @@ const data = {
         Apple: [
             {
                 key: "airpods4",
-                src: "/images/fones/airpods4.png",
+                src: "/images/musica/airpods4.png",
                 product: "AirPods 4 - abafamento de ruído",
                 price: "R$ 1.699,00",
                 garantia: "1 ano",
@@ -1038,7 +1038,7 @@ const data = {
             },
             {
                 key: "airpodspro2",
-                src: "/images/fones/airpodspro2.png",
+                src: "/images/musica/airpodspro2.png",
                 product: "AirPods Pro 2",
                 price: "R$ 1.799,00",
                 garantia: "1 ano",
@@ -1056,7 +1056,7 @@ const data = {
             },
             {
                 key: "airpods3",
-                src: "/images/fones/airpods3.png",
+                src: "/images/musica/airpods3.png",
                 product: "AirPods 3",
                 price: "R$ 1.499,00",
                 garantia: "1 ano",
@@ -1076,7 +1076,7 @@ const data = {
         Kaidi: [
             {
                 key: "kd790",
-                src: "/images/fones/kaidikd790.png",
+                src: "/images/musica/kaidikd790.png",
                 product: "Kaidi KD-790 TWS",
                 price: "R$ 85,00",
                 garantia: "6 meses",
@@ -1088,6 +1088,26 @@ const data = {
                         availability: "Pronta-entrega",
                         images: {
                             Branco: "/images/fones/kaidikd790.png",
+                        },
+                    },
+                ],
+            },
+        ],
+        Padrao: [
+            {
+                key: "airdotspro",
+                src: "/images/musica/airdotspro.png",
+                product: "Airdots PRO",
+                price: "R$ 38,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 38,00",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/musica/airdotspro.png",
                         },
                     },
                 ],
@@ -1187,7 +1207,78 @@ const data = {
                         },
                     }
                 ],
-
+            },
+            {
+                key: "carregadorinducaoagold",
+                src: "/images/carregadores/carregadorinducaoagold.png",
+                product: "Carregador por indução 20W A'GOLD",
+                price: "R$ 49,99",
+                garantia: "6 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 49,00",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/carregadores/carregadorinducaoagold.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "powerbankagold",
+                src: "/images/carregadores/powerbankagold.png",
+                product: "Carregador PoweBank 75W A'GOLD 5000mAh",
+                price: "R$ 89,99",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 89,99",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/carregadores/powerbankagold.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "carregadorusbclightning",
+                src: "/images/carregadores/carregadorusbclightning.png",
+                product: "Carregador UBC-C - lightning",
+                price: "R$ 40,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 40,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/carregadores/carregadorusbclightning.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "cabousbc",
+                src: "/images/carregadores/cabousbc.png",
+                product: "Cabo UBC-C",
+                price: "R$ 35,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/carregadores/cabousbc.png",
+                        },
+                    }
+                ],
             },
         ]
     },
