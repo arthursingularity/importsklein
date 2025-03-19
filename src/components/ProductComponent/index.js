@@ -1265,7 +1265,7 @@ const productData = {
             {
                 key: "capinhasiliconeapple",
                 src: "/images/acessorios/capinhasiliconeapple.png",
-                product: "Capa para iPhone",
+                product: "Capa de silicone para iPhone",
                 price: "R$ 35,00",
                 versions: [
                     {
