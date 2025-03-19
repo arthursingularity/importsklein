@@ -1267,7 +1267,7 @@ const data = {
             {
                 key: "capinhasiliconeapple",
                 src: "/images/acessorios/capinhasiliconeapple.png",
-                product: "Capinha de Silicone para iPhone",
+                product: "Capa de Silicone para iPhone",
                 price: "R$ 35,00",
                 versions: [
                     {
@@ -1377,7 +1377,7 @@ const data = {
             {
                 key: "capinhamagsafeiphone",
                 src: "/images/acessorios/capinhamagsafeiphone.png",
-                product: "Capa transparente com MagSafe para iPhone (Modelos 11 a 16)",
+                product: "Capa transparente com MagSafe para iPhone",
                 price: "R$ 40,00",
                 versions: [
                     {
@@ -1394,7 +1394,7 @@ const data = {
             {
                 key: "capinhavidroiphone",
                 src: "/images/acessorios/capinhavidroiphone.png",
-                product: "Capa de vidro para iPhone (Modelos 11 a 16)",
+                product: "Capa de vidro para iPhone",
                 price: "R$ 45,00",
                 versions: [
                     {

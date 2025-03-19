@@ -1265,7 +1265,7 @@ const productData = {
             {
                 key: "capinhasiliconeapple",
                 src: "/images/acessorios/capinhasiliconeapple.png",
-                product: "Capinha de Silicone para iPhone",
+                product: "Capa para iPhone",
                 price: "R$ 35,00",
                 versions: [
                     {
@@ -1375,7 +1375,7 @@ const productData = {
             {
                 key: "capinhamagsafeiphone",
                 src: "/images/acessorios/capinhamagsafeiphone.png",
-                product: "Capa transparente com MagSafe para iPhone (Modelos 11 a 16)",
+                product: "Capa transparente com MagSafe para iPhone",
                 price: "R$ 40,00",
                 versions: [
                     {
@@ -1392,7 +1392,7 @@ const productData = {
             {
                 key: "capinhavidroiphone",
                 src: "/images/acessorios/capinhavidroiphone.png",
-                product: "Capa de vidro para iPhone (Modelos 11 a 16)",
+                product: "Capa de vidro para iPhone",
                 price: "R$ 45,00",
                 versions: [
                     {
@@ -1666,14 +1666,14 @@ function ProductComponent({ productKey }) {
                                             ? `Modelo - ${selectedVariant}`
                                             : variantLabel}
                                     </p>
-                                    <div className="grid grid-cols-5 gap-2 mt-2">
+                                    <div className="flex gap-2 mt-2">
                                         {variantOptions.map((option, index) => {
                                             const isSelected = option === selectedVariant;
                                             return (
                                                 <div
                                                     key={index}
                                                     onClick={() => setSelectedVariant(option)}
-                                                    className={`border p-2 w-12 h-12 rounded mt-1 flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                                    className={`border p-2 px-3 rounded mt-1 flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
                                                         ? "border-blue-500 bg-gray-700"
                                                         : "border-blue-500 border-gray-400"
                                                         }`}
@@ -1786,14 +1786,14 @@ function ProductComponent({ productKey }) {
                                     ? `Modelo - ${selectedVariant}`
                                     : variantLabel}
                             </p>
-                            <div className="grid grid-cols-5 gap-2 mt-2">
+                            <div className="flex gap-2 mt-2">
                                 {variantOptions.map((option, index) => {
                                     const isSelected = option === selectedVariant;
                                     return (
                                         <div
                                             key={index}
                                             onClick={() => setSelectedVariant(option)}
-                                            className={`border p-2 w-12 h-12 rounded mt-1 flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
+                                            className={`border p-2 px-3 rounded mt-1 flex justify-center items-center cursor-pointer hover:bg-gray-700 hover:border-blue-500 ${isSelected
                                                     ? "border-blue-500 bg-gray-700"
                                                     : "border-blue-500 border-gray-400"
                                                 }`}
