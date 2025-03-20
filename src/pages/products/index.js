@@ -1247,7 +1247,7 @@ const data = {
             {
                 key: "carregadorusbclightning",
                 src: "/images/carregadores/carregadorusbclightning.png",
-                product: "Carregador UBC-C - lightning",
+                product: "Carregador USB-C - lightning",
                 price: "R$ 40,00",
                 garantia: "3 meses",
                 versions: [
@@ -1265,7 +1265,7 @@ const data = {
             {
                 key: "cabousbc",
                 src: "/images/carregadores/cabousbc.png",
-                product: "Cabo UBC-C",
+                product: "Cabo USB-C",
                 price: "R$ 35,00",
                 garantia: "3 meses",
                 versions: [

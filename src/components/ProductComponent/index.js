@@ -1028,7 +1028,7 @@ const productData = {
                         colors: ["Branco"],
                         availability: "Encomenda",
                         images: {
-                            Branco: "/images/fones/airpods4.png",
+                            Branco: "/images/musica/airpods4.png",
                         },
                     },
                 ],
@@ -1046,7 +1046,7 @@ const productData = {
                         colors: ["Branco"],
                         availability: "Encomenda",
                         images: {
-                            Branco: "/images/fones/airpods4.png",
+                            Branco: "/images/musica/airpods4.png",
                         },
                     },
                 ],
@@ -1064,7 +1064,7 @@ const productData = {
                         colors: ["Branco"],
                         availability: "Encomenda",
                         images: {
-                            Branco: "/images/fones/airpodspro2.png",
+                            Branco: "/images/musica/airpodspro2.png",
                         },
                     },
                 ],
@@ -1084,7 +1084,7 @@ const productData = {
                         colors: ["Branco"],
                         availability: "Pronta-entrega",
                         images: {
-                            Branco: "/images/fones/kaidikd790.png",
+                            Branco: "/images/musica/kaidikd790.png",
                         },
                     },
                 ],
