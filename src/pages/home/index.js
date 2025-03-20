@@ -90,7 +90,6 @@ function Home() {
     const sliderRef = useRef(null);
     const scrollAmount = 300;
     const destaqueRef = useRef(null);
-    const [popUpVisible, setPopUpVisible] = useState(true);
     const [colunas, setColunas] = useState(4);
 
     useEffect(() => { //Responsividade
@@ -160,28 +159,9 @@ function Home() {
         return () => clearInterval(interval);
     }, []);
 
-    function popUpVisibillity() {
-        setPopUpVisible(false)
-    };
-
     return (
         <div>
             <NavBar />
-            {popUpVisible && (
-                <div className="popUp flex justify-center">
-                    <div className="fixed w-72 bg-dark-bg-3 bottom-4 z-20 border p-2 border-borderColor rounded-lg flex items-center" style={{ height: "72px" }}>
-                        <img
-                            src='/images/icons/close.svg'
-                            className='absolute right-0.5 top-0.5 cursor-pointer w-6'
-                            onClick={popUpVisibillity}
-                        />
-                        <img src='/images/icons/entrega.svg' className='border border-gray-500 bg-dark-bg-4 p-2 rounded w-16' />
-                        <p className="text-white font-thin text-lg leading-tight ml-3">
-                            <span className="font-medium">Entrega grátis</span> em toda Nova Friburgo!
-                        </p>
-                    </div>
-                </div>
-            )}
             <div className="flex justify-center">
                 <div className="mt-[85px]">
                     <p className="text-white font-regular text-3xl text-center p-8" style={{ lineHeight: "0.75" }}>
@@ -221,22 +201,22 @@ function Home() {
                             {Array.isArray(data["destaques"]) && data["destaques"].length > 0 ? (
                                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
                                     {data["destaques"].map((item, idx) => (
-                                            <SmartphonesComponent
-                                                key={item.id || idx}
-                                                src={item.src}
-                                                product={item.product}
-                                                price={
-                                                    item.storage && Array.isArray(item.storage) && item.storage.length > 0
-                                                        ? Math.min(
-                                                            ...item.storage.map(s => {
-                                                                const price = Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."));
-                                                                return isNaN(price) ? Infinity : price;
-                                                            })
-                                                        ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-                                                        : item.price
-                                                }
-                                                link={item.link}
-                                            />
+                                        <SmartphonesComponent
+                                            key={item.id || idx}
+                                            src={item.src}
+                                            product={item.product}
+                                            price={
+                                                item.storage && Array.isArray(item.storage) && item.storage.length > 0
+                                                    ? Math.min(
+                                                        ...item.storage.map(s => {
+                                                            const price = Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."));
+                                                            return isNaN(price) ? Infinity : price;
+                                                        })
+                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                    : item.price
+                                            }
+                                            link={item.link}
+                                        />
                                     ))}
                                 </div>
                             ) : null}

@@ -10,11 +10,23 @@ function NavBar() {
                 <Link to="/">
                     <img src="/images/importsKleinLogo.png" style={{ width: 75 }} className='buttonHover' />
                 </Link>
-                <img src='/images/icons/search.svg' className='searchNavBarIcon buttonHover absolute text-white right-4 w-7' />
+                <img src='/images/icons/menu.svg' className='searchNavBarIcon buttonHover absolute text-white right-4 w-9' />
                 <div>
                     <input className='bg-transparent rounded-lg border border-borderColor font-light text-white pl-7 w-40 h-7 outline-none caret-white hidden' placeholder='Pesquisar' />
                 </div>
-                <img src='/images/icons/menu.svg' className='menuNavBarIcon buttonHover material-symbols-outlined text-white absolute left-4 w-9' />
+                <Link to="/">
+                    <img src='/images/icons/home.svg' className='menuNavBarIcon buttonHover material-symbols-outlined text-white absolute left-4 top-[45px] w-8' />
+                </Link>
+            </div>
+            <div className="popUp flex justify-center">
+                <a
+                    href="https://wa.me/5522996122610?text=Olá,%20visitei%20a%20loja%20Imports%20Klein%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos.%20Poderia%20me%20ajudar?"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="fixed w-[58px] bottom-4 right-4 z-20 p-1.5 bg-[#40c351] rounded-full"
+                >
+                    <img src='/images/icons/whatsapp.svg' alt="WhatsApp" />
+                </a>
             </div>
         </div>
     )
