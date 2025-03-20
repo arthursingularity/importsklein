@@ -56,7 +56,7 @@ function NavBar() {
                 </a>
             </div>
             <div
-                className={`fixed top-0 right-0 rounded-tl-xl rounded-bl-xl p-3 h-full w-64 bg-dark-bg-3 border border-borderColor text-white shadow-lg transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
+                className={`fixed top-0 right-0 rounded-tl-xl rounded-bl-xl p-3 h-full w-64 bg-dark-bg-3 border border-r-0 border-borderColor text-white shadow-lg transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
                     } transition-transform duration-300 ease-in-out`}
             >
                 <Link to="/">
@@ -70,21 +70,30 @@ function NavBar() {
                 </button>
                 <hr className='border-1 mt-4 border-borderColor' />
                 <ul className="mt-4">
-                    {categories.map((category, index) => (
-                        <Link to={category.path} onClick={toggleSidebar}>
-                            <div
-                                key={index}
-                                className={`flex items-center space-x-3 p-3 rounded cursor-pointer 
-                                ${location.pathname === category.path ? 'bg-dark-bg-4' : 'hover:bg-dark-bg-4'}`}
-                            >
-                                <img src={category.icon} className='w-[25px]' alt={category.name} />
-                                <li className="font-light text-[18px]">
-                                    {category.name}
-                                </li>
-                            </div>
-                        </Link>
-                    ))}
+                    {categories.map((category, index) => {
+                        const isActive = location.pathname.startsWith(category.path);
+
+                        return (
+                            <Link to={category.path} onClick={toggleSidebar} key={index}>
+                                <div
+                                    className={`flex items-center space-x-3 p-3 rounded cursor-pointer 
+                    ${isActive ? 'bg-dark-bg-4 text-blue-500' : 'hover:bg-dark-bg-4'}`}
+                                >
+                                    <img
+                                        src={category.icon}
+                                        className='w-[25px]'
+                                        alt={category.name}
+                                        style={isActive ? { filter: 'invert(64%) sepia(23%) saturate(3894%) hue-rotate(188deg) brightness(98%) contrast(99%' } : {}}
+                                    />
+                                    <li className="font-light text-[18px]">
+                                        {category.name}
+                                    </li>
+                                </div>
+                            </Link>
+                        );
+                    })}
                 </ul>
+
             </div>
         </div>
     );
