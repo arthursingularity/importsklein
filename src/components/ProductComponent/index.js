@@ -1358,11 +1358,12 @@ const productData = {
                 src: "/images/acessorios/capinhasiliconeapple.png",
                 product: "Capa de silicone para iPhone",
                 price: "R$ 35,00",
-                versions: [
-                    {
-                        model: "11",
+                versions: Array.from({ length: 6 }, (_, i) => {
+                    const model = (i + 11).toString();
+                    return {
+                        model,
                         condition: "Lacrado",
-                        price: "R$ 35,00",
+                        price: "R$ 40,00",
                         colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
                         availability: "Pronta-entrega",
                         images: {
@@ -1375,236 +1376,67 @@ const productData = {
                             Amarelo: "/images/acessorios/capinhasiliconeapple.png",
                             Roxo: "/images/acessorios/capinhasiliconeapple.png",
                         }
-                    },
-                    {
-                        model: "12",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    },
-                    {
-                        model: "13",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    },
-                    {
-                        model: "14",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    },
-                    {
-                        model: "15",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    },
-                    {
-                        model: "16",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    }
-                ]
+                    };
+                })
             },
             {
                 key: "capinhamagsafeiphone",
                 src: "/images/acessorios/capinhamagsafeiphone.png",
                 product: "Capa transparente com MagSafe para iPhone",
                 price: "R$ 40,00",
-                versions: [
-                    {
-                        model: "11",
+                versions: Array.from({ length: 6 }, (_, i) => {
+                    const model = (i + 11).toString();
+                    return {
+                        model,
                         condition: "Lacrado",
                         price: "R$ 40,00",
                         colors: ["Transparente"],
                         availability: "Pronta-entrega",
                         images: {
-                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
+                            "Transparente": "/images/acessorios/capatransparenteiphone.png",
                         }
-                    },
-                    {
-                        model: "12",
-                        condition: "Lacrado",
-                        price: "R$ 40,00",
-                        colors: ["Transparente"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
-                        }
-                    },
-                    {
-                        model: "13",
-                        condition: "Lacrado",
-                        price: "R$ 40,00",
-                        colors: ["Transparente"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
-                        }
-                    },
-                    {
-                        model: "14",
-                        condition: "Lacrado",
-                        price: "R$ 40,00",
-                        colors: ["Transparente"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
-                        }
-                    },
-                    {
-                        model: "15",
-                        condition: "Lacrado",
-                        price: "R$ 40,00",
-                        colors: ["Transparente"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
-                        }
-                    },
-                    {
-                        model: "16",
-                        condition: "Lacrado",
-                        price: "R$ 40,00",
-                        colors: ["Transparente"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
-                        }
-                    },
-                ]
+                    };
+                })
             },
             {
                 key: "capinhavidroiphone",
                 src: "/images/acessorios/capinhavidroiphone.png",
                 product: "Capa de vidro para iPhone",
                 price: "R$ 45,00",
-                versions: [
-                    {
-                        model: "11",
+                versions: Array.from({ length: 6 }, (_, i) => {
+                    const model = (i + 11).toString();
+                    return {
+                        model,
+                        colorType: "img",
                         condition: "Lacrado",
                         price: "R$ 45,00",
-                        colorType: "img",
                         colors: ["Consultar disponibilidade"],
                         availability: "Pronta-entrega",
                         images: {
                             "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
                         }
-                    },
-                    {
-                        model: "12",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                    {
-                        model: "13",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                    {
-                        model: "14",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                    {
-                        model: "15",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                    {
-                        model: "16",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                ]
+                    };
+                })
             },
+            {
+                key: "capatransparenteiphone",
+                src: "/images/acessorios/capatransparenteiphone.png",
+                product: "Capa transparente para iPhone",
+                price: "R$ 35,00",
+                versions: Array.from({ length: 6 }, (_, i) => {
+                    const model = (i + 11).toString();
+                    return {
+                        model,
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Transparente"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Transparente": "/images/acessorios/capatransparenteiphone.png",
+                        }
+                    };
+                })
+            }
         ]
     }
 };
