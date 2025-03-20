@@ -286,7 +286,7 @@ function Home() {
                                     <img src='/images/icons/star.svg' />
                                 </div>
                                 <div className="flex space-x-3 mt-6">
-                                    <img src="./images/cliente1.jpg" className="w-24 rounded-lg border border-borderColor" />
+                                    <img src="./images/cliente11.jpg" className="w-24 rounded-lg border border-borderColor" />
                                     <img src="./images/cliente2.jpg" className="w-24 rounded-lg border border-borderColor" />
                                     <img src="./images/cliente3.jpg" className="w-24 rounded-lg border border-borderColor" />
                                 </div>
