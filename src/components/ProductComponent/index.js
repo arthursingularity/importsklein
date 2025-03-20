@@ -1470,6 +1470,7 @@ const productData = {
                 price: "R$ 40,00",
                 versions: [
                     {
+                        model: "11",
                         condition: "Lacrado",
                         price: "R$ 40,00",
                         colors: ["Transparente"],
@@ -1477,7 +1478,57 @@ const productData = {
                         images: {
                             "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
                         }
-                    }
+                    },
+                    {
+                        model: "12",
+                        condition: "Lacrado",
+                        price: "R$ 40,00",
+                        colors: ["Transparente"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
+                        }
+                    },
+                    {
+                        model: "13",
+                        condition: "Lacrado",
+                        price: "R$ 40,00",
+                        colors: ["Transparente"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
+                        }
+                    },
+                    {
+                        model: "14",
+                        condition: "Lacrado",
+                        price: "R$ 40,00",
+                        colors: ["Transparente"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
+                        }
+                    },
+                    {
+                        model: "15",
+                        condition: "Lacrado",
+                        price: "R$ 40,00",
+                        colors: ["Transparente"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
+                        }
+                    },
+                    {
+                        model: "16",
+                        condition: "Lacrado",
+                        price: "R$ 40,00",
+                        colors: ["Transparente"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
+                        }
+                    },
                 ]
             },
             {
@@ -1487,6 +1538,7 @@ const productData = {
                 price: "R$ 45,00",
                 versions: [
                     {
+                        model: "11",
                         condition: "Lacrado",
                         price: "R$ 45,00",
                         colorType: "img",
@@ -1495,7 +1547,62 @@ const productData = {
                         images: {
                             "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
                         }
-                    }
+                    },
+                    {
+                        model: "12",
+                        condition: "Lacrado",
+                        price: "R$ 45,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
+                        }
+                    },
+                    {
+                        model: "13",
+                        condition: "Lacrado",
+                        price: "R$ 45,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
+                        }
+                    },
+                    {
+                        model: "14",
+                        condition: "Lacrado",
+                        price: "R$ 45,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
+                        }
+                    },
+                    {
+                        model: "15",
+                        condition: "Lacrado",
+                        price: "R$ 45,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
+                        }
+                    },
+                    {
+                        model: "16",
+                        condition: "Lacrado",
+                        price: "R$ 45,00",
+                        colorType: "img",
+                        colors: ["Consultar disponibilidade"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
+                        }
+                    },
                 ]
             },
         ]
