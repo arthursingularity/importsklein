@@ -50,7 +50,7 @@ function NavBar() {
                     href="https://wa.me/5522996122610?text=Olá,%20visitei%20a%20loja%20Imports%20Klein%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos.%20Poderia%20me%20ajudar?"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="fixed w-[58px] bottom-4 right-4 z-20 p-1.5 bg-[#40c351] rounded-full"
+                    className="fixed w-[50px] bottom-4 right-4 z-20 p-1.5 bg-[#40c351] rounded-full"
                 >
                     <img src='/images/icons/whatsapp.svg' alt="WhatsApp" />
                 </a>
@@ -59,14 +59,16 @@ function NavBar() {
                 className={`fixed top-0 right-0 rounded-tl-xl rounded-bl-xl p-3 h-full w-64 bg-dark-bg-3 border border-borderColor text-white shadow-lg transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
                     } transition-transform duration-300 ease-in-out`}
             >
-                <img src="/images/importsKleinLogo.png" className='buttonHover w-[65px] mt-1 ml-1' />
+                <Link to="/">
+                    <img src="/images/importsKleinLogo.png" className='buttonHover w-[65px] mt-1 ml-1' />
+                </Link>
                 <button
                     className="absolute top-3 right-3 text-xl text-white"
                     onClick={toggleSidebar}
                 >
                     <img src='/images/icons/close.svg' className='w-[35px]' />
                 </button>
-                <hr className='border-1 mt-4 border-borderColor'/>
+                <hr className='border-1 mt-4 border-borderColor' />
                 <ul className="mt-4">
                     {categories.map((category, index) => (
                         <Link to={category.path} onClick={toggleSidebar}>
