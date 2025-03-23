@@ -913,6 +913,16 @@ const productData = {
                         images: {
                             Azul: "/images/smartphones/xiaomi/redminote14pro.png",
                         }
+                    },
+                    {
+                        condition: "Lacrado",
+                        storage: "256GB/8GB",
+                        price: "R$ 1.900,00",
+                        colors: ["Azul"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redminote14pro.png",
+                        }
                     }
                 ],
             },
@@ -947,25 +957,6 @@ const productData = {
             },
         ],
         Motorola: [
-            {
-                key: "motog30",
-                src: "/images/smartphones/motorola/motog30.png",
-                product: "Moto G30",
-                price: "R$ 599,00",
-                garantia: "6 meses",
-                versions: [
-                    {
-                        condition: "Seminovo",
-                        storage: "128GB",
-                        price: "R$ 599,00",
-                        colors: ["White lilac"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "White lilac": "/images/smartphones/motorola/motog30.png",
-                        }
-                    }
-                ]
-            },
         ],
         Realme: [
             {
@@ -983,6 +974,25 @@ const productData = {
                         availability: "Pronta-entrega",
                         images: {
                             "Marble black": "/images/smartphones/realme/note60.png"
+                        }
+                    }
+                ]
+            },
+            {
+                key: "realmec61",
+                src: "/images/smartphones/realme/realmec61.png",
+                product: "Realme C61 com NFC",
+                price: "R$ 1.199,00",
+                garantia: "1 ano",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        storage: "256GB",
+                        price: "R$ 1.199,00",
+                        colors: ["Marble black"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Marble black": "/images/smartphones/realme/realmec61.png",
                         }
                     }
                 ]
@@ -1363,7 +1373,7 @@ const productData = {
                     return {
                         model,
                         condition: "Lacrado",
-                        price: "R$ 40,00",
+                        price: "R$ 35,00",
                         colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
                         availability: "Pronta-entrega",
                         images: {
@@ -1393,7 +1403,7 @@ const productData = {
                         colors: ["Transparente"],
                         availability: "Pronta-entrega",
                         images: {
-                            "Transparente": "/images/acessorios/capatransparenteiphone.png",
+                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
                         }
                     };
                 })
@@ -1436,7 +1446,26 @@ const productData = {
                         }
                     };
                 })
-            }
+            },
+            {
+                key: "pelicula3dapple",
+                src: "/images/acessorios/pelicula3dapple.png",
+                product: "Película 3D para iPhone",
+                price: "R$ 20,00",
+                versions: Array.from({ length: 6 }, (_, i) => {
+                    const model = (i + 11).toString();
+                    return {
+                        model,
+                        condition: "Lacrado",
+                        price: "R$ 20,00",
+                        colors: ["Transparente"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Transparente": "/images/acessorios/pelicula3dapple.png",
+                        }
+                    };
+                })
+            },
         ]
     }
 };

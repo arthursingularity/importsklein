@@ -14,6 +14,7 @@ const data = {
                 product: "Apple iPhone 13",
                 price: "R$ 3.632,00",
                 garantia: "1 ano",
+                message: "Acima de 2 unidades, cada um sai por R$ 11,99",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -916,6 +917,16 @@ const data = {
                         images: {
                             Azul: "/images/smartphones/xiaomi/redminote14pro.png",
                         }
+                    },
+                    {
+                        condition: "Lacrado",
+                        storage: "256GB/8GB",
+                        price: "R$ 1.900,00",
+                        colors: ["Azul"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Azul: "/images/smartphones/xiaomi/redminote14pro.png",
+                        }
                     }
                 ],
             },
@@ -950,25 +961,6 @@ const data = {
             },
         ],
         Motorola: [
-            {
-                key: "motog30",
-                src: "/images/smartphones/motorola/motog30.png",
-                product: "Moto G30",
-                price: "R$ 599,00",
-                garantia: "6 meses",
-                versions: [
-                    {
-                        condition: "Seminovo",
-                        storage: "128GB",
-                        price: "R$ 599,00",
-                        colors: ["White lilac"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "White lilac": "/images/smartphones/motorola/motog30.png",
-                        }
-                    }
-                ]
-            },
         ],
         Realme: [
             {
@@ -986,6 +978,25 @@ const data = {
                         availability: "Pronta-entrega",
                         images: {
                             "Marble black": "/images/smartphones/realme/note60.png"
+                        }
+                    }
+                ]
+            },
+            {
+                key: "realmec61",
+                src: "/images/smartphones/realme/realmec61.png",
+                product: "Realme C61 com NFC",
+                price: "R$ 1.199,00",
+                garantia: "1 ano",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        storage: "256GB",
+                        price: "R$ 1.199,00",
+                        colors: ["Marble black"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Marble black": "/images/smartphones/realme/realmec61.png",
                         }
                     }
                 ]
@@ -1031,7 +1042,7 @@ const data = {
                         colors: ["Branco"],
                         availability: "Encomenda",
                         images: {
-                            Branco: "/images/fones/airpods4.png",
+                            Branco: "/images/musica/airpods4.png",
                         },
                     },
                 ],
@@ -1049,7 +1060,7 @@ const data = {
                         colors: ["Branco"],
                         availability: "Encomenda",
                         images: {
-                            Branco: "/images/fones/airpods4.png",
+                            Branco: "/images/musica/airpods4.png",
                         },
                     },
                 ],
@@ -1067,7 +1078,7 @@ const data = {
                         colors: ["Branco"],
                         availability: "Encomenda",
                         images: {
-                            Branco: "/images/fones/airpodspro2.png",
+                            Branco: "/images/musica/airpodspro2.png",
                         },
                     },
                 ],
@@ -1087,7 +1098,7 @@ const data = {
                         colors: ["Branco"],
                         availability: "Pronta-entrega",
                         images: {
-                            Branco: "/images/fones/kaidikd790.png",
+                            Branco: "/images/musica/kaidikd790.png",
                         },
                     },
                 ],
@@ -1195,7 +1206,7 @@ const data = {
                 src: "/images/carregadores/cabousbclight.png",
                 product: "Cabo de USB-C para Lightning",
                 price: "R$ 35,00",
-                garantia: "6 meses",
+                garantia: "3 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -1213,7 +1224,7 @@ const data = {
                 src: "/images/carregadores/carregadorinducaoagold.png",
                 product: "Carregador por indução 20W A'GOLD",
                 price: "R$ 49,99",
-                garantia: "6 meses",
+                garantia: "3 meses",
                 versions: [
                     {
                         condition: "Lacrado",
@@ -1247,7 +1258,7 @@ const data = {
             {
                 key: "carregadorusbclightning",
                 src: "/images/carregadores/carregadorusbclightning.png",
-                product: "Carregador USB-C - lightning",
+                product: "Carregador UBC-C - lightning",
                 price: "R$ 40,00",
                 garantia: "3 meses",
                 versions: [
@@ -1265,7 +1276,7 @@ const data = {
             {
                 key: "cabousbc",
                 src: "/images/carregadores/cabousbc.png",
-                product: "Cabo USB-C",
+                product: "Cabo UBC-C",
                 price: "R$ 35,00",
                 garantia: "3 meses",
                 versions: [
@@ -1288,11 +1299,11 @@ const data = {
                 key: "chaveirocolecionavel",
                 src: "/images/chaveiros/chaveiros.png",
                 product: "Chaveiro Colecionável",
-                price: "R$ 12,99",
+                price: "R$ 13,99",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 35,00",
+                        price: "R$ 13,99",
                         colors: ["Minion1", "Minion2", "Minion3", "Minion4", "Minion5",
                             "Stitch1", "Stitch2", "Stitch3", "Stitch4", "Stitch5",
                             "Patrick1", "Patrick2", "Patrick3",
@@ -1310,6 +1321,7 @@ const data = {
                             "Ursopooh1", // Ursinho Pooh
                             "Alegria1", "Nojinho1", "Raiva1", "Tristeza1", "Inveja1",],
                         colorType: "img",
+                        message: "Acima de 2 unidades, cada um sai por R$ 11,99",
                         availability: "Pronta-entrega",
                         images: {
                             Minion1: "/images/chaveiros/minion1.png",
@@ -1360,9 +1372,10 @@ const data = {
                 src: "/images/acessorios/capinhasiliconeapple.png",
                 product: "Capa de silicone para iPhone",
                 price: "R$ 35,00",
-                versions: [
-                    {
-                        model: "11",
+                versions: Array.from({ length: 6 }, (_, i) => {
+                    const model = (i + 11).toString();
+                    return {
+                        model,
                         condition: "Lacrado",
                         price: "R$ 35,00",
                         colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
@@ -1377,93 +1390,8 @@ const data = {
                             Amarelo: "/images/acessorios/capinhasiliconeapple.png",
                             Roxo: "/images/acessorios/capinhasiliconeapple.png",
                         }
-                    },
-                    {
-                        model: "12",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    },
-                    {
-                        model: "13",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    },
-                    {
-                        model: "14",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    },
-                    {
-                        model: "15",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    },
-                    {
-                        model: "16",
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
-                        }
-                    }
-                ]
+                    };
+                })
             },
             {
                 key: "capinhamagsafeiphone",
@@ -1479,7 +1407,7 @@ const data = {
                         colors: ["Transparente"],
                         availability: "Pronta-entrega",
                         images: {
-                            "Transparente": "/images/acessorios/capatransparenteiphone.png",
+                            "Transparente": "/images/acessorios/capinhamagsafeiphone.png",
                         }
                     };
                 })
@@ -1488,75 +1416,21 @@ const data = {
                 key: "capinhavidroiphone",
                 src: "/images/acessorios/capinhavidroiphone.png",
                 product: "Capa de vidro para iPhone",
-                price: "R$ 45,00",
-                versions: [
-                    {
-                        model: "11",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
+                price: "R$ 35,00",
+                versions: Array.from({ length: 6 }, (_, i) => {
+                    const model = (i + 11).toString();
+                    return {
+                        model,
                         colorType: "img",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
                         colors: ["Consultar disponibilidade"],
                         availability: "Pronta-entrega",
                         images: {
                             "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
                         }
-                    },
-                    {
-                        model: "12",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                    {
-                        model: "13",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                    {
-                        model: "14",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                    {
-                        model: "15",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                    {
-                        model: "16",
-                        condition: "Lacrado",
-                        price: "R$ 45,00",
-                        colorType: "img",
-                        colors: ["Consultar disponibilidade"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            "Consultar disponibilidade": "/images/acessorios/capinhavidroiphone.png",
-                        }
-                    },
-                ]
+                    };
+                })
             },
             {
                 key: "capatransparenteiphone",
@@ -1576,7 +1450,26 @@ const data = {
                         }
                     };
                 })
-            }
+            },
+            {
+                key: "pelicula3dapple",
+                src: "/images/acessorios/pelicula3dapple.png",
+                product: "Película 3D para iPhone",
+                price: "R$ 20,00",
+                versions: Array.from({ length: 6 }, (_, i) => {
+                    const model = (i + 11).toString();
+                    return {
+                        model,
+                        condition: "Lacrado",
+                        price: "R$ 20,00",
+                        colors: ["Transparente"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            "Transparente": "/images/acessorios/pelicula3dapple.png",
+                        }
+                    };
+                })
+            },
         ]
     }
 };

@@ -30,14 +30,39 @@ function NavBar() {
                 <Link to="/">
                     <img src="/images/importsKleinLogo.png" style={{ width: 75 }} className='buttonHover' />
                 </Link>
-
-                {/* Ícone do menu que abre/fecha a aba lateral */}
                 <img
                     src='/images/icons/menu.svg'
                     className='searchNavBarIcon buttonHover absolute text-white right-4 w-9 cursor-pointer'
                     onClick={toggleSidebar}
                 />
-
+                <ul>
+                    <li className='space-x-4 hidden'>
+                        <Link to="/" className='text-white font-light buttonHover'>
+                            Página inicial
+                        </Link>
+                        <Link to="/" className='text-white font-light buttonHover'>
+                            Smartphones
+                        </Link>
+                        <Link to="/" className='text-white font-light buttonHover'>
+                            Tablets
+                        </Link>
+                        <Link to="/" className='text-white font-light buttonHover'>
+                            Música
+                        </Link>
+                        <Link to="/" className='text-white font-light buttonHover'>
+                            Carregadores
+                        </Link>
+                        <Link to="/" className='text-white font-light buttonHover'>
+                            Smartwatches
+                        </Link>
+                        <Link to="/" className='text-white font-light buttonHover'>
+                            Eletrônicos
+                        </Link>
+                        <Link to="/" className='text-white font-light buttonHover'>
+                            Chaveiros
+                        </Link>
+                    </li>
+                </ul>
                 <div>
                     <input className='bg-transparent rounded-lg border border-borderColor font-light text-white pl-7 w-40 h-7 outline-none caret-white hidden' placeholder='Pesquisar' />
                 </div>
