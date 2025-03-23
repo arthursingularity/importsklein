@@ -901,13 +901,13 @@ const productData = {
                 key: "redminote14pro",
                 src: "/images/smartphones/xiaomi/redminote14pro.png",
                 product: "Redmi Note 14 Pro 4G",
-                price: "R$ 2.229,00",
+                price: "R$ 2.179,00",
                 garantia: "6 meses",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
-                        price: "R$ 2.229,00",
+                        price: "R$ 2.179,00",
                         colors: ["Azul"],
                         availability: "Encomenda",
                         images: {
