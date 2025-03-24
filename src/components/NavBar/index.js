@@ -26,48 +26,53 @@ function NavBar() {
             <p className='bg-dark-bg font-light text-white text-center py-1'>
                 <span className='font-medium'>Frete grátis</span> para Nova Friburgo!
             </p>
-            <div className="bg-dark-bg-2 p-3 flex justify-center items-center w-full border-b border-borderColor">
-                <Link to="/">
-                    <img src="/images/importsKleinLogo.png" style={{ width: 75 }} className='buttonHover' />
-                </Link>
+            <div className="bg-dark-bg-2 p-3 w-full border-b border-borderColor">
+                <div className='flex justify-center lg:justify-start'>
+                    <Link to="/">
+                        <img src="/images/importsKleinLogo.png" style={{ width: 75 }} className='buttonHover' />
+                    </Link>
+                </div>
                 <img
                     src='/images/icons/menu.svg'
-                    className='searchNavBarIcon buttonHover absolute text-white right-4 w-9 cursor-pointer'
+                    className='searchNavBarIcon buttonHover lg:invisible top-[44px] visible absolute text-white right-4 w-9 cursor-pointer'
                     onClick={toggleSidebar}
                 />
-                <ul>
-                    <li className='space-x-4 hidden'>
-                        <Link to="/" className='text-white font-light buttonHover'>
-                            Página inicial
-                        </Link>
-                        <Link to="/" className='text-white font-light buttonHover'>
-                            Smartphones
-                        </Link>
-                        <Link to="/" className='text-white font-light buttonHover'>
-                            Tablets
-                        </Link>
-                        <Link to="/" className='text-white font-light buttonHover'>
-                            Música
-                        </Link>
-                        <Link to="/" className='text-white font-light buttonHover'>
-                            Carregadores
-                        </Link>
-                        <Link to="/" className='text-white font-light buttonHover'>
-                            Smartwatches
-                        </Link>
-                        <Link to="/" className='text-white font-light buttonHover'>
-                            Eletrônicos
-                        </Link>
-                        <Link to="/" className='text-white font-light buttonHover'>
-                            Chaveiros
-                        </Link>
-                    </li>
-                </ul>
+                <div className='flex justify-center'>
+                    <ul className='hidden lg:block absolute top-[50px]'>
+                        <li className='space-x-7'>
+                            <Link to="/" className='text-white font-light buttonHover'>
+                                Página inicial
+                            </Link>
+                            <Link to="/smartphones" className='text-white font-light buttonHover'>
+                                Smartphones
+                            </Link>
+                            <Link to="/tablets" className='text-white font-light buttonHover'>
+                                Tablets
+                            </Link>
+                            <Link to="/musica" className='text-white font-light buttonHover'>
+                                Música
+                            </Link>
+                            <Link to="/carregadores" className='text-white font-light buttonHover'>
+                                Carregadores
+                            </Link>
+                            <Link to="/smartwatches" className='text-white font-light buttonHover'>
+                                Smartwatches
+                            </Link>
+                            <Link to="/eletronicos" className='text-white font-light buttonHover'>
+                                Eletrônicos
+                            </Link>
+                            <Link to="/chaveiros" className='text-white font-light buttonHover'>
+                                Chaveiros
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+
                 <div>
                     <input className='bg-transparent rounded-lg border border-borderColor font-light text-white pl-7 w-40 h-7 outline-none caret-white hidden' placeholder='Pesquisar' />
                 </div>
                 <Link to="/">
-                    <img src='/images/icons/home.svg' className='menuNavBarIcon buttonHover material-symbols-outlined text-white absolute left-4 top-[45px] w-8' />
+                    <img src='/images/icons/home.svg' className='menuNavBarIcon buttonHover lg:invisible visible text-white absolute left-4 top-[45px] w-8' />
                 </Link>
             </div>
             <div className="WhatsAppPopUp flex justify-center">

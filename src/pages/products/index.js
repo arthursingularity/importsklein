@@ -429,11 +429,10 @@ const data = {
                         condition: "Lacrado",
                         storage: "256GB/8GB",
                         price: "R$ 1.160,00",
-                        colors: ["Azul"],
+                        colors: ["Preto"],
                         availability: "Pronta-entrega",
                         images: {
                             Preto: "/images/smartphones/xiaomi/redmi14c.png",
-                            Azul: "/images/smartphones/xiaomi/redmi14c.png",
                         }
                     },
                 ]
@@ -1416,14 +1415,14 @@ const data = {
                 key: "capinhavidroiphone",
                 src: "/images/acessorios/capinhavidroiphone.png",
                 product: "Capa de vidro para iPhone",
-                price: "R$ 35,00",
+                price: "R$ 45,00",
                 versions: Array.from({ length: 6 }, (_, i) => {
                     const model = (i + 11).toString();
                     return {
                         model,
                         colorType: "img",
                         condition: "Lacrado",
-                        price: "R$ 35,00",
+                        price: "R$ 45,00",
                         colors: ["Consultar disponibilidade"],
                         availability: "Pronta-entrega",
                         images: {
