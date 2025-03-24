@@ -387,7 +387,7 @@ const data = {
                 ],
             },
             {
-                key: "redmia14c",
+                key: "redmi14c",
                 src: "/images/smartphones/xiaomi/redmi14c.png",
                 product: "Redmi 14C",
                 price: "R$ 1.120,00",
@@ -1124,82 +1124,8 @@ const data = {
             },
         ]
     },
-    Smartwatches: {
-        Apple: [
-            {
-                key: "applewatchse2",
-                src: "/images/smartwatches/applewatchse2estelar.jpg",
-                product: "Apple Watch SE 2",
-                price: "R$ 1.999,00",
-                garantia: "1 ano",
-                versions: [
-                    {
-                        size: "40mm",
-                        condition: "Lacrado",
-                        price: "R$ 1.999,00",
-                        colors: ["Estelar", "Meia-noite"],
-                        availability: "Encomenda",
-                        images: {
-                            Estelar: "/images/smartwatches/applewatchse2estelar.jpg",
-                            "Meia-noite": "/images/smartwatches/applewatchse2meianoite.jpg",
-                        },
-                    },
-                    {
-                        size: "44mm",
-                        condition: "Lacrado",
-                        price: "R$ 2.250,00",
-                        colors: ["Meia-noite"],
-                        availability: "Encomenda",
-                        images: {
-                            "Meia-noite": "/images/smartwatches/applewatchse2meianoite.jpg",
-                        },
-                    },
-                ],
-
-            },
-            {
-                key: "applewatch10",
-                src: "/images/smartwatches/applewatch10silver.jpg",
-                product: "Apple Watch Series 10",
-                price: "R$ 3.990,00",
-                garantia: "1 ano",
-                versions: [
-                    {
-                        size: "46mm",
-                        condition: "Lacrado",
-                        price: "R$ 3.990,00",
-                        colors: ["Silver", "Rose"],
-                        availability: "Encomenda",
-                        images: {
-                            Silver: "/images/smartwatches/applewatch10silver.jpg",
-                            Rose: "/images/smartwatches/applewatch10rose.jpg",
-                        },
-                    }
-                ],
-            },
-            {
-                key: "applewatchultra2",
-                src: "/images/smartwatches/applewatchultra2.png",
-                product: "Apple Watch Ultra 2",
-                price: "R$ 6.700,00",
-                garantia: "1 ano",
-                versions: [
-                    {
-                        size: "49mm",
-                        condition: "Lacrado",
-                        price: "R$ 6.700,00",
-                        colors: ["Oceano Laranja"],
-                        availability: "Encomenda",
-                        images: {
-                            "Oceano Laranja": "/images/smartwatches/applewatchultra2.png",
-                        },
-                    }
-                ],
-            },
-        ],
-    },
     Carregadores: {
-        Padrão: [
+        Padrao: [
             {
                 key: "cabousbclight",
                 src: "/images/carregadores/cabousbclight.png",
@@ -1286,6 +1212,284 @@ const data = {
                         availability: "Pronta-entrega",
                         images: {
                             Branco: "/images/carregadores/cabousbc.png",
+                        },
+                    }
+                ],
+            },
+        ]
+    },
+    Smartwatches: {
+        Apple: [
+            {
+                key: "applewatchse2",
+                src: "/images/smartwatches/applewatchse2estelar.jpg",
+                product: "Apple Watch SE 2",
+                price: "R$ 1.999,00",
+                garantia: "1 ano",
+                versions: [
+                    {
+                        size: "40mm",
+                        condition: "Lacrado",
+                        price: "R$ 1.999,00",
+                        colors: ["Estelar", "Meia-noite"],
+                        availability: "Encomenda",
+                        images: {
+                            Estelar: "/images/smartwatches/applewatchse2estelar.jpg",
+                            "Meia-noite": "/images/smartwatches/applewatchse2meianoite.jpg",
+                        },
+                    },
+                    {
+                        size: "44mm",
+                        condition: "Lacrado",
+                        price: "R$ 2.250,00",
+                        colors: ["Meia-noite"],
+                        availability: "Encomenda",
+                        images: {
+                            "Meia-noite": "/images/smartwatches/applewatchse2meianoite.jpg",
+                        },
+                    },
+                ],
+
+            },
+            {
+                key: "applewatch10",
+                src: "/images/smartwatches/applewatch10silver.jpg",
+                product: "Apple Watch Series 10",
+                price: "R$ 3.990,00",
+                garantia: "1 ano",
+                versions: [
+                    {
+                        size: "46mm",
+                        condition: "Lacrado",
+                        price: "R$ 3.990,00",
+                        colors: ["Silver", "Rose"],
+                        availability: "Encomenda",
+                        images: {
+                            Silver: "/images/smartwatches/applewatch10silver.jpg",
+                            Rose: "/images/smartwatches/applewatch10rose.jpg",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "applewatchultra2",
+                src: "/images/smartwatches/applewatchultra2.png",
+                product: "Apple Watch Ultra 2",
+                price: "R$ 6.700,00",
+                garantia: "1 ano",
+                versions: [
+                    {
+                        size: "49mm",
+                        condition: "Lacrado",
+                        price: "R$ 6.700,00",
+                        colors: ["Oceano Laranja"],
+                        availability: "Encomenda",
+                        images: {
+                            "Oceano Laranja": "/images/smartwatches/applewatchultra2.png",
+                        },
+                    }
+                ],
+            },
+        ],
+        Padrao: [
+            {
+                key: "smartwatch",
+                src: "/images/smartwatches/smartwatch.png",
+                product: "Smartwatch",
+                price: "R$ 49,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 49,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/smartwatches/smartwatch.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "t900ultra",
+                src: "/images/smartwatches/t900ultra.png",
+                product: "T900 Ultra com 2 pulseiras",
+                price: "R$ 99,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 99,90",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/smartwatches/t900ultra.png",
+                        },
+                    }
+                ],
+            }, 
+        ]
+    },
+    Eletronicos: {
+        Padrao: [
+            {
+                key: "videogameretro",
+                src: "/images/eletronicos/videogameretro.png",
+                product: "Video game retrô (10.000 jogos)",
+                price: "R$ 109,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 109,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/eletronicos/videogameretro.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "aparadordepelos",
+                src: "/images/eletronicos/aparadordepelos.png",
+                product: "Aparador de pelos",
+                price: "R$ 23,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 23,00",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/eletronicos/aparadordepelos.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "minimassageador",
+                src: "/images/eletronicos/minimassageador.png",
+                product: "Mini massageador",
+                price: "R$ 9,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 9,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/eletronicos/minimassageador.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "camerapanoramica",
+                src: "/images/eletronicos/camerapanoramica.png",
+                product: "Câmera panorâmica Wi-Fi",
+                price: "R$ 89,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 89,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/eletronicos/camerapanoramica.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "camerainteligente",
+                src: "/images/eletronicos/camerainteligente.png",
+                product: "Câmera inteligente Wi-Fi",
+                price: "R$ 119,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 119,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/eletronicos/camerainteligente.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "umidificador",
+                src: "/images/eletronicos/umidificador.png",
+                product: "Umidificador e Aromaterapia",
+                price: "R$ 39,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 39,90",
+                        colors: ["Marrom"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Marrom: "/images/eletronicos/umidificador.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "raladordepe",
+                src: "/images/eletronicos/raladordepe.png",
+                product: "Ralador de pé elétrico",
+                price: "R$ 15,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 15,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/eletronicos/raladordepe.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "projetordeled",
+                src: "/images/eletronicos/projetordeled.png",
+                product: "Projetor de LED",
+                price: "R$ 149,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 149,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/eletronicos/projetordeled.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "3em1",
+                src: "/images/eletronicos/3em1.png",
+                product: "3 em 1(Relógio, carregador e caixa de som)",
+                price: "R$ 119,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 119,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/eletronicos/3em1.png",
                         },
                     }
                 ],

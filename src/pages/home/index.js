@@ -58,19 +58,28 @@ const data = {
     ],
     prontaEntrega: [
         {
-            src: "/images/smartphones/motorola/motog30.png",
-            product: "Moto G30",
-            price: "R$ 599,00",
+            link: "/smartphones/xiaomi/redmi14c",
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.120,00",
         },
         {
+            link: "/smartphones/xiaomi/redminote14pro",
+            src: "/images/smartphones/xiaomi/redminote14pro.png",
+            product: "Redmi Note 14 Pro 4G",
+            price: "R$ 1.850,00",
+        },
+        {
+            link: "/smartphones/realme/realmec61",
+            src: "/images/smartphones/realme/realmec61.png",
+            product: "Realme C61 com NFC",
+            price: "R$ 1.199,00",
+        },
+        {
+            link: "/smartphones/realme/note60",
             src: "/images/smartphones/realme/note60.png",
             product: "Realme Note 60",
             price: "R$ 899,00",
-        },
-        {
-            src: "/images/smartphones/xiaomi/redmi14c.png",
-            product: "Redmi 14C",
-            price: "R$ 1.160,00",
         },
     ],
 };
@@ -242,6 +251,7 @@ function Home() {
                                                     ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
                                                     : item.price
                                             }
+                                            link={item.link}
                                         />
                                     ))}
                                 </div>
@@ -268,6 +278,7 @@ function Home() {
                                                     ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
                                                     : item.price
                                             }
+                                            link={item.link}
                                         />
                                     ))}
                                 </div>

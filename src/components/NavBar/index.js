@@ -2,24 +2,21 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import './navbar.css';
 
+const categories = [
+    { name: "Smartphones", path: "/smartphones", icon: "/images/icons/smartphone.svg" },
+    { name: "Tablets", path: "/tablets", icon: "/images/icons/smartphone.svg" },
+    { name: "Música", path: "/musica", icon: "/images/icons/musica.svg" },
+    { name: "Carregadores", path: "/carregadores", icon: "/images/icons/carregadores.svg" },
+    { name: "Acessórios", path: "/acessorios", icon: "/images/icons/acessorios.png" },
+    { name: "Smartwatches", path: "/smartwatches", icon: "/images/icons/smartwatch.svg" },
+    { name: "Eletrônicos", path: "/eletronicos", icon: "/images/icons/eletronicos.svg" },
+    { name: "Chaveiros", path: "/chaveiros", icon: "/images/icons/chaveiro.svg" }
+];
+
 function NavBar() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const location = useLocation(); // Hook para obter a rota atual
-
-    const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
-    };
-
-    const categories = [
-        { name: "Smartphones", path: "/smartphones", icon: "/images/icons/smartphone.svg" },
-        { name: "Tablets", path: "/tablets", icon: "/images/icons/smartphone.svg" },
-        { name: "Música", path: "/musica", icon: "/images/icons/musica.svg" },
-        { name: "Carregadores", path: "/carregadores", icon: "/images/icons/carregadores.svg" },
-        { name: "Acessórios", path: "/acessorios", icon: "/images/icons/acessorios.png" },
-        { name: "Smartwatches", path: "/smartwatches", icon: "/images/icons/smartwatch.svg" },
-        { name: "Eletrônicos", path: "/eletronicos", icon: "/images/icons/eletronicos.svg" },
-        { name: "Chaveiros", path: "/chaveiros", icon: "/images/icons/chaveiro.svg" }
-    ];
+    const location = useLocation();
+    const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
     return (
         <div className='fixed z-50 w-full'>
@@ -39,9 +36,9 @@ function NavBar() {
                 />
                 <div className='flex justify-center'>
                     <ul className='hidden lg:block absolute top-[50px]'>
-                        <li className='space-x-7'>
+                        <li className='space-x-5'>
                             <Link to="/" className='text-white font-light buttonHover'>
-                                Página inicial
+                                Início
                             </Link>
                             <Link to="/smartphones" className='text-white font-light buttonHover'>
                                 Smartphones
@@ -54,6 +51,9 @@ function NavBar() {
                             </Link>
                             <Link to="/carregadores" className='text-white font-light buttonHover'>
                                 Carregadores
+                            </Link>
+                            <Link to="/acessorios" className='text-white font-light buttonHover'>
+                                Acessorios
                             </Link>
                             <Link to="/smartwatches" className='text-white font-light buttonHover'>
                                 Smartwatches
