@@ -226,7 +226,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "64/3GB",
+                        storage: "64GB/3GB",
                         price: "R$ 909,00",
                         colors: ["Preto", "Verde", "Azul"],
                         availability: "Encomenda",
@@ -238,7 +238,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "128/4GB",
+                        storage: "128GB/4GB",
                         price: "R$ 1.039,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -259,7 +259,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128/4GB",
+                        storage: "128GB/4GB",
                         price: "R$ 1.329,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -278,7 +278,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128/4GB",
+                        storage: "128GB/4GB",
                         price: "R$ 1.129,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -289,7 +289,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "128/8GB",
+                        storage: "128GB/8GB",
                         price: "R$ 1.209,00",
                         colors: ["Azul", "Silver"],
                         availability: "Encomenda",
@@ -300,7 +300,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.309,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -320,7 +320,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.479,00",
                         colors: ["Preto", "Branco", "Cinza"],
                         availability: "Encomenda",
@@ -341,7 +341,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128/6GB",
+                        storage: "128GB/6GB",
                         price: "R$ 1.229,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -351,7 +351,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.379,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -371,7 +371,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128/6GB",
+                        storage: "128GB/6GB",
                         price: "R$ 1.259,00",
                         colors: ["Branco", "Preto"],
                         availability: "Encomenda",
@@ -391,7 +391,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128/4GB",
+                        storage: "128GB/4GB",
                         price: "R$ 1.120,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -402,7 +402,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/4GB",
+                        storage: "256GB/4GB",
                         price: "R$ 1.189,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -413,7 +413,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.279,00",
                         colors: ["Azul"],
                         availability: "Encomenda",
@@ -423,7 +423,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.160,00",
                         colors: ["Preto"],
                         availability: "Pronta-entrega",
@@ -442,7 +442,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.629,00",
                         colors: ["Preto", "Roxo"],
                         availability: "Encomenda",
@@ -453,7 +453,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512/12GB",
+                        storage: "512GB/12GB",
                         price: "R$ 1.909,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -473,7 +473,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/12GB",
+                        storage: "256GB/12GB",
                         price: "R$ 2.059,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -493,7 +493,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 2.349,00",
                         colors: ["Cinza", "Preto"],
                         availability: "Encomenda",
@@ -504,7 +504,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512/12GB",
+                        storage: "512GB/12GB",
                         price: "R$ 2.539,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -523,7 +523,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 2.149,00",
                         colors: ["Silver", "Preto", "Verde"],
                         availability: "Encomenda",
@@ -535,7 +535,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512/12GB",
+                        storage: "512GB/12GB",
                         price: "R$ 2.379,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -554,7 +554,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/12GB",
+                        storage: "256GB/12GB",
                         price: "R$ 2.759,00",
                         colors: ["Verde", "Preto", "Silver"],
                         availability: "Encomenda",
@@ -566,7 +566,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512/12GB",
+                        storage: "512GB/12GB",
                         price: "R$ 3.009,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -585,7 +585,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 2.559,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -604,7 +604,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "512/12GB",
+                        storage: "512GB/12GB",
                         price: "R$ 3.739,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -633,7 +633,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.279,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -652,7 +652,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128/6GB",
+                        storage: "128GB/6GB",
                         price: "R$ 1.209,00",
                         colors: ["Verde", "Preto"],
                         availability: "Encomenda",
@@ -663,7 +663,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.269,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -682,7 +682,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.309,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -701,7 +701,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128/6GB",
+                        storage: "128GB/6GB",
                         price: "R$ 1.349,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -711,7 +711,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "128/8GB",
+                        storage: "128GB/8GB",
                         price: "R$ 1.379,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -723,7 +723,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.549,00",
                         colors: ["Preto", "Azul", "Verde"],
                         availability: "Encomenda",
@@ -744,7 +744,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128/6GB",
+                        storage: "128GB/6GB",
                         price: "R$ 1.509,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -754,7 +754,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.959,00",
                         colors: ["Preto", "Azul",],
                         availability: "Encomenda",
@@ -774,7 +774,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.999,00",
                         colors: ["Roxo"],
                         availability: "Encomenda",
@@ -793,7 +793,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 2.509,00",
                         colors: ["Preto", "Azul"],
                         availability: "Encomenda",
@@ -804,7 +804,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512/12GB",
+                        storage: "512GB/12GB",
                         price: "R$ 2.789,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -823,7 +823,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 2.149,00",
                         colors: ["Azul"],
                         availability: "Encomenda",
@@ -842,7 +842,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 2.729,00",
                         colors: ["Preto", "Roxo"],
                         availability: "Encomenda",
@@ -853,7 +853,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512/12GB",
+                        storage: "512GB/12GB",
                         price: "R$ 3.109,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -872,7 +872,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "128/6GB",
+                        storage: "128GB/6GB",
                         price: "R$ 1.469,00",
                         colors: ["Preto", "Azul", "Roxo"],
                         availability: "Encomenda",
@@ -884,7 +884,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.619,00",
                         colors: ["Preto", "Azul", "Verde"],
                         availability: "Encomenda",
@@ -905,7 +905,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.850,00",
                         colors: ["Azul"],
                         availability: "Encomenda",
@@ -915,7 +915,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 1.900,00",
                         colors: ["Azul"],
                         availability: "Pronta-entrega",
@@ -934,7 +934,7 @@ const productData = {
                 versions: [
                     {
                         condition: "Lacrado",
-                        storage: "256/8GB",
+                        storage: "256GB/8GB",
                         price: "R$ 3.009,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -944,7 +944,7 @@ const productData = {
                     },
                     {
                         condition: "Lacrado",
-                        storage: "512/12GB",
+                        storage: "512GB/12GB",
                         price: "R$ 3.309,00",
                         colors: ["Preto"],
                         availability: "Encomenda",
@@ -1118,6 +1118,265 @@ const productData = {
                     },
                 ],
             },
+            {
+                key: "minicaixadesom",
+                src: "/images/musica/minicaixadesom.png",
+                product: "Mini caixinha de som bluetooth",
+                price: "R$ 36,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 36,00",
+                        colors: ["Preto", "Azul", "Vermelho"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/musica/minicaixadesom.png",
+                            Azul: "/images/musica/minicaixadesom.png",
+                            Vermelho: "/images/musica/minicaixadesom.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "caixadesomparapc",
+                src: "/images/musica/caixadesomparapc.png",
+                product: "Caixa de som USB para pc/notebook",
+                price: "R$ 29,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 29,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/musica/caixadesomparapc.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "fonedeouvidobluetooth",
+                src: "/images/musica/fonedeouvidobluetooth.png",
+                product: "Fone de ouvido bluetooth",
+                price: "R$ 49,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 49,90",
+                        colors: ["Vermelho"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Vermelho: "/images/musica/fonedeouvidobluetooth.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "fonedeouvidobmax",
+                src: "/images/musica/fonedeouvidobmax.png",
+                product: "Fone de ouvido bluetooth Bmax",
+                price: "R$ 49,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 49,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/musica/fonedeouvidobmax.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "minicaixadesomspeaker",
+                src: "/images/musica/minicaixadesomspeaker.png",
+                product: "Mini caixa de som bluetooth",
+                price: "R$ 28,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 28,00",
+                        colors: ["Azul", "Vermelho"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Azul: "/images/musica/minicaixadesomspeaker.png",
+                            Vermelho: "/images/musica/minicaixadesomspeaker.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "fonep9",
+                src: "/images/musica/fonep9.png",
+                product: "Fone de ouvido P9",
+                price: "R$ 63,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 63,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/musica/fonep9.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "caixadesomcomsuporte",
+                src: "/images/musica/caixadesomcomsuporte.png",
+                product: "Caixa de som com suporte",
+                price: "R$ 39,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 39,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/musica/fonep9.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "3em1",
+                src: "/images/eletronicos/3em1.png",
+                product: "3 em 1(Relógio, carregador e caixa de som)",
+                price: "R$ 119,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 119,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/eletronicos/3em1.png",
+                        },
+                    }
+                ],
+            },
+        ]
+    },
+    Carregadores: {
+        Padrao: [
+            {
+                key: "cabousbclight",
+                src: "/images/carregadores/cabousbclight.png",
+                product: "Cabo de USB-C para Lightning",
+                price: "R$ 35,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/carregadores/cabousbclight.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "carregadorinducaoagold",
+                src: "/images/carregadores/carregadorinducaoagold.png",
+                product: "Carregador por indução 20W A'GOLD",
+                price: "R$ 49,99",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 49,00",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/carregadores/carregadorinducaoagold.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "powerbankagold",
+                src: "/images/carregadores/powerbankagold.png",
+                product: "Carregador PoweBank 75W A'GOLD 5000mAh",
+                price: "R$ 89,99",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 89,99",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/carregadores/powerbankagold.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "carregadorusbclightning",
+                src: "/images/carregadores/carregadorusbclightning.png",
+                product: "Carregador USB-C - lightning",
+                price: "R$ 40,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 40,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/carregadores/carregadorusbclightning.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "cabousbc",
+                src: "/images/carregadores/cabousbc.png",
+                product: "Cabo USB-C",
+                price: "R$ 35,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/carregadores/cabousbc.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "3em1",
+                src: "/images/eletronicos/3em1.png",
+                product: "3 em 1(Relógio, carregador e caixa de som)",
+                price: "R$ 119,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 119,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/eletronicos/3em1.png",
+                        },
+                    }
+                ],
+            },
         ]
     },
     Smartwatches: {
@@ -1211,7 +1470,7 @@ const productData = {
                         },
                     }
                 ],
-            }, 
+            },
             {
                 key: "t900ultra",
                 src: "/images/smartwatches/t900ultra.png",
@@ -1229,7 +1488,7 @@ const productData = {
                         },
                     }
                 ],
-            }, 
+            },
         ]
     },
     Eletronicos: {
@@ -1379,113 +1638,105 @@ const productData = {
                 ],
             },
             {
-                key: "3em1",
-                src: "/images/eletronicos/3em1.png",
-                product: "3 em 1(Relógio, carregador e caixa de som)",
-                price: "R$ 119,90",
+                key: "pendrive",
+                src: "/images/eletronicos/pendrive.png",
+                product: "Pen drive",
+                price: "R$ 26,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        storage: "8GB",
+                        condition: "Lacrado",
+                        price: "R$ 26,00",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/eletronicos/pendrive.png",
+                        },
+                    },
+                    {
+                        storage: "16GB",
+                        condition: "Lacrado",
+                        price: "R$ 30,00",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/eletronicos/pendrive.png",
+                        },
+                    },
+                    {
+                        storage: "32GB",
+                        condition: "Lacrado",
+                        price: "R$ 38,00",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/eletronicos/pendrive.png",
+                        },
+                    },
+                    {
+                        storage: "64GB",
+                        condition: "Lacrado",
+                        price: "R$ 59,00",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/eletronicos/pendrive.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "luminariabola",
+                src: "/images/eletronicos/luminariabola.jpg",
+                product: "Luminária bola",
+                price: "R$ 39,99",
                 garantia: "3 meses",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 119,90",
-                        colors: ["Branco"],
+                        price: "R$ 39,99",
+                        colors: ["Marrom"],
                         availability: "Pronta-entrega",
                         images: {
-                            Branco: "/images/eletronicos/3em1.png",
+                            Marrom: "/images/eletronicos/luminariabola.jpg",
                         },
                     }
                 ],
             },
-        ]
-    },
-    Carregadores: {
-        Padrão: [
             {
-                key: "cabousbclight",
-                src: "/images/carregadores/cabousbclight.png",
-                product: "Cabo de USB-C para Lightning",
-                price: "R$ 35,00",
+                key: "xbox360",
+                src: "/images/eletronicos/xbox360.png",
+                product: "Xbox 360 + kinect + 2 controles",
+                price: "R$ 699,99",
                 garantia: "3 meses",
                 versions: [
                     {
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Branco"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Branco: "/images/carregadores/cabousbclight.png",
-                        },
-                    }
-                ],
-            },
-            {
-                key: "carregadorinducaoagold",
-                src: "/images/carregadores/carregadorinducaoagold.png",
-                product: "Carregador por indução 20W A'GOLD",
-                price: "R$ 49,99",
-                garantia: "3 meses",
-                versions: [
-                    {
-                        condition: "Lacrado",
-                        price: "R$ 49,00",
+                        message: "Acompanha jogos no HD",
+                        condition: "Seminovo",
+                        price: "R$ 699,99",
                         colors: ["Preto"],
                         availability: "Pronta-entrega",
                         images: {
-                            Preto: "/images/carregadores/carregadorinducaoagold.png",
+                            Preto: "/images/eletronicos/xbox360.png",
                         },
                     }
                 ],
             },
             {
-                key: "powerbankagold",
-                src: "/images/carregadores/powerbankagold.png",
-                product: "Carregador PoweBank 75W A'GOLD 5000mAh",
-                price: "R$ 89,99",
+                key: "carregadorveicular",
+                src: "/images/eletronicos/carregadorcarro.jpg",
+                product: "Carregador turbo veicular 55W(2x USB / 1x USB-C)",
+                price: "R$ 20,00",
                 garantia: "3 meses",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 89,99",
-                        colors: ["Branco"],
+                        price: "R$ 20,00",
+                        colors: ["Preto"],
                         availability: "Pronta-entrega",
                         images: {
-                            Branco: "/images/carregadores/powerbankagold.png",
-                        },
-                    }
-                ],
-            },
-            {
-                key: "carregadorusbclightning",
-                src: "/images/carregadores/carregadorusbclightning.png",
-                product: "Carregador UBC-C - lightning",
-                price: "R$ 40,00",
-                garantia: "3 meses",
-                versions: [
-                    {
-                        condition: "Lacrado",
-                        price: "R$ 40,00",
-                        colors: ["Branco"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Branco: "/images/carregadores/carregadorusbclightning.png",
-                        },
-                    }
-                ],
-            },
-            {
-                key: "cabousbc",
-                src: "/images/carregadores/cabousbc.png",
-                product: "Cabo UBC-C",
-                price: "R$ 35,00",
-                garantia: "3 meses",
-                versions: [
-                    {
-                        condition: "Lacrado",
-                        price: "R$ 35,00",
-                        colors: ["Branco"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Branco: "/images/carregadores/cabousbc.png",
+                            Preto: "/images/eletronicos/carregadorcarro.jpg",
                         },
                     }
                 ],
@@ -1668,6 +1919,26 @@ const productData = {
                         }
                     };
                 })
+            },
+        ],
+        Padrao: [
+            {
+                key: "suportemagnetico",
+                src: "/images/acessorios/suportemagnetico.png",
+                product: "Suporte magnético",
+                price: "R$ 15,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 15,90",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/acessorios/suportemagnetico.png",
+                        },
+                    }
+                ],
             },
         ]
     }
@@ -1869,10 +2140,11 @@ function ProductComponent({ productKey }) {
 
     const handleBuy = () => {
         const phone = "5522996122610";
-
         const productUrl = window.location.href;
 
-        const message = `Olá, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*\n*${selectedVariant}*\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\n Valor: *${finalPrice}*\n\n Link do produto: ${productUrl}\n\nAguardo seu retorno, obrigado!`;
+        const variantMessage = selectedVariant ? `\n*${selectedVariant}*` : "";
+
+        const message = `Olá, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*${variantMessage}\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\nValor: *${finalPrice}*\n\nLink do produto: ${productUrl}\n\nAguardo seu retorno, obrigado!`;
 
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");

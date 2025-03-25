@@ -1122,6 +1122,153 @@ const data = {
                     },
                 ],
             },
+            {
+                key: "minicaixadesom",
+                src: "/images/musica/minicaixadesom.png",
+                product: "Mini caixinha de som bluetooth",
+                price: "R$ 36,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 36,00",
+                        colors: ["Preto", "Azul", "Vermelho"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/musica/minicaixadesom.png",
+                            Azul: "/images/musica/minicaixadesom.png",
+                            Vermelho: "/images/musica/minicaixadesom.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "caixadesomparapc",
+                src: "/images/musica/caixadesomparapc.png",
+                product: "Caixa de som USB para pc/notebook",
+                price: "R$ 29,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 29,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/musica/caixadesomparapc.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "fonedeouvidobluetooth",
+                src: "/images/musica/fonedeouvidobluetooth.png",
+                product: "Fone de ouvido bluetooth",
+                price: "R$ 49,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 49,90",
+                        colors: ["Vermelho"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Vermelho: "/images/musica/fonedeouvidobluetooth.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "fonedeouvidobmax",
+                src: "/images/musica/fonedeouvidobmax.png",
+                product: "Fone de ouvido bluetooth Bmax",
+                price: "R$ 49,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 49,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/musica/fonedeouvidobmax.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "minicaixadesomspeaker",
+                src: "/images/musica/minicaixadesomspeaker.png",
+                product: "Mini caixa de som bluetooth",
+                price: "R$ 28,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 28,00",
+                        colors: ["Azul", "Vermelho"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Azul: "/images/musica/minicaixadesomspeaker.png",
+                            Vermelho: "/images/musica/minicaixadesomspeaker.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "fonep9",
+                src: "/images/musica/fonep9.png",
+                product: "Fone de ouvido P9",
+                price: "R$ 63,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 63,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/musica/fonep9.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "caixadesomcomsuporte",
+                src: "/images/musica/caixadesomcomsuporte.png",
+                product: "Caixa de som com suporte",
+                price: "R$ 39,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 39,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/musica/fonep9.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "3em1",
+                src: "/images/eletronicos/3em1.png",
+                product: "3 em 1(Relógio, carregador e caixa de som)",
+                price: "R$ 119,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 119,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/eletronicos/3em1.png",
+                        },
+                    }
+                ],
+            },
         ]
     },
     Carregadores: {
@@ -1183,7 +1330,7 @@ const data = {
             {
                 key: "carregadorusbclightning",
                 src: "/images/carregadores/carregadorusbclightning.png",
-                product: "Carregador UBC-C - lightning",
+                product: "Carregador USB-C - lightning",
                 price: "R$ 40,00",
                 garantia: "3 meses",
                 versions: [
@@ -1201,7 +1348,7 @@ const data = {
             {
                 key: "cabousbc",
                 src: "/images/carregadores/cabousbc.png",
-                product: "Cabo UBC-C",
+                product: "Cabo USB-C",
                 price: "R$ 35,00",
                 garantia: "3 meses",
                 versions: [
@@ -1212,6 +1359,24 @@ const data = {
                         availability: "Pronta-entrega",
                         images: {
                             Branco: "/images/carregadores/cabousbc.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "3em1",
+                src: "/images/eletronicos/3em1.png",
+                product: "3 em 1(Relógio, carregador e caixa de som)",
+                price: "R$ 119,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 119,90",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/eletronicos/3em1.png",
                         },
                     }
                 ],
@@ -1327,7 +1492,7 @@ const data = {
                         },
                     }
                 ],
-            }, 
+            },
         ]
     },
     Eletronicos: {
@@ -1477,19 +1642,105 @@ const data = {
                 ],
             },
             {
-                key: "3em1",
-                src: "/images/eletronicos/3em1.png",
-                product: "3 em 1(Relógio, carregador e caixa de som)",
-                price: "R$ 119,90",
+                key: "pendrive",
+                src: "/images/eletronicos/pendrive.png",
+                product: "Pen drive",
+                price: "R$ 26,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        storage: "8GB",
+                        condition: "Lacrado",
+                        price: "R$ 26,00",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/eletronicos/pendrive.png",
+                        },
+                    },
+                    {
+                        storage: "16GB",
+                        condition: "Lacrado",
+                        price: "R$ 30,00",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/eletronicos/pendrive.png",
+                        },
+                    },
+                    {
+                        storage: "32GB",
+                        condition: "Lacrado",
+                        price: "R$ 38,00",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/eletronicos/pendrive.png",
+                        },
+                    },
+                    {
+                        storage: "64GB",
+                        condition: "Lacrado",
+                        price: "R$ 59,00",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/eletronicos/pendrive.png",
+                        },
+                    },
+                ],
+            },
+            {
+                key: "luminariabola",
+                src: "/images/eletronicos/luminariabola.jpg",
+                product: "Luminária bola",
+                price: "R$ 39,99",
                 garantia: "3 meses",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 119,90",
-                        colors: ["Branco"],
+                        price: "R$ 39,99",
+                        colors: ["Marrom"],
                         availability: "Pronta-entrega",
                         images: {
-                            Branco: "/images/eletronicos/3em1.png",
+                            Marrom: "/images/eletronicos/luminariabola.jpg",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "xbox360",
+                src: "/images/eletronicos/xbox360.png",
+                product: "Xbox 360 + kinect + 2 controles",
+                price: "R$ 699,99",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        message: "Acompanha jogos no HD",
+                        condition: "Seminovo",
+                        price: "R$ 699,99",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/eletronicos/xbox360.png",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "carregadorveicular",
+                src: "/images/eletronicos/carregadorcarro.jpg",
+                product: "Carregador turbo veicular 55W(2x USB / 1x USB-C)",
+                price: "R$ 20,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 20,00",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/eletronicos/carregadorcarro.jpg",
                         },
                     }
                 ],
@@ -1673,6 +1924,26 @@ const data = {
                     };
                 })
             },
+        ],
+        Padrao: [
+            {
+                key: "suportemagnetico",
+                src: "/images/acessorios/suportemagnetico.png",
+                product: "Suporte magnético",
+                price: "R$ 15,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 15,90",
+                        colors: ["Silver"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Silver: "/images/acessorios/suportemagnetico.png",
+                        },
+                    }
+                ],
+            },
         ]
     }
 };
@@ -1773,7 +2044,7 @@ function Products() {
                     />
                 </div>
                 <ProductBrand category={categoryFromPath} />
-                <div className="Filter absolute z-30 top-[91px] ml-[129px]">
+                <div className="Filter absolute z-30 top-[114px] ml-[129px]">
                     {isFilterOpen && (
                         <div className="">
                             <div className="w-48 bg-dark-bg-3 border border-borderColor rounded-lg shadow-lg p-4 text-white">
