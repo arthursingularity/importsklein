@@ -55,6 +55,21 @@ const data = {
             product: "Redmi 14C",
             price: "R$ 1.160,00",
         },
+        {
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.160,00",
+        },
+        {
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.160,00",
+        },
+        {
+            src: "/images/smartphones/xiaomi/redmi14c.png",
+            product: "Redmi 14C",
+            price: "R$ 1.160,00",
+        },
     ],
     prontaEntrega: [
         {
@@ -206,6 +221,33 @@ function Home() {
                     </div>
                     <div className="flex justify-center mt-14">
                         <div className="space-y-2">
+                            <p className="text-white text-xl font-regular">Novidades</p>
+                            {Array.isArray(data["novidades"]) && data["novidades"].length > 0 ? (
+                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
+                                    {data["novidades"].map((item, idx) => (
+                                        <SmartphonesComponent
+                                            key={item.id || idx}
+                                            src={item.src}
+                                            product={item.product}
+                                            price={
+                                                item.storage && Array.isArray(item.storage) && item.storage.length > 0
+                                                    ? Math.min(
+                                                        ...item.storage.map(s => {
+                                                            const price = Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."));
+                                                            return isNaN(price) ? Infinity : price;
+                                                        })
+                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+                                                    : item.price
+                                            }
+                                            link={item.link}
+                                        />
+                                    ))}
+                                </div>
+                            ) : null}
+                        </div>
+                    </div>
+                    <div className="flex justify-center mt-8">
+                        <div className="space-y-2">
                             <p className="text-white text-xl font-regular">Destaques</p>
                             {Array.isArray(data["destaques"]) && data["destaques"].length > 0 ? (
                                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
@@ -233,36 +275,9 @@ function Home() {
                     </div>
                     <div className="flex justify-center mt-8">
                         <div className="space-y-2">
-                            <p className="text-white text-xl font-regular">Novidades</p>
-                            {Array.isArray(data["novidades"]) && data["novidades"].length > 0 ? (
-                                <div className="grid grid-cols-3 gap-1.5">
-                                    {data["novidades"].map((item, idx) => (
-                                        <SmartphonesComponent
-                                            key={item.id || idx}
-                                            src={item.src}
-                                            product={item.product}
-                                            price={
-                                                item.storage && Array.isArray(item.storage) && item.storage.length > 0
-                                                    ? Math.min(
-                                                        ...item.storage.map(s => {
-                                                            const price = Number(s.price.replace("R$ ", "").replace(".", "").replace(",", "."));
-                                                            return isNaN(price) ? Infinity : price;
-                                                        })
-                                                    ).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
-                                                    : item.price
-                                            }
-                                            link={item.link}
-                                        />
-                                    ))}
-                                </div>
-                            ) : null}
-                        </div>
-                    </div>
-                    <div className="flex justify-center mt-8">
-                        <div className="space-y-2">
                             <p className="text-white text-xl font-regular">Pronta-entrega</p>
                             {Array.isArray(data["prontaEntrega"]) && data["prontaEntrega"].length > 0 ? (
-                                <div className="grid grid-cols-3 gap-1.5">
+                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
                                     {data["prontaEntrega"].map((item, idx) => (
                                         <SmartphonesComponent
                                             key={item.id || idx}
