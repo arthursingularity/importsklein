@@ -191,9 +191,9 @@ function Home() {
                             ref={sliderRef}
                             className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 no-scrollbar px-7 pb-4"
                         >
-                            <img src="./images/banner1.jpg" className="buttonHover  border border-borderColor rounded-xl snap-center" style={{ width: "500px" }} />
-                            <img src="./images/banner1.jpg" className="buttonHover  border border-borderColor rounded-xl snap-center" style={{ width: "500px" }} />
-                            <img src="./images/banner1.jpg" className="buttonHover  border border-borderColor rounded-xl snap-center" style={{ width: "500px" }} />
+                            <img src="./images/banners/banneriphone16.png" className="buttonHover  border border-borderColor rounded-xl snap-center" style={{ width: "500px" }} />
+                            <img src="./images/banners/banneriphone14.jpg" className="buttonHover  border border-borderColor rounded-xl snap-center" style={{ width: "500px" }} />
+                            <img src="./images/banners/bannersamsung.jpg" className="buttonHover  border border-borderColor rounded-xl snap-center" style={{ width: "500px" }} />
                         </div>
                     </div>
                     <div className="flex flex-col items-center mt-8 space-y-9">
