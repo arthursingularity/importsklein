@@ -219,7 +219,7 @@ function Home() {
                             </div>
                         ))}
                     </div>
-                    <div className="flex justify-center mt-14">
+                    <div className="flex justify-center mt-14 hidden">
                         <div className="space-y-2">
                             <p className="text-white text-xl font-regular">Novidades</p>
                             {Array.isArray(data["novidades"]) && data["novidades"].length > 0 ? (
@@ -246,7 +246,7 @@ function Home() {
                             ) : null}
                         </div>
                     </div>
-                    <div className="flex justify-center mt-8">
+                    <div className="flex justify-center mt-8 hidden">
                         <div className="space-y-2">
                             <p className="text-white text-xl font-regular">Destaques</p>
                             {Array.isArray(data["destaques"]) && data["destaques"].length > 0 ? (
@@ -273,7 +273,7 @@ function Home() {
                             ) : null}
                         </div>
                     </div>
-                    <div className="flex justify-center mt-8">
+                    <div className="flex justify-center mt-14">
                         <div className="space-y-2">
                             <p className="text-white text-xl font-regular">Pronta-entrega</p>
                             {Array.isArray(data["prontaEntrega"]) && data["prontaEntrega"].length > 0 ? (

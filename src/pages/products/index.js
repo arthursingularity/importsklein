@@ -1276,13 +1276,13 @@ const data = {
             {
                 key: "cabousbclight",
                 src: "/images/carregadores/cabousbclight.png",
-                product: "Cabo de USB-C para Lightning",
-                price: "R$ 35,00",
+                product: "Cabo USB-C para Lightning (1m)",
+                price: "R$ 19,90",
                 garantia: "3 meses",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 35,00",
+                        price: "R$ 19,90",
                         colors: ["Branco"],
                         availability: "Pronta-entrega",
                         images: {
@@ -1330,13 +1330,13 @@ const data = {
             {
                 key: "carregadorusbclightning",
                 src: "/images/carregadores/carregadorusbclightning.png",
-                product: "Carregador USB-C - lightning",
-                price: "R$ 40,00",
+                product: "Carregador 20W USB-C - lightning",
+                price: "R$ 39,90",
                 garantia: "3 meses",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 40,00",
+                        price: "R$ 39,90",
                         colors: ["Branco"],
                         availability: "Pronta-entrega",
                         images: {
@@ -1348,13 +1348,13 @@ const data = {
             {
                 key: "cabousbc",
                 src: "/images/carregadores/cabousbc.png",
-                product: "Cabo USB-C",
-                price: "R$ 35,00",
+                product: "Cabo USB-C (1m)",
+                price: "R$ 19,90",
                 garantia: "3 meses",
                 versions: [
                     {
                         condition: "Lacrado",
-                        price: "R$ 35,00",
+                        price: "R$ 19,90",
                         colors: ["Branco"],
                         availability: "Pronta-entrega",
                         images: {
