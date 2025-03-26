@@ -13,62 +13,43 @@ const data = {
             product: "Apple iPhone 15",
             price: "R$ 4.830,00",
         },
-        {
-            src: "/images/smartphones/realme/note60.png",
-            product: "Realme Note 60",
-            price: "R$ 899,00",
-        },
-        {
-            src: "/images/smartphones/xiaomi/redmi14c.png",
-            product: "Redmi 14C",
-            price: "R$ 1.160,00",
-        },
-        {
-            src: "/images/smartphones/xiaomi/redmi14c.png",
-            product: "Redmi 14C",
-            price: "R$ 1.160,00",
-        },
-        {
-            src: "/images/smartphones/xiaomi/redmi14c.png",
-            product: "Redmi 14C",
-            price: "R$ 1.160,00",
-        },
-        {
-            src: "/images/smartphones/xiaomi/redmi14c.png",
-            product: "Redmi 14C",
-            price: "R$ 1.160,00",
-        },
     ],
-    novidades: [
+    apple: [
         {
+            link: "/smartphones/apple/iphone13",
+            src: "/images/smartphones/apple/iphone13.jpg",
+            product: "Apple iPhone 13",
+            price: "R$ 3.632,00",
+        },
+        {
+            link: "/smartphones/apple/iphone15",
             src: "/images/smartphones/apple/iphone15.jpg",
             product: "Apple iPhone 15",
             price: "R$ 4.830,00",
         },
         {
-            src: "/images/smartphones/realme/note60.png",
-            product: "Realme Note 60",
-            price: "R$ 899,00",
+            link: "/smartphones/apple/iphone16",
+            src: "/images/smartphones/apple/iphone16verde.jpg",
+            product: "Apple iPhone 16",
+            price: "R$ 5.102,00",
         },
         {
-            src: "/images/smartphones/xiaomi/redmi14c.png",
-            product: "Redmi 14C",
-            price: "R$ 1.160,00",
+            link: "/tablets/apple/ipad10",
+            src: "/images/tablets/ipad10azul.png",
+            product: "Apple iPad 10",
+            price: "R$ 2.879,00",
         },
         {
-            src: "/images/smartphones/xiaomi/redmi14c.png",
-            product: "Redmi 14C",
-            price: "R$ 1.160,00",
+            link: "/musica/apple/airpods3",
+            src: "/images/musica/airpods3.png",
+            product: "Apple AirPods 3",
+            price: "R$ 1.499,00",
         },
         {
-            src: "/images/smartphones/xiaomi/redmi14c.png",
-            product: "Redmi 14C",
-            price: "R$ 1.160,00",
-        },
-        {
-            src: "/images/smartphones/xiaomi/redmi14c.png",
-            product: "Redmi 14C",
-            price: "R$ 1.160,00",
+            link: "/smartwatches/apple/applewatchse2",
+            src: "/images/smartwatches/applewatchse2estelar.jpg",
+            product: "Apple Watch SE 2",
+            price: "R$ 1.999,00",
         },
     ],
     prontaEntrega: [
@@ -95,6 +76,18 @@ const data = {
             src: "/images/smartphones/realme/note60.png",
             product: "Realme Note 60",
             price: "R$ 899,00",
+        },
+        {
+            link: "/acessorios/capinha/capinhasiliconeapple",
+            src: "/images/acessorios/capinhasiliconeapple.png",
+            product: "Capa de silicone para iPhone",
+            price: "R$ 35,00",
+        },
+        {
+            link: "/eletronicos/padrao/videogameretro",
+            src: "/images/eletronicos/videogameretro.png",
+            product: "Video game retrô (10.000 jogos)",
+            price: "R$ 109,90",
         },
     ],
 };
@@ -219,12 +212,12 @@ function Home() {
                             </div>
                         ))}
                     </div>
-                    <div className="flex justify-center mt-14 hidden">
+                    <div className="flex justify-center mt-14">
                         <div className="space-y-2">
-                            <p className="text-white text-xl font-regular">Novidades</p>
-                            {Array.isArray(data["novidades"]) && data["novidades"].length > 0 ? (
-                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
-                                    {data["novidades"].map((item, idx) => (
+                            <p className="text-white text-xl font-regular">Apple</p>
+                            {Array.isArray(data["apple"]) && data["apple"].length > 0 ? (
+                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+                                    {data["apple"].map((item, idx) => (
                                         <SmartphonesComponent
                                             key={item.id || idx}
                                             src={item.src}
@@ -250,7 +243,7 @@ function Home() {
                         <div className="space-y-2">
                             <p className="text-white text-xl font-regular">Destaques</p>
                             {Array.isArray(data["destaques"]) && data["destaques"].length > 0 ? (
-                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
+                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
                                     {data["destaques"].map((item, idx) => (
                                         <SmartphonesComponent
                                             key={item.id || idx}
@@ -273,11 +266,11 @@ function Home() {
                             ) : null}
                         </div>
                     </div>
-                    <div className="flex justify-center mt-14">
+                    <div className="flex justify-center mt-8">
                         <div className="space-y-2">
                             <p className="text-white text-xl font-regular">Pronta-entrega</p>
                             {Array.isArray(data["prontaEntrega"]) && data["prontaEntrega"].length > 0 ? (
-                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
+                                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
                                     {data["prontaEntrega"].map((item, idx) => (
                                         <SmartphonesComponent
                                             key={item.id || idx}

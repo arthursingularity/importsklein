@@ -1027,7 +1027,7 @@ const productData = {
             {
                 key: "airpods4",
                 src: "/images/musica/airpods4.png",
-                product: "AirPods 4 - abafamento de ruído",
+                product: "Apple AirPods 4 - abafamento de ruído",
                 price: "R$ 1.699,00",
                 garantia: "1 ano",
                 versions: [
@@ -1045,7 +1045,7 @@ const productData = {
             {
                 key: "airpodspro2",
                 src: "/images/musica/airpodspro2.png",
-                product: "AirPods Pro 2",
+                product: "Apple AirPods Pro 2",
                 price: "R$ 1.799,00",
                 garantia: "1 ano",
                 versions: [
@@ -1063,7 +1063,7 @@ const productData = {
             {
                 key: "airpods3",
                 src: "/images/musica/airpods3.png",
-                product: "AirPods 3",
+                product: "Apple AirPods 3",
                 price: "R$ 1.499,00",
                 garantia: "1 ano",
                 versions: [
@@ -1344,7 +1344,7 @@ const productData = {
             {
                 key: "cabousbc",
                 src: "/images/carregadores/cabousbc.png",
-                product: "Cabo USB-C",
+                product: "Cabo USB-C (1m)",
                 price: "R$ 19,90",
                 garantia: "3 meses",
                 versions: [

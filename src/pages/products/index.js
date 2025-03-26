@@ -1031,7 +1031,7 @@ const data = {
             {
                 key: "airpods4",
                 src: "/images/musica/airpods4.png",
-                product: "AirPods 4 - abafamento de ruído",
+                product: "Apple AirPods 4 - abafamento de ruído",
                 price: "R$ 1.699,00",
                 garantia: "1 ano",
                 versions: [
@@ -1049,7 +1049,7 @@ const data = {
             {
                 key: "airpodspro2",
                 src: "/images/musica/airpodspro2.png",
-                product: "AirPods Pro 2",
+                product: "Apple AirPods Pro 2",
                 price: "R$ 1.799,00",
                 garantia: "1 ano",
                 versions: [
@@ -1067,7 +1067,7 @@ const data = {
             {
                 key: "airpods3",
                 src: "/images/musica/airpods3.png",
-                product: "AirPods 3",
+                product: "Apple AirPods 3",
                 price: "R$ 1.499,00",
                 garantia: "1 ano",
                 versions: [
@@ -2110,7 +2110,7 @@ function Products() {
                                 (() => {
                                     const filteredProducts = sortProducts(data[capitalizedCategory][capitalizedBrand]);
                                     return filteredProducts.length > 0 ? (
-                                        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
+                                        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
                                             {filteredProducts.map((item, idx) => (
                                                 <SmartphonesComponent
                                                     key={idx}
@@ -2140,7 +2140,7 @@ function Products() {
                                 <p className="text-white font-light">Esta marca ainda não possui produto cadastrado.</p>
                             )
                         ) : (
-                            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5">
+                            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
                                 {Object.keys(data[capitalizedCategory]).map((brandKey) => {
                                     const filteredProducts = sortProducts(data[capitalizedCategory][brandKey]);
                                     return filteredProducts.length > 0 ? (
