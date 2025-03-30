@@ -1,40 +1,42 @@
-function Parcelamento({ finalPrice, safeProduct, variantOptions, availableColors, selectedVariant, selectedColor }) {
-    // Converte finalPrice para número removendo caracteres não numéricos
+import { useState } from "react";
+
+function Parcelamento({ finalPrice, safeProduct, variantOptions, selectedVariant }) {
+    const [entrada, setEntrada] = useState("");
+    // Converte finalPrice para número
     const basePrice = parseFloat(
         finalPrice.replace("R$", "").replace(".", "").replace(",", ".")
     );
 
-    // Verifica se o preço é válido
     if (isNaN(basePrice) || basePrice <= 0) {
         return <p>Preço inválido</p>;
     }
 
-    // Multiplicadores calculados com base nos valores totais fornecidos para cada quantidade de parcelas
+    const valorComEntrada = basePrice - (entrada === "" ? 0 : parseFloat(entrada));
+
     const multiplicadores = [
-        1.030185, // 1x: 2060,37 / 2000
-        1.044605, // 2x: 2089,21 / 2000
-        1.05263,  // 3x: 2105,26 / 2000
-        1.06067,  // 4x: 2121,34 / 2000
-        1.068835, // 5x: 2137,67 / 2000
-        1.07689,  // 6x: 2153,78 / 2000
-        1.08354,  // 7x: 2167,08 / 2000
-        1.09182,  // 8x: 2183,64 / 2000
-        1.09999,  // 9x: 2199,98 / 2000
-        1.1084,   // 10x: 2216,80 / 2000
-        1.116695, // 11x: 2233,39 / 2000
-        1.124985, // 12x: 2249,97 / 2000
-        1.13353,  // 13x: 2267,06 / 2000
-        1.141945, // 14x: 2283,89 / 2000
-        1.150485, // 15x: 2300,97 / 2000
-        1.159015, // 16x: 2318,03 / 2000
-        1.16768,  // 17x: 2335,36 / 2000
-        1.17633   // 18x: 2352,66 / 2000
+        1.030185,
+        1.044605,
+        1.05263,
+        1.06067,
+        1.068835,
+        1.07689,
+        1.08354,
+        1.09182,
+        1.09999,
+        1.1084,
+        1.116695,
+        1.124985,
+        1.13353,
+        1.141945,
+        1.150485,
+        1.159015,
+        1.16768,
+        1.17633
     ];
 
-    // Gera os valores das parcelas aplicando os multiplicadores
     const parcelas = Array.from({ length: 18 }, (_, i) => {
         const numParcelas = i + 1;
-        const valorTotal = basePrice * multiplicadores[i];
+        const valorTotal = valorComEntrada * multiplicadores[i]; // Aplica o multiplicador com o valor já descontado
         const valorParcela = valorTotal / numParcelas;
 
         return {
@@ -44,31 +46,56 @@ function Parcelamento({ finalPrice, safeProduct, variantOptions, availableColors
         };
     });
 
+    // Função para garantir que o valor da entrada não ultrapasse o valor do produto
+    const handleEntradaChange = (e) => {
+        let valor = e.target.value;
+        if (valor === "") {
+            setEntrada(""); // Se o campo for vazio, mantém vazio
+        } else {
+            valor = parseFloat(valor);
+            // Converte para o valor de basePrice se o valor digitado for maior que basePrice
+            if (valor > basePrice) {
+                setEntrada(basePrice);
+            } else {
+                setEntrada(valor);
+            }
+        }
+    };
+
     return (
         <div className="absolute z-40 bg-dark-bg-2 py-2 flex justify-center rounded-xl w-[355px] lg:w-[830px] border border-borderColor">
             <div className="mt-2">
-                <p className="font-light text-blue-500 text-[18px] flex justify-center leading-none">
+                <p className="font-light text-blue-500 text-[18px] ml-4 leading-none">
                     {safeProduct.product}
                     {variantOptions.length > 0 ? ` (${selectedVariant})` : ""}
                 </p>
-                <table className="mt-4">
-                    <thead>
-                        <tr className="font-regular border-t border-borderColor">
-                            <th className="px-1.5 py-2.5">Quantd</th>
-                            <th className="px-1.5 py-2.5">Valor da parcela</th>
-                            <th className="px-1.5 py-2.5">Valor total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {parcelas.map((parcela) => (
-                            <tr key={parcela.numParcelas} className="border-t border-borderColor font-light">
-                                <td className="px-1.5 py-2.5">{parcela.numParcelas}x</td>
-                                <td className="px-1.5">{parcela.valorParcela}</td>
-                                <td className="px-1.5">{parcela.valorTotal}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                <div className="mt-4 flex justify-center">
+                    <div>
+                        <p className="font-regular">Valor da entrada</p>
+                        <input
+                            type="number"
+                            value={entrada}
+                            onChange={handleEntradaChange}
+                            className="border border-gray-500 font-light text-white rounded px-2 py-1 mt-1 w-[230px] bg-transparent outline-none caret-blue-500"
+                            placeholder="Digite o valor de entrada"
+                            max={basePrice}
+                            inputMode="decimal"
+                        />
+                    </div>
+                </div>
+                <div className="flex justify-center">
+                    <table className="mt-4 w-[355px]">
+                        <tbody>
+                            {parcelas.map((parcela) => (
+                                <tr key={parcela.numParcelas} className="border-t border-borderColor font-light">
+                                    <td className="px-14 py-2.5">{parcela.numParcelas}x</td>
+                                    <td className="">{parcela.valorParcela}</td>
+                                    <td className="hidden">{parcela.valorTotal}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );

@@ -1813,27 +1813,126 @@ const productData = {
                 src: "/images/acessorios/capinhasiliconeapple.png",
                 product: "Capa de silicone para iPhone",
                 price: "R$ 35,00",
-                versions: Array.from({ length: 6 }, (_, i) => {
-                    const model = (i + 11).toString();
-                    return {
-                        model,
+                versions: [
+                    {
+                        model: "11",
                         condition: "Lacrado",
                         price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
+                        colors: ["Verde", "Azul", "Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Verde: "/images/acessorios/capasilicone/11verdeescuro.png",
+                            Azul: "/images/acessorios/capasilicone/11azulescuro.png",
+                            Branco: "/images/acessorios/capasilicone/11branco.png",
+                        }
+                    },
+                    {
+                        model: "12",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Amarelo", "Verde", "Azul"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capasilicone/12preto.png",
+                            Branco: "/images/acessorios/capasilicone/12branco.png",
+                            Amarelo: "/images/acessorios/capasilicone/12amarelo.png",
+                            Verde: "/images/acessorios/capasilicone/12verdeescuro.png",
+                            Azul: "/images/acessorios/capasilicone/12azul.png",
+                        }
+                    },
+                    {
+                        model: "13",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Azul", "Preto", "Branco", "Rosa fluorescente", "Vinho"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Azul: "/images/acessorios/capasilicone/13azul.png",
+                            Preto: "/images/acessorios/capasilicone/13preto.png",
+                            Branco: "/images/acessorios/capasilicone/13branco.png",
+                            "Rosa fluorescente": "/images/acessorios/capasilicone/13rosafluorescente.png",
+                            Vinho: "/images/acessorios/capasilicone/13vinho.png",
+                        }
+                    },
+                    {
+                        model: "13 Pro Max",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Azul", "Lilás"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capasilicone/13promaxpreto.png",
+                            Azul: "/images/acessorios/capasilicone/13promaxazul.png",
+                            Lilás: "/images/acessorios/capasilicone/13promaxlilas.png",
+                        }
+                    },
+                    {
+                        model: "14",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Azul", "Branco", "Vinho", "Verde"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capasilicone/14preto.png",
+                            Azul: "/images/acessorios/capasilicone/14azul.png",
+                            Branco: "/images/acessorios/capasilicone/14branco.png",
+                            Vinho: "/images/acessorios/capasilicone/14vinho.png",
+                            Verde: "/images/acessorios/capasilicone/14verde.png",
+                        }
+                    },
+                    {
+                        model: "14 Pro Max",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Azul", "Branco", "Lilás"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capasilicone/14promaxpreto.png",
+                            Azul: "/images/acessorios/capasilicone/14promaxazul.png",
+                            Branco: "/images/acessorios/capasilicone/14promaxbranco.png",
+                            Lilás: "/images/acessorios/capasilicone/14promaxlilas.png",
+                        }
+                    },
+                    {
+                        model: "15",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Roxo", "Azul", "Azul claro", "Preto", "Verde"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Roxo: "/images/acessorios/capasilicone/15roxo.png",
+                            Azul: "/images/acessorios/capasilicone/15azul.png",
+                            "Azul claro": "/images/acessorios/capasilicone/15azulclaro.png",
+                            Preto: "/images/acessorios/capasilicone/15preto.png",
+                            Verde: "/images/acessorios/capasilicone/15verde.png",
+                        }
+                    },
+                    {
+                        model: "15 Pro Max",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/acessorios/capasilicone/14promaxbranco.png",
+                        }
+                    },
+                    {
+                        model: "16",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Azul", "Roxo"],
                         availability: "Pronta-entrega",
                         images: {
                             Preto: "/images/acessorios/capinhasiliconeapple.png",
                             Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
                             Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
+                            Roxo: "/images/acessorios/capinhasiliconeapple.png"
                         }
-                    };
-                })
-            },
+                    }
+                ]
+            }
+            ,
             {
                 key: "capinhamagsafeiphone",
                 src: "/images/acessorios/capinhamagsafeiphone.png",
@@ -1963,6 +2062,9 @@ const colorMap = {
     "Oceano Laranja": "#f45f29",
     "Consultar disponibilidade": "#cae0bf",
     "Transparente": "#ffffff",
+    "Rosa fluorescente": "#f50f5f",
+    "Vinho": "#902861",
+    "Lilás": "#9273af",
 };
 
 function ProductComponent({ productKey }) {
@@ -2173,15 +2275,13 @@ function ProductComponent({ productKey }) {
                         finalPrice={finalPrice}
                         safeProduct={safeProduct}
                         variantOptions={variantOptions}
-                        availableColors={availableColors}
                         selectedVariant={selectedVariant}
-                        selectedColor={selectedColor}
                     />
                 </div>
             )}
             <img
                 src="/images/icons/close.svg"
-                className="absolute cursor-pointer w-8 z-40 top-[2px] right-[2px] buttonHover"
+                className="absolute cursor-pointer w-8 z-[38] top-[2px] right-[2px] buttonHover"
                 onClick={handleBackClick}
                 alt="Fechar"
             />
@@ -2208,13 +2308,23 @@ function ProductComponent({ productKey }) {
                             {variantOptions.length > 0 ? ` (${selectedVariant})` : ""}
                             {availableColors.length > 0 ? ` - ${selectedColor}` : ""}
                         </p>
-                        <p className="text-[28px] font-regular rounded mt-4 leading-tight">
+                        <p className="text-[35px] font-regular rounded mt-4 leading-tight">
                             {finalPrice}
                         </p>
-                        {safeProduct.garantia && (
-                            <p className="font-thin leading-none">
-                                Garantia: <span className="font-light">{safeProduct.garantia}</span>
-                            </p>
+                        <p className="font-regular text-verde leading-none mt-0.5">à vista no Pix/dinheiro</p>
+                        {parseFloat(finalPrice.replace("R$", "").replace(".", "").replace(",", ".")) > 699 && (
+                            <div className="parcelamentoDiv">
+                                <p className="font-light leading-none">ou em até 18x no cartão de crédito</p>
+                                <button
+                                    className="border border-gray-400 rounded text-[15px] font-regular p-1.5 px-2.5 mt-3 buttonHover"
+                                    onClick={() => {
+                                        setMostrarParcelamento(true);
+                                        window.scrollTo(0, 0);
+                                    }}
+                                >
+                                    Simular parcelamento
+                                </button>
+                            </div>
                         )}
                         <div className="OptionsPcView">
                             {variantOptions.length > 0 && (
@@ -2224,7 +2334,7 @@ function ProductComponent({ productKey }) {
                                             ? `Modelo - ${selectedVariant}`
                                             : variantLabel}
                                     </p>
-                                    <div className="flex gap-2 mt-2">
+                                    <div className="flex gap-2 mt-2 flex-wrap">
                                         {variantOptions.map((option, index) => {
                                             const isSelected = option === selectedVariant;
                                             return (
@@ -2324,27 +2434,34 @@ function ProductComponent({ productKey }) {
                                     </div>
                                 </div>
                             )}
+                            {safeProduct.garantia && (
+                                <p className="font-thin leading-none mt-5">
+                                    Garantia: <span className="font-light">{safeProduct.garantia}</span>
+                                </p>
+                            )}
                         </div>
                     </div>
                 </div>
-                <p className="text-[33px] font-medium mt-4 lg:hidden leading-tight">
+                <p className="text-[35px] font-medium mt-4 lg:hidden leading-tight">
                     {finalPrice}
                 </p>
-                <p className="font-regular text-verde leading-none mt-0.5">à vista no Pix(3% off)</p>
-                {parseFloat(finalPrice.replace("R$", "").replace(".", "").replace(",", ".")) > 700 && (
-                    <div className="parcelamentoDiv">
-                        <p className="font-light leading-none">ou em até 18x no cartão de crédito</p>
-                        <button
-                            className="border border-gray-400 rounded text-[15px] font-regular p-1.5 px-2.5 mt-3 buttonHover"
-                            onClick={() => {
-                                setMostrarParcelamento(true);
-                                window.scrollTo(0, 0);
-                            }}
-                        >
-                            Simular parcelamento
-                        </button>
-                    </div>
-                )}
+                <div className="lg:hidden">
+                    <p className="font-regular text-verde leading-none mt-0.5">à vista no Pix/dinheiro</p>
+                    {parseFloat(finalPrice.replace("R$", "").replace(".", "").replace(",", ".")) > 700 && (
+                        <div className="parcelamentoDiv">
+                            <p className="font-light leading-none">ou em até 18x no cartão de crédito</p>
+                            <button
+                                className="border border-gray-400 rounded text-[15px] font-regular p-1.5 px-2.5 mt-3 buttonHover"
+                                onClick={() => {
+                                    setMostrarParcelamento(true);
+                                    window.scrollTo(0, 0);
+                                }}
+                            >
+                                Simular parcelamento
+                            </button>
+                        </div>
+                    )}
+                </div>
                 <p className="Message font-light text-[16px] text-verde mt-5">{safeProduct.versions[0]?.message && `${safeProduct.versions[0].message}`}</p>
                 <div className="Options lg:hidden">
                     {variantOptions.length > 0 && (
@@ -2354,7 +2471,7 @@ function ProductComponent({ productKey }) {
                                     ? `Modelo - ${selectedVariant}`
                                     : variantLabel}
                             </p>
-                            <div className="flex gap-2 mt-2">
+                            <div className="flex gap-2 mt-2 flex-wrap">
                                 {variantOptions.map((option, index) => {
                                     const isSelected = option === selectedVariant;
                                     return (
