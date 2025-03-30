@@ -60,12 +60,6 @@ const data = {
             price: "R$ 1.120,00",
         },
         {
-            link: "/smartphones/xiaomi/redminote14pro",
-            src: "/images/smartphones/xiaomi/redminote14pro.png",
-            product: "Redmi Note 14 Pro 4G",
-            price: "R$ 1.850,00",
-        },
-        {
             link: "/smartphones/realme/realmec61",
             src: "/images/smartphones/realme/realmec61.png",
             product: "Realme C61 com NFC",
@@ -88,6 +82,12 @@ const data = {
             src: "/images/eletronicos/videogameretro.png",
             product: "Video game retrô (10.000 jogos)",
             price: "R$ 109,90",
+        },
+        {
+            link: "/musica/padrao/3em1",
+            src: "/images/eletronicos/3em1.png",
+            product: "3 em 1(Relógio, carregador e caixa de som)",
+            price: "R$ 119,90",
         },
     ],
 };

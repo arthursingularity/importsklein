@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
+import Parcelamento from "../Parcelamento";
 
 const productData = {
     Smartphones: {
@@ -8,7 +9,7 @@ const productData = {
                 key: "iphone13",
                 src: "/images/smartphones/apple/iphone13.jpg",
                 product: "Apple iPhone 13",
-                price: "R$ 3.632,00",
+                price: "R$ 3.62,00",
                 garantia: "1 ano",
                 message: "Acima de 2 unidades, cada um sai por R$ 11,99",
                 versions: [
@@ -909,16 +910,6 @@ const productData = {
                         price: "R$ 1.850,00",
                         colors: ["Azul"],
                         availability: "Encomenda",
-                        images: {
-                            Azul: "/images/smartphones/xiaomi/redminote14pro.png",
-                        }
-                    },
-                    {
-                        condition: "Lacrado",
-                        storage: "256GB/8GB",
-                        price: "R$ 1.900,00",
-                        colors: ["Azul"],
-                        availability: "Pronta-entrega",
                         images: {
                             Azul: "/images/smartphones/xiaomi/redminote14pro.png",
                         }
@@ -2027,6 +2018,7 @@ function ProductComponent({ productKey }) {
                     : "";
 
     // Valores iniciais para os estados
+    const [mostrarParcelamento, setMostrarParcelamento] = useState(false);
     const defaultVersion = safeProduct.versions[0] || {};
     const initialCondition = defaultVersion.condition || "";
     const initialAvailability = defaultVersion.availability || "";
@@ -2169,6 +2161,24 @@ function ProductComponent({ productKey }) {
 
     return (
         <div className="absolute z-30 top-[104px] text-white pb-2">
+            {mostrarParcelamento && (
+                <div>
+                    <img
+                        src="/images/icons/close.svg"
+                        className="absolute cursor-pointer w-8 z-50 top-[2px] right-[2px] buttonHover"
+                        alt="Fechar"
+                        onClick={() => setMostrarParcelamento(false)}
+                    />
+                    <Parcelamento
+                        finalPrice={finalPrice}
+                        safeProduct={safeProduct}
+                        variantOptions={variantOptions}
+                        availableColors={availableColors}
+                        selectedVariant={selectedVariant}
+                        selectedColor={selectedColor}
+                    />
+                </div>
+            )}
             <img
                 src="/images/icons/close.svg"
                 className="absolute cursor-pointer w-8 z-40 top-[2px] right-[2px] buttonHover"
@@ -2317,15 +2327,25 @@ function ProductComponent({ productKey }) {
                         </div>
                     </div>
                 </div>
-                <p className="text-[33px] font-medium rounded mt-4 lg:hidden leading-tight">
+                <p className="text-[33px] font-medium mt-4 lg:hidden leading-tight">
                     {finalPrice}
                 </p>
-                <p className="Messaage font-light text-[16px] text-verde">{safeProduct.versions[0]?.message && `${safeProduct.versions[0].message}`}</p>
-                {safeProduct.garantia && (
-                    <p className="font-thin leading-none lg:hidden">
-                        Garantia: <span className="font-regular">{safeProduct.garantia}</span>
-                    </p>
+                <p className="font-regular text-verde leading-none mt-0.5">à vista no Pix(3% off)</p>
+                {parseFloat(finalPrice.replace("R$", "").replace(".", "").replace(",", ".")) > 700 && (
+                    <div className="parcelamentoDiv">
+                        <p className="font-light leading-none">ou em até 18x no cartão de crédito</p>
+                        <button
+                            className="border border-gray-400 rounded text-[15px] font-regular p-1.5 px-2.5 mt-3 buttonHover"
+                            onClick={() => {
+                                setMostrarParcelamento(true);
+                                window.scrollTo(0, 0);
+                            }}
+                        >
+                            Simular parcelamento
+                        </button>
+                    </div>
                 )}
+                <p className="Message font-light text-[16px] text-verde mt-5">{safeProduct.versions[0]?.message && `${safeProduct.versions[0].message}`}</p>
                 <div className="Options lg:hidden">
                     {variantOptions.length > 0 && (
                         <div>
@@ -2433,6 +2453,11 @@ function ProductComponent({ productKey }) {
                                 })}
                             </div>
                         </div>
+                    )}
+                    {safeProduct.garantia && (
+                        <p className="font-thin leading-none lg:hidden mt-5">
+                            Garantia: <span className="font-regular">{safeProduct.garantia}</span>
+                        </p>
                     )}
                 </div>
                 <hr className="border-1 border-borderColor mt-6" />

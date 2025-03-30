@@ -916,16 +916,6 @@ const data = {
                         images: {
                             Azul: "/images/smartphones/xiaomi/redminote14pro.png",
                         }
-                    },
-                    {
-                        condition: "Lacrado",
-                        storage: "256GB/8GB",
-                        price: "R$ 1.900,00",
-                        colors: ["Azul"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Azul: "/images/smartphones/xiaomi/redminote14pro.png",
-                        }
                     }
                 ],
             },
