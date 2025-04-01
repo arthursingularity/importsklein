@@ -1008,6 +1008,16 @@ const productData = {
                             Azul: "/images/tablets/ipad10azul.png",
                             Silver: "/images/tablets/ipad10silver.png",
                         }
+                    },
+                    {
+                        condition: "Lacrado",
+                        storage: "256GB",
+                        price: "R$ 4.120,00",
+                        colors: ["Silver"],
+                        availability: "Encomenda",
+                        images: {
+                            Silver: "/images/tablets/ipad10silver.png",
+                        }
                     }
                 ]
             },
@@ -1498,24 +1508,6 @@ const productData = {
                         availability: "Pronta-entrega",
                         images: {
                             Preto: "/images/eletronicos/videogameretro.png",
-                        },
-                    }
-                ],
-            },
-            {
-                key: "aparadordepelos",
-                src: "/images/eletronicos/aparadordepelos.png",
-                product: "Aparador de pelos",
-                price: "R$ 23,00",
-                garantia: "3 meses",
-                versions: [
-                    {
-                        condition: "Lacrado",
-                        price: "R$ 23,00",
-                        colors: ["Preto"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/eletronicos/aparadordepelos.png",
                         },
                     }
                 ],

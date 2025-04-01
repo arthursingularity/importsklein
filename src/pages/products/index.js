@@ -12,7 +12,7 @@ const data = {
                 key: "iphone13",
                 src: "/images/smartphones/apple/iphone13.jpg",
                 product: "Apple iPhone 13",
-                price: "R$ 3.632,00",
+                price: "R$ 3.62,00",
                 garantia: "1 ano",
                 message: "Acima de 2 unidades, cada um sai por R$ 11,99",
                 versions: [
@@ -1011,6 +1011,16 @@ const data = {
                             Azul: "/images/tablets/ipad10azul.png",
                             Silver: "/images/tablets/ipad10silver.png",
                         }
+                    },
+                    {
+                        condition: "Lacrado",
+                        storage: "256GB",
+                        price: "R$ 4.120,00",
+                        colors: ["Silver"],
+                        availability: "Encomenda",
+                        images: {
+                            Silver: "/images/tablets/ipad10silver.png",
+                        }
                     }
                 ]
             },
@@ -1506,24 +1516,6 @@ const data = {
                 ],
             },
             {
-                key: "aparadordepelos",
-                src: "/images/eletronicos/aparadordepelos.png",
-                product: "Aparador de pelos",
-                price: "R$ 23,00",
-                garantia: "3 meses",
-                versions: [
-                    {
-                        condition: "Lacrado",
-                        price: "R$ 23,00",
-                        colors: ["Preto"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Preto: "/images/eletronicos/aparadordepelos.png",
-                        },
-                    }
-                ],
-            },
-            {
                 key: "minimassageador",
                 src: "/images/eletronicos/minimassageador.png",
                 product: "Mini massageador",
@@ -1816,27 +1808,126 @@ const data = {
                 src: "/images/acessorios/capinhasiliconeapple.png",
                 product: "Capa de silicone para iPhone",
                 price: "R$ 35,00",
-                versions: Array.from({ length: 6 }, (_, i) => {
-                    const model = (i + 11).toString();
-                    return {
-                        model,
+                versions: [
+                    {
+                        model: "11",
                         condition: "Lacrado",
                         price: "R$ 35,00",
-                        colors: ["Preto", "Branco", "Vermelho", "Azul", "Verde", "Rosa", "Amarelo", "Roxo"],
+                        colors: ["Verde", "Azul", "Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Verde: "/images/acessorios/capasilicone/11verdeescuro.png",
+                            Azul: "/images/acessorios/capasilicone/11azulescuro.png",
+                            Branco: "/images/acessorios/capasilicone/11branco.png",
+                        }
+                    },
+                    {
+                        model: "12",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Amarelo", "Verde", "Azul"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capasilicone/12preto.png",
+                            Branco: "/images/acessorios/capasilicone/12branco.png",
+                            Amarelo: "/images/acessorios/capasilicone/12amarelo.png",
+                            Verde: "/images/acessorios/capasilicone/12verdeescuro.png",
+                            Azul: "/images/acessorios/capasilicone/12azul.png",
+                        }
+                    },
+                    {
+                        model: "13",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Azul", "Preto", "Branco", "Rosa fluorescente", "Vinho"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Azul: "/images/acessorios/capasilicone/13azul.png",
+                            Preto: "/images/acessorios/capasilicone/13preto.png",
+                            Branco: "/images/acessorios/capasilicone/13branco.png",
+                            "Rosa fluorescente": "/images/acessorios/capasilicone/13rosafluorescente.png",
+                            Vinho: "/images/acessorios/capasilicone/13vinho.png",
+                        }
+                    },
+                    {
+                        model: "13 Pro Max",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Azul", "Lilás"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capasilicone/13promaxpreto.png",
+                            Azul: "/images/acessorios/capasilicone/13promaxazul.png",
+                            Lilás: "/images/acessorios/capasilicone/13promaxlilas.png",
+                        }
+                    },
+                    {
+                        model: "14",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Azul", "Branco", "Vinho", "Verde"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capasilicone/14preto.png",
+                            Azul: "/images/acessorios/capasilicone/14azul.png",
+                            Branco: "/images/acessorios/capasilicone/14branco.png",
+                            Vinho: "/images/acessorios/capasilicone/14vinho.png",
+                            Verde: "/images/acessorios/capasilicone/14verde.png",
+                        }
+                    },
+                    {
+                        model: "14 Pro Max",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Azul", "Branco", "Lilás"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/acessorios/capasilicone/14promaxpreto.png",
+                            Azul: "/images/acessorios/capasilicone/14promaxazul.png",
+                            Branco: "/images/acessorios/capasilicone/14promaxbranco.png",
+                            Lilás: "/images/acessorios/capasilicone/14promaxlilas.png",
+                        }
+                    },
+                    {
+                        model: "15",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Roxo", "Azul", "Azul claro", "Preto", "Verde"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Roxo: "/images/acessorios/capasilicone/15roxo.png",
+                            Azul: "/images/acessorios/capasilicone/15azul.png",
+                            "Azul claro": "/images/acessorios/capasilicone/15azulclaro.png",
+                            Preto: "/images/acessorios/capasilicone/15preto.png",
+                            Verde: "/images/acessorios/capasilicone/15verde.png",
+                        }
+                    },
+                    {
+                        model: "15 Pro Max",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Branco"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Branco: "/images/acessorios/capasilicone/14promaxbranco.png",
+                        }
+                    },
+                    {
+                        model: "16",
+                        condition: "Lacrado",
+                        price: "R$ 35,00",
+                        colors: ["Preto", "Branco", "Azul", "Roxo"],
                         availability: "Pronta-entrega",
                         images: {
                             Preto: "/images/acessorios/capinhasiliconeapple.png",
                             Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Vermelho: "/images/acessorios/capinhasiliconeapple.png",
                             Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Verde: "/images/acessorios/capinhasiliconeapple.png",
-                            Rosa: "/images/acessorios/capinhasiliconeapple.png",
-                            Amarelo: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png",
+                            Roxo: "/images/acessorios/capinhasiliconeapple.png"
                         }
-                    };
-                })
-            },
+                    }
+                ]
+            }
+            ,
             {
                 key: "capinhamagsafeiphone",
                 src: "/images/acessorios/capinhamagsafeiphone.png",
