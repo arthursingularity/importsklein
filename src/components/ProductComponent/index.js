@@ -1670,24 +1670,6 @@ const productData = {
                 ],
             },
             {
-                key: "luminariabola",
-                src: "/images/eletronicos/luminariabola.jpg",
-                product: "Luminária bola",
-                price: "R$ 39,99",
-                garantia: "3 meses",
-                versions: [
-                    {
-                        condition: "Lacrado",
-                        price: "R$ 39,99",
-                        colors: ["Marrom"],
-                        availability: "Pronta-entrega",
-                        images: {
-                            Marrom: "/images/eletronicos/luminariabola.jpg",
-                        },
-                    }
-                ],
-            },
-            {
                 key: "xbox360",
                 src: "/images/eletronicos/xbox360.png",
                 product: "Xbox 360 + kinect + 2 controles",
@@ -1724,6 +1706,42 @@ const productData = {
                     }
                 ],
             },
+            {
+                key: "carregadorveicular",
+                src: "/images/eletronicos/carregadorcarro.jpg",
+                product: "Carregador turbo veicular 55W(2x USB / 1x USB-C)",
+                price: "R$ 20,00",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 20,00",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/eletronicos/carregadorcarro.jpg",
+                        },
+                    }
+                ],
+            },
+            {
+                key: "chaleiraeletrica",
+                src: "/images/eletronicos/chaleira.png",
+                product: "Chaleira elétrica Futuro Casa 1,8L 220v Inox",
+                price: "R$ 89,90",
+                garantia: "3 meses",
+                versions: [
+                    {
+                        condition: "Lacrado",
+                        price: "R$ 89,90",
+                        colors: ["Preto"],
+                        availability: "Pronta-entrega",
+                        images: {
+                            Preto: "/images/eletronicos/chaleira.png",
+                        },
+                    }
+                ],
+            },
         ]
     },
     Chaveiros: {
@@ -1737,61 +1755,12 @@ const productData = {
                     {
                         condition: "Lacrado",
                         price: "R$ 13,99",
-                        colors: ["Minion1", "Minion2", "Minion3", "Minion4", "Minion5",
-                            "Stitch1", "Stitch2", "Stitch3", "Stitch4", "Stitch5",
-                            "Patrick1", "Patrick2", "Patrick3",
-                            "Minnie1",
-
-                            // Super-Heróis (Marvel)
-                            "Spiderman1", "Ironman1", "Ironman2", "Blackpanther1",
-                            "Hulk1", "Captainamerica1", "Captainamerica2", "Thor1",
-
-                            // Animes
-                            "Goku1", "Goku2", "Majinboo1", // Dragon Ball
-                            "Naruto1", "Kakashi1", "Gaara1", "Itachi1", // Naruto
-
-                            // Outros
-                            "Ursopooh1", // Ursinho Pooh
-                            "Alegria1", "Nojinho1", "Raiva1", "Tristeza1", "Inveja1",],
+                        colors: ["Minion1"],
                         colorType: "img",
                         message: "Acima de 2 unidades, cada um sai por R$ 11,99",
                         availability: "Pronta-entrega",
                         images: {
                             Minion1: "/images/chaveiros/minion1.png",
-                            Minion2: "/images/chaveiros/minion2.png",
-                            Minion3: "/images/chaveiros/minion3.png",
-                            Minion4: "/images/chaveiros/minion4.png",
-                            Minion5: "/images/chaveiros/minion5.png",
-                            Stitch1: "/images/chaveiros/stitch1.png",
-                            Stitch2: "/images/chaveiros/stitch2.png",
-                            Stitch3: "/images/chaveiros/stitch3.png",
-                            Stitch4: "/images/chaveiros/stitch4.png",
-                            Stitch5: "/images/chaveiros/stitch5.png",
-                            Patrick1: "/images/chaveiros/patrick1.png",
-                            Patrick2: "/images/chaveiros/patrick2.png",
-                            Patrick3: "/images/chaveiros/patrick3.png",
-                            Minnie1: "/images/chaveiros/minnie1.png",
-                            Spiderman1: "/images/chaveiros/spiderman1.png",
-                            Ironman1: "/images/chaveiros/ironman1.png",
-                            Ironman2: "/images/chaveiros/ironman2.png",
-                            Blackpanther1: "/images/chaveiros/blackpanther1.png",
-                            Hulk1: "/images/chaveiros/hulk1.png",
-                            Captainamerica1: "/images/chaveiros/captainamerica1.png",
-                            Captainamerica2: "/images/chaveiros/captainamerica2.png",
-                            Thor1: "/images/chaveiros/thor1.png",
-                            Goku1: "/images/chaveiros/goku1.png",
-                            Goku2: "/images/chaveiros/goku2.png",
-                            Majinboo1: "/images/chaveiros/majinboo1.png",
-                            Naruto1: "/images/chaveiros/naruto1.png",
-                            Kakashi1: "/images/chaveiros/kakashi1.png",
-                            Gaara1: "/images/chaveiros/gaara1.png",
-                            Itachi1: "/images/chaveiros/itachi1.png",
-                            Ursopooh1: "/images/chaveiros/ursopooh1.png",
-                            Alegria1: "/images/chaveiros/alegria1.png",
-                            Nojinho1: "/images/chaveiros/nojinho1.png",
-                            Raiva1: "/images/chaveiros/raiva1.png",
-                            Tristeza1: "/images/chaveiros/tristeza1.png",
-                            Inveja1: "/images/chaveiros/inveja1.png",
                         },
                     }
                 ]
@@ -1916,10 +1885,10 @@ const productData = {
                         colors: ["Preto", "Branco", "Azul", "Roxo"],
                         availability: "Pronta-entrega",
                         images: {
-                            Preto: "/images/acessorios/capinhasiliconeapple.png",
-                            Branco: "/images/acessorios/capinhasiliconeapple.png",
-                            Azul: "/images/acessorios/capinhasiliconeapple.png",
-                            Roxo: "/images/acessorios/capinhasiliconeapple.png"
+                            Preto: "/images/acessorios/capasilicone/16preto.png",
+                            Branco: "/images/acessorios/capasilicone/16branco.png",
+                            Azul: "/images/acessorios/capasilicone/16azul.png",
+                            Roxo: "/images/acessorios/capasilicone/16roxo.png",
                         }
                     }
                 ]
