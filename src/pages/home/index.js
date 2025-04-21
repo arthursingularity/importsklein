@@ -11,7 +11,7 @@ const data = {
             link: "/smartphones/apple/iphone15",
             src: "/images/smartphones/apple/iphone15.jpg",
             product: "Apple iPhone 15",
-            price: "R$ 4.830,00",
+            price: "R$ 4.980,00",
         },
     ],
     apple: [
@@ -19,19 +19,19 @@ const data = {
             link: "/smartphones/apple/iphone13",
             src: "/images/smartphones/apple/iphone13.jpg",
             product: "Apple iPhone 13",
-            price: "R$ 3.632,00",
+            price: "R$ 3.782,00",
         },
         {
             link: "/smartphones/apple/iphone15",
             src: "/images/smartphones/apple/iphone15.jpg",
             product: "Apple iPhone 15",
-            price: "R$ 4.830,00",
+            price: "R$ 4.980,00",
         },
         {
             link: "/smartphones/apple/iphone16",
             src: "/images/smartphones/apple/iphone16verde.jpg",
             product: "Apple iPhone 16",
-            price: "R$ 5.102,00",
+            price: "R$ 5.252,00",
         },
         {
             link: "/tablets/apple/ipad10",

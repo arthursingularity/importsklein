@@ -12,14 +12,14 @@ const data = {
                 key: "iphone13",
                 src: "/images/smartphones/apple/iphone13.jpg",
                 product: "Apple iPhone 13",
-                price: "R$ 3.62,00",
+                price: "R$ 3.782,00",
                 garantia: "1 ano",
                 message: "Acima de 2 unidades, cada um sai por R$ 11,99",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "128GB",
-                        price: "R$ 3.632,00",
+                        price: "R$ 3.782,00",
                         colors: ["Azul", "Estelar", "Meia-noite"],
                         availability: "Encomenda",
                         images: {
@@ -34,13 +34,13 @@ const data = {
                 key: "iphone14",
                 src: "/images/smartphones/apple/iphone14.jpg",
                 product: "Apple iPhone 14",
-                price: "R$ 4.304,00",
+                price: "R$ 4.454,00",
                 garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "128GB",
-                        price: "R$ 4.304,00",
+                        price: "R$ 4.454,00",
                         colors: ["Azul"],
                         availability: "Encomenda",
                         images: {
@@ -53,13 +53,13 @@ const data = {
                 key: "iphone15",
                 src: "/images/smartphones/apple/iphone15.jpg",
                 product: "Apple iPhone 15",
-                price: "R$ 4.830,00",
+                price: "R$ 4.980,00",
                 garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "128GB",
-                        price: "R$ 4.830,00",
+                        price: "R$ 4.980,00",
                         colors: ["Preto", "Azul claro", "Verde", "Rosa"],
                         availability: "Encomenda",
                         images: {
@@ -75,13 +75,13 @@ const data = {
                 key: "iphone16",
                 src: "/images/smartphones/apple/iphone16verde.jpg",
                 product: "Apple iPhone 16",
-                price: "R$ 5.102,00",
+                price: "R$ 5.252,00",
                 garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "128GB",
-                        price: "R$ 5.102,00",
+                        price: "R$ 5.252,00",
                         colors: ["Verde", "Ultramarino", "Branco", "Preto", "Rosa"],
                         availability: "Encomenda",
                         images: {
@@ -95,7 +95,7 @@ const data = {
                     {
                         condition: "Lacrado",
                         storage: "256GB",
-                        price: "R$ 6.132,00",
+                        price: "R$ 6.282,00",
                         colors: ["Preto", "Ultramarino", "Branco", "Rosa"],
                         availability: "Encomenda",
                         images: {
@@ -111,13 +111,13 @@ const data = {
                 key: "iphone16pro",
                 src: "/images/smartphones/apple/iphone16pro.jpg",
                 product: "Apple iPhone 16 Pro",
-                price: "R$ 6.432,00",
+                price: "R$ 6.582,00",
                 garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "128GB",
-                        price: "R$ 6.432,00",
+                        price: "R$ 6.582,00",
                         colors: ["Titânio-deserto", "Titânio natural", "Titânio branco"],
                         availability: "Encomenda",
                         images: {
@@ -129,7 +129,7 @@ const data = {
                     {
                         condition: "Lacrado",
                         storage: "256GB",
-                        price: "R$ 7.052,00",
+                        price: "R$ 7.202,00",
                         colors: ["Titânio-deserto", "Titânio preto", "Titânio branco"],
                         availability: "Encomenda",
                         images: {
@@ -144,13 +144,13 @@ const data = {
                 key: "iphone16promax",
                 src: "/images/smartphones/apple/iphone16promax.png",
                 product: "Apple iPhone 16 Pro Max",
-                price: "R$ 7.602,00",
+                price: "R$ 7.752,00",
                 garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "256GB",
-                        price: "R$ 7.602,00",
+                        price: "R$ 7.752,00",
                         colors: ["Titânio-deserto"],
                         availability: "Encomenda",
                         images: {
