@@ -9,14 +9,14 @@ const productData = {
                 key: "iphone13",
                 src: "/images/smartphones/apple/iphone13.jpg",
                 product: "Apple iPhone 13",
-                price: "R$ 3.782,00",
+                price: "R$ 3.632,00",
                 garantia: "1 ano",
                 message: "Acima de 2 unidades, cada um sai por R$ 11,99",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "128GB",
-                        price: "R$ 3.782,00",
+                        price: "R$ 3.632,00",
                         colors: ["Azul", "Estelar", "Meia-noite"],
                         availability: "Encomenda",
                         images: {
@@ -31,13 +31,13 @@ const productData = {
                 key: "iphone14",
                 src: "/images/smartphones/apple/iphone14.jpg",
                 product: "Apple iPhone 14",
-                price: "R$ 4.454,00",
+                price: "R$ 4.304,00",
                 garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "128GB",
-                        price: "R$ 4.454,00",
+                        price: "R$ 4.304,00",
                         colors: ["Azul"],
                         availability: "Encomenda",
                         images: {
@@ -50,13 +50,13 @@ const productData = {
                 key: "iphone15",
                 src: "/images/smartphones/apple/iphone15.jpg",
                 product: "Apple iPhone 15",
-                price: "R$ 4.980,00",
+                price: "R$ 4.830,00",
                 garantia: "1 ano",
                 versions: [
                     {
                         condition: "Lacrado",
                         storage: "128GB",
-                        price: "R$ 4.980,00",
+                        price: "R$ 4.830,00",
                         colors: ["Preto", "Azul claro", "Verde", "Rosa"],
                         availability: "Encomenda",
                         images: {
