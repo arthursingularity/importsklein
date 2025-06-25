@@ -207,7 +207,7 @@ function ProductComponent({ productKey }) {
 
         const variantMessage = selectedVariant ? `\n*${selectedVariant}*` : "";
 
-        const message = `Olá, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*${variantMessage}\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\nValor: *${finalPrice}*\n\nLink do produto: ${productUrl}\n\nAguardo seu retorno, obrigado!`;
+        const message = `Olá, tudo bem?\n\nTenho interesse no seguinte produto:\n\n*${safeProduct.product}*${variantMessage}\n*${selectedColor}*\n*${selectedCondition}*\n*${selectedAvailability}*\n\nLink do produto: ${productUrl}\n\nAguardo seu retorno, obrigado!`;
 
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
@@ -277,24 +277,27 @@ function ProductComponent({ productKey }) {
                             {variantOptions.length > 0 ? ` (${selectedVariant})` : ""}
                             {availableColors.length > 0 ? ` - ${selectedColor}` : ""}
                         </p>
-                        <p className="text-[35px] font-regular rounded mt-4 leading-tight">
-                            {finalPrice}
-                        </p>
-                        <p className="font-regular text-verde leading-none mt-0.5">à vista no Pix/dinheiro</p>
-                        {parseFloat(finalPrice.replace("R$", "").replace(".", "").replace(",", ".")) > 699 && (
-                            <div className="parcelamentoDiv">
-                                <p className="font-light leading-none">ou em até 18x no cartão de crédito</p>
-                                <button
-                                    className="border border-gray-400 rounded text-[15px] font-regular p-1.5 px-2.5 mt-3 buttonHover"
-                                    onClick={() => {
-                                        setMostrarParcelamento(true);
-                                        window.scrollTo(0, 0);
-                                    }}
-                                >
-                                    Simular parcelamento
-                                </button>
-                            </div>
-                        )}
+                        <div className="hidden">
+                            <p className="text-[35px] font-regular rounded mt-4 leading-tight">
+                                {finalPrice}
+                            </p>
+                            <p className="font-regular text-verde leading-none mt-0.5">à vista no Pix/dinheiro</p>
+                            {parseFloat(finalPrice.replace("R$", "").replace(".", "").replace(",", ".")) > 699 && (
+                                <div className="parcelamentoDiv">
+                                    <p className="font-light leading-none">ou em até 18x no cartão de crédito</p>
+                                    <button
+                                        className="border border-gray-400 rounded text-[15px] font-regular p-1.5 px-2.5 mt-3 buttonHover"
+                                        onClick={() => {
+                                            setMostrarParcelamento(true);
+                                            window.scrollTo(0, 0);
+                                        }}
+                                    >
+                                        Simular parcelamento
+                                    </button>
+                                </div>
+                            )}
+                        </div>
+
                         <div className="OptionsPcView">
                             {variantOptions.length > 0 && (
                                 <div>
@@ -411,10 +414,10 @@ function ProductComponent({ productKey }) {
                         </div>
                     </div>
                 </div>
-                <p className="text-[35px] font-medium mt-4 lg:hidden leading-tight">
-                    {finalPrice}
-                </p>
-                <div className="lg:hidden">
+                <div className="lg:hidden hidden">
+                    <p className="text-[35px] font-medium mt-4 lg:hidden leading-tight">
+                        {finalPrice}
+                    </p>
                     <p className="font-regular text-verde leading-none mt-0.5">à vista no Pix/dinheiro</p>
                     {parseFloat(finalPrice.replace("R$", "").replace(".", "").replace(",", ".")) > 700 && (
                         <div className="parcelamentoDiv">
